@@ -1,0 +1,1383 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-hans" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>yocode扩展生成器 · vscode-docs</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="VSCodeContributorsinChina">
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search-pro/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-intopic-toc/style.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="范例.html" />
+    
+    
+    <link rel="prev" href="vse命令行工具.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="输入并搜索" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    简介
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" >
+            
+                <a target="_blank" href="https://code.visualstudio.com/docs">
+            
+                    
+                    官方文档
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../Overview.html">
+            
+                <a href="../Overview.html">
+            
+                    
+                    概览
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../快速入门.md">
+            
+                <span>
+            
+                    
+                    快速入门(暂无)
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../快速入门/介绍视频.html">
+            
+                <a href="../快速入门/介绍视频.html">
+            
+                    
+                    视频介绍
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="../快速入门/小技巧.html">
+            
+                <a href="../快速入门/小技巧.html">
+            
+                    
+                    小技巧
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="../快速入门/用户接口.html">
+            
+                <a href="../快速入门/用户接口.html">
+            
+                    
+                    用户接口
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4" data-path="../快速入门/主题.html">
+            
+                <a href="../快速入门/主题.html">
+            
+                    
+                    主题
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.5" data-path="../快速入门/设置.html">
+            
+                <a href="../快速入门/设置.html">
+            
+                    
+                    设置
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.6" data-path="../快速入门/快捷键绑定.html">
+            
+                <a href="../快速入门/快捷键绑定.html">
+            
+                    
+                    快捷键绑定
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.7" data-path="../快速入门/语言区域.html">
+            
+                <a href="../快速入门/语言区域.html">
+            
+                    
+                    语言区域
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../../summary/编辑器.html">
+            
+                <a href="../../summary/编辑器.html">
+            
+                    
+                    编辑器
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../编辑器/基础.html">
+            
+                <a href="../编辑器/基础.html">
+            
+                    
+                    基础
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="../编辑器/安装.html">
+            
+                <a href="../编辑器/安装.html">
+            
+                    
+                    安装
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="../编辑器/扩展市场.html">
+            
+                <a href="../编辑器/扩展市场.html">
+            
+                    
+                    扩展市场
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.4" data-path="../编辑器/任务.html">
+            
+                <a href="../编辑器/任务.html">
+            
+                    
+                    任务
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.5" data-path="../编辑器/调试.html">
+            
+                <a href="../编辑器/调试.html">
+            
+                    
+                    调试
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.6" data-path="../编辑器/为什么选用VSCode.html">
+            
+                <a href="../编辑器/为什么选用VSCode.html">
+            
+                    
+                    为什么选用VSCode
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.7" data-path="../编辑器/版本控制.html">
+            
+                <a href="../编辑器/版本控制.html">
+            
+                    
+                    版本控制
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.8" data-path="../编辑器/易用性.html">
+            
+                <a href="../编辑器/易用性.html">
+            
+                    
+                    易用性
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.9" data-path="../编辑器/与时俱进的编辑体验.html">
+            
+                <a href="../编辑器/与时俱进的编辑体验.html">
+            
+                    
+                    与时俱进的编辑体验
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../../summary/定制化.html">
+            
+                <a href="../../summary/定制化.html">
+            
+                    
+                    定制化
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="../定制化/概述.html">
+            
+                <a href="../定制化/概述.html">
+            
+                    
+                    概述
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="../定制化/用户和工作空间.html">
+            
+                <a href="../定制化/用户和工作空间.html">
+            
+                    
+                    用户和工作空间
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3" data-path="../定制化/快捷键绑定.html">
+            
+                <a href="../定制化/快捷键绑定.html">
+            
+                    
+                    快捷键绑定
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.4" data-path="../定制化/用户定义代码段.html">
+            
+                <a href="../定制化/用户定义代码段.html">
+            
+                    
+                    用户定义代码段
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.5" data-path="../定制化/调色板.html">
+            
+                <a href="../定制化/调色板.html">
+            
+                    
+                    调色板
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.6" data-path="../定制化/主题.html">
+            
+                <a href="../定制化/主题.html">
+            
+                    
+                    主题
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.7" data-path="../定制化/语言区域.html">
+            
+                <a href="../定制化/语言区域.html">
+            
+                    
+                    语言区域
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../../summary/工具.html">
+            
+                <a href="../../summary/工具.html">
+            
+                    
+                    工具
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1" data-path="vse命令行工具.html">
+            
+                <a href="vse命令行工具.html">
+            
+                    
+                    vse命令行工具
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.7.2" data-path="yocode扩展生成器.html">
+            
+                <a href="yocode扩展生成器.html">
+            
+                    
+                    yocode扩展生成器
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.3" data-path="范例.html">
+            
+                <a href="范例.html">
+            
+                    
+                    范例
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="../../summary/技术支持.html">
+            
+                <a href="../../summary/技术支持.html">
+            
+                    
+                    技术支持
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.1" data-path="../技术支持/常见问题.html">
+            
+                <a href="../技术支持/常见问题.html">
+            
+                    
+                    常见问题
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.2" data-path="../技术支持/错误代码.html">
+            
+                <a href="../技术支持/错误代码.html">
+            
+                    
+                    错误代码
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.3" data-path="../技术支持/如何升级.html">
+            
+                <a href="../技术支持/如何升级.html">
+            
+                    
+                    如何升级
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.4" data-path="../技术支持/系统要求.html">
+            
+                <a href="../技术支持/系统要求.html">
+            
+                    
+                    系统要求
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="../../summary/扩展.html">
+            
+                <a href="../../summary/扩展.html">
+            
+                    
+                    扩展
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.9.1" data-path="../扩展/概述.html">
+            
+                <a href="../扩展/概述.html">
+            
+                    
+                    概述
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.2" data-path="../扩展/范例-hello-world.html">
+            
+                <a href="../扩展/范例-hello-world.html">
+            
+                    
+                    范例-hello-world
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.3" data-path="../扩展/范例-word-count.html">
+            
+                <a href="../扩展/范例-word-count.html">
+            
+                    
+                    范例-word-count
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.4" data-path="../扩展/范例-language-server.html">
+            
+                <a href="../扩展/范例-language-server.html">
+            
+                    
+                    范例-language-server
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.5" data-path="../扩展/范例-调试器.html">
+            
+                <a href="../扩展/范例-调试器.html">
+            
+                    
+                    范例-调试器
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.6" data-path="../扩展/调试-扩展.html">
+            
+                <a href="../扩展/调试-扩展.html">
+            
+                    
+                    调试-扩展
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.7" data-path="../扩展/安装-扩展.html">
+            
+                <a href="../扩展/安装-扩展.html">
+            
+                    
+                    安装-扩展
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.8" data-path="../扩展/范式-原则.html">
+            
+                <a href="../扩展/范式-原则.html">
+            
+                    
+                    范式-原则
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.9" data-path="../扩展/测试-扩展.html">
+            
+                <a href="../扩展/测试-扩展.html">
+            
+                    
+                    测试-扩展
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.10" data-path="../扩展/用我们的方法创造扩展.html">
+            
+                <a href="../扩展/用我们的方法创造扩展.html">
+            
+                    
+                    用我们的方法创造扩展
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="../../summary/扩展API.html">
+            
+                <a href="../../summary/扩展API.html">
+            
+                    
+                    扩展API
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.10.1" data-path="../扩展API/概述.html">
+            
+                <a href="../扩展API/概述.html">
+            
+                    
+                    概述
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.2" data-path="../扩展API/扩展manifest文件.html">
+            
+                <a href="../扩展API/扩展manifest文件.html">
+            
+                    
+                    扩展manifest文件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.3" data-path="../扩展API/扩展点.html">
+            
+                <a href="../扩展API/扩展点.html">
+            
+                    
+                    扩展点
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.4" data-path="../扩展API/激活事件.html">
+            
+                <a href="../扩展API/激活事件.html">
+            
+                    
+                    激活事件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.5" data-path="../扩展API/vscode-api.html">
+            
+                <a href="../扩展API/vscode-api.html">
+            
+                    
+                    vscode-api
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.6" data-path="../扩展API/vscode-api-命令.html">
+            
+                <a href="../扩展API/vscode-api-命令.html">
+            
+                    
+                    vscode-api-命令
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.7" data-path="../扩展API/api调试.html">
+            
+                <a href="../扩展API/api调试.html">
+            
+                    
+                    api调试
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="../../summary/语言.html">
+            
+                <a href="../../summary/语言.html">
+            
+                    
+                    语言
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.11.1" data-path="../语言/概述.html">
+            
+                <a href="../语言/概述.html">
+            
+                    
+                    概述
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.2" data-path="../语言/javascript.html">
+            
+                <a href="../语言/javascript.html">
+            
+                    
+                    Javascript
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.3" data-path="../语言/json.html">
+            
+                <a href="../语言/json.html">
+            
+                    
+                    JSON
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.4" data-path="../语言/html.html">
+            
+                <a href="../语言/html.html">
+            
+                    
+                    HTML(暂无)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.5" data-path="../语言/css.html">
+            
+                <a href="../语言/css.html">
+            
+                    
+                    CSS, Sass and Less
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.6" data-path="../语言/typescript.html">
+            
+                <a href="../语言/typescript.html">
+            
+                    
+                    TypeScript
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.7" data-path="../语言/markdown.html">
+            
+                <a href="../语言/markdown.html">
+            
+                    
+                    Markdown
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.8" data-path="../语言/cpp.html">
+            
+                <a href="../语言/cpp.html">
+            
+                    
+                    C++
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.9" data-path="../语言/java.md">
+            
+                <span>
+            
+                    
+                    Java(暂无)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.10" data-path="../语言/php.html">
+            
+                <a href="../语言/php.html">
+            
+                    
+                    PHP
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.11" data-path="../语言/python.html">
+            
+                <a href="../语言/python.html">
+            
+                    
+                    Python
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.12" data-path="../语言/go.md">
+            
+                <span>
+            
+                    
+                    Go(暂无)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.13" data-path="../语言/dockerfile.html">
+            
+                <a href="../语言/dockerfile.html">
+            
+                    
+                    Dockerfile
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.14" data-path="../语言/t-sql.md">
+            
+                <span>
+            
+                    
+                    T-SQL(暂无)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.15" data-path="../语言/csharp.html">
+            
+                <a href="../语言/csharp.html">
+            
+                    
+                    C#
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="../../summary/运行时.html">
+            
+                <a href="../../summary/运行时.html">
+            
+                    
+                    运行时
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.12.1" data-path="../运行时/nodejs.html">
+            
+                <a href="../运行时/nodejs.html">
+            
+                    
+                    nodejs
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.2" data-path="../运行时/ASPnet5.html">
+            
+                <a href="../运行时/ASPnet5.html">
+            
+                    
+                    ASPnet5
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.3" data-path="../运行时/unity.html">
+            
+                <a href="../运行时/unity.html">
+            
+                    
+                    unity
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.4" data-path="../运行时/office.html">
+            
+                <a href="../运行时/office.html">
+            
+                    
+                    office
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            本书使用 GitBook 发布
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../.." >yocode扩展生成器</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="yo-code---extension-generator">Yo Code - Extension Generator</h1>
+<h1 id="yo-code---&#x6269;&#x5C55;&#x751F;&#x6210;&#x5668;">Yo Code - &#x6269;&#x5C55;&#x751F;&#x6210;&#x5668;</h1>
+<p>We have written a Yeoman generator to help get you started.<br>&#x6211;&#x4EEC;&#x5199;&#x4E00;&#x4E2A;Yeoman&#x751F;&#x6210;&#x5668;&#x6765;&#x4F5C;&#x4E3A;&#x5F00;&#x59CB;&#x3002;</p>
+<h2 id="install-the-generator">Install the Generator</h2>
+<h2 id="&#x5B89;&#x88C5;&#x751F;&#x6210;&#x5668;">&#x5B89;&#x88C5;&#x751F;&#x6210;&#x5668;</h2>
+<p>Install Yeoman and the VS Code Extension generator from the command prompt:<br>&#x4ECE;&#x547D;&#x4EE4;&#x884C;&#x5B89;&#x88C5;Yeoman&#x548C;VSCode&#x6269;&#x5C55;&#x751F;&#x6210;&#x5668;&#xFF1A;</p>
+<pre><code class="lang-bash">npm install -g yo generator-code
+</code></pre>
+<h2 id="run-yo-code">Run Yo Code</h2>
+<h2 id="&#x8FD0;&#x884C;yo-code">&#x8FD0;&#x884C;Yo Code</h2>
+<p>The Yeoman generator will walk you through the steps required to create your customization or extension prompting for the required information.<br>Yeoman&#x751F;&#x6210;&#x5668;&#x4F1A;&#x8981;&#x6C42;&#x4F60;&#x4E00;&#x6B65;&#x6B65;&#x7684;&#x586B;&#x5199;&#x76F8;&#x5E94;&#x4FE1;&#x606F;&#x6765;&#x521B;&#x5EFA;&#x81EA;&#x5B9A;&#x4E49;&#x6216;&#x6269;&#x5C55;&#x7684;&#x63D0;&#x793A;&#x3002;</p>
+<p>To launch the generator simply type the following in a command prompt:<br>&#x5728;&#x547D;&#x4EE4;&#x884C;&#x4E2D;&#x8F93;&#x5165;&#x5982;&#x4E0B;&#x547D;&#x4EE4;&#x6765;&#x542F;&#x52A8;&#x751F;&#x6210;&#x5668;&#xFF1A;</p>
+<pre><code class="lang-bash">yo code
+</code></pre>
+<p><img src="images/yocode/yocode.png" alt="yo code output"></p>
+<h2 id="generator-options">Generator Options</h2>
+<h2 id="&#x751F;&#x6210;&#x5668;&#x9009;&#x9879;">&#x751F;&#x6210;&#x5668;&#x9009;&#x9879;</h2>
+<p>The generator can either create an extension skeleton for a new extension or create a ready-to-use extension for languages, themes or snippets based on existing TextMate definition files.<br>&#x751F;&#x6210;&#x5668;&#x53EF;&#x4EE5;&#x4E3A;&#x65B0;&#x7684;&#x6269;&#x5C55;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x6269;&#x5C55;&#x6846;&#x67B6;&#x6216;&#x8005;&#x57FA;&#x4E8E;&#x5DF2;&#x7ECF;&#x5B58;&#x5728;&#x7684;TextMate&#x5B9A;&#x4E49;&#x6587;&#x4EF6;&#x4E3A;&#x8BED;&#x8A00;&#x3001;&#x4E3B;&#x9898;&#x548C;&#x7247;&#x6BB5;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x51C6;&#x5907;&#x4F7F;&#x7528;&#x7684;&#x6269;&#x5C55;&#xFF0C;</p>
+<h3 id="new-extension-in-typescript">New Extension in TypeScript</h3>
+<h3 id="&#x4F7F;&#x7528;typescript&#x5199;&#x65B0;&#x6269;&#x5C55;">&#x4F7F;&#x7528;TypeScript&#x5199;&#x65B0;&#x6269;&#x5C55;</h3>
+<p>Creates an extension skeleton implementing a &apos;hello world&apos; command. Use this as a starting point for your own extension.<br>&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x6269;&#x5C55;&#x6846;&#x67B6;&#x5B9E;&#x73B0;&apos;hello world&apos;&#x547D;&#x4EE4;&#x3002;&#x7528;&#x8FD9;&#x4E2A;&#x4F5C;&#x4E3A;&#x5F00;&#x53D1;&#x4F60;&#x81EA;&#x5DF1;&#x7684;&#x6269;&#x5C55;&#x7684;&#x8D77;&#x70B9;&#x3002;</p>
+<ul>
+<li>Prompts for the extension identifier and will create a folder of that name in the current directory    </li>
+<li>&#x63D0;&#x793A;&#x5728;&#x5F53;&#x524D;&#x76EE;&#x5F55;&#x4E0B;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x4EE5;&#x6269;&#x5C55;&#x6807;&#x8BC6;&#x4E3A;&#x540D;&#x79F0;&#x7684;&#x6587;&#x4EF6;&#x5939;</li>
+<li>Creates a base folder structure with a source, test and output folder   </li>
+<li>&#x521B;&#x5EFA;&#x5305;&#x542B;source&#x3001;test&#x548C;output&#x6587;&#x4EF6;&#x5939;&#x7684;&#x57FA;&#x7840;&#x6587;&#x4EF6;&#x5939;&#x7ED3;&#x6784;</li>
+<li>Templates out a <code>package.json</code> file and an extension main file    </li>
+<li>&#x751F;&#x6210;&#x4E00;&#x4EFD;<code>package.json</code>&#x6A21;&#x677F;&#x548C;&#x6269;&#x5C55;&#x4E3B;&#x6587;&#x4EF6;</li>
+<li>Sets-up <code>launch.json</code> and <code>tasks.json</code> so that F5 will compile and run your extension and attach the debugger    </li>
+<li>&#x914D;&#x7F6E;<code>launch.json</code>&#x548C;<code>tasks.json</code>&#x4F7F;&#x5F97;&#x6309;F5&#x5C31;&#x80FD;&#x7F16;&#x8BD1;&#x548C;&#x8FD0;&#x884C;&#x4F60;&#x7684;&#x6269;&#x5C55;&#xFF0C;&#x4EE5;&#x53CA;&#x6302;&#x8F7D;&#x8C03;&#x8BD5;&#x5668;</li>
+<li>Optionally sets up a Git repository   </li>
+<li>&#x53EF;&#x4EE5;&#x9009;&#x62E9;&#x914D;&#x7F6E;&#x4E00;&#x4E2A;Git&#x4ED3;&#x5E93;</li>
+</ul>
+<p>Once created, open VS Code on the created folder. The folder contains a file <code>vsc-extension-quickstart.md</code> as a quick guide with the next steps. The extension is setup so that you get IntelliSense for the extension API.<br>&#x521B;&#x5EFA;&#x6210;&#x529F;&#x540E;&#xFF0C;&#x6253;&#x5F00;&#x8FD9;&#x4E2A;&#x88AB;&#x521B;&#x5EFA;&#x7684;&#x6587;&#x4EF6;&#x5939;&#x3002;&#x6587;&#x4EF6;&#x5939;&#x5305;&#x542B;&#x4E00;&#x4E2A;<code>vsc-extension-quickstart.md</code>&#x6587;&#x4EF6;&#x4F5C;&#x4E3A;&#x540E;&#x7EED;&#x6B65;&#x9AA4;&#x7684;&#x5FEB;&#x901F;&#x6307;&#x5357;&#x3002;&#x6269;&#x5C55;&#x4F1A;&#x4E3A;&#x4F60;&#x914D;&#x7F6E;&#x6269;&#x5C55;API&#x7684;&#x667A;&#x80FD;&#x63D0;&#x793A;&#x3002;</p>
+<h3 id="new-extension-in-javascript">New Extension in JavaScript</h3>
+<h3 id="&#x4F7F;&#x7528;javascript&#x5199;&#x65B0;&#x6269;&#x5C55;">&#x4F7F;&#x7528;JavaScript&#x5199;&#x65B0;&#x6269;&#x5C55;</h3>
+<p>Does the same as <code>New Extension (TypeScript)</code>, but for JavaScript. The extension is setup so that you get IntelliSense for the extension API.<br>&#x548C;<code>New Extension (TypeScript)</code>&#x4E00;&#x6837;&#xFF0C;&#x4F46;&#x662F;&#x662F;&#x4E3A;JavaScript&#x5199;&#x7684;&#x3002;&#x6269;&#x5C55;&#x4F1A;&#x4E3A;&#x4F60;&#x914D;&#x7F6E;&#x6269;&#x5C55;API&#x7684;&#x667A;&#x80FD;&#x63D0;&#x793A;&#x3002;</p>
+<h3 id="new-color-theme">New Color Theme</h3>
+<h3 id="&#x65B0;&#x7684;&#x989C;&#x8272;&#x4E3B;&#x9898;">&#x65B0;&#x7684;&#x989C;&#x8272;&#x4E3B;&#x9898;</h3>
+<p>Creates an extension that contributes a new color theme based on an existing TextMate color theme.<br>&#x57FA;&#x4E8E;&#x5DF2;&#x5B58;&#x5728;&#x7684;TextMate&#x989C;&#x8272;&#x4E3B;&#x9898;&#x4E3A;&#x6269;&#x5C55;&#x8D21;&#x732E;&#x4E00;&#x4E2A;&#x65B0;&#x7684;&#x989C;&#x8272;&#x4E3B;&#x9898;&#x3002;</p>
+<ul>
+<li>Prompts for the location (URL or file path) of the existing TextMate color theme (.tmTheme). This file will be imported into the new extension.    </li>
+<li>&#x63D0;&#x793A;&#x8F93;&#x5165;&#x73B0;&#x6709;&#x7684;TextMate&#x989C;&#x8272;&#x4E3B;&#x9898;(.tmTheme)&#x7684;&#x4F4D;&#x7F6E;&#xFF08;URL&#x6216;&#x8005;&#x6587;&#x4EF6;&#x8DEF;&#x5F84;)&#x3002;</li>
+<li>Prompts for the color theme name as well as the color base theme (light or dark)   </li>
+<li>&#x63D0;&#x793A;&#x4E3A;&#x8FD9;&#x4E2A;&#x57FA;&#x672C;&#x7684;&#x989C;&#x8272;&#x4E3B;&#x9898;(light or dark)&#x8F93;&#x5165;&#x540D;&#x79F0;&#x3002;</li>
+<li>Prompts for the extension identifier and will create a folder of that name in the current directory    </li>
+<li>&#x63D0;&#x793A;&#x5728;&#x5F53;&#x524D;&#x76EE;&#x5F55;&#x4E0B;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x4EE5;&#x6269;&#x5C55;&#x6807;&#x8BC6;&#x4E3A;&#x540D;&#x79F0;&#x7684;&#x6587;&#x4EF6;&#x5939;</li>
+</ul>
+<p>Once created, open VS Code on the created folder and run the extension to test the new theme.<br>&#x521B;&#x5EFA;&#x6210;&#x529F;&#x540E;&#xFF0C;&#x7528;VSCode&#x6253;&#x5F00;&#x8FD9;&#x4E2A;&#x6587;&#x4EF6;&#x5939;&#x5E76;&#x8FD0;&#x884C;&#x6269;&#x5C55;&#x6765;&#x6D4B;&#x8BD5;&#x8FD9;&#x4E2A;&#x65B0;&#x4E3B;&#x9898;&#x3002;
+Check out <code>vsc-extension-quickstart.md</code>. It&apos;s a quick guide with the next steps.<br>&#x67E5;&#x770B;<code>vsc-extension-quickstart.md</code>&#x3002;&#x5B83;&#x662F;&#x540E;&#x7EED;&#x6B65;&#x9AA4;&#x7684;&#x5FEB;&#x901F;&#x6307;&#x5357;&#x3002;</p>
+<h3 id="new-language-support">New Language Support</h3>
+<h3 id="&#x65B0;&#x8BED;&#x8A00;&#x652F;&#x6301;">&#x65B0;&#x8BED;&#x8A00;&#x652F;&#x6301;</h3>
+<p>Creates an extension that contributes a language with colorizer.<br>&#x4E3A;&#x5E26;&#x7740;&#x8272;&#x5668;&#x7684;&#x8BED;&#x8A00;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x6269;&#x5C55;&#x3002;</p>
+<ul>
+<li>Prompts for the location (URL or file path) of an existing TextMate language file (.tmLanguage, .plist or .json). This file will be imported to the new extension    </li>
+<li>&#x63D0;&#x793A;&#x8F93;&#x5165;&#x73B0;&#x6709;&#x7684;TextMate&#x8BED;&#x8A00;&#x6587;&#x4EF6;(.tmLanguage, .plist or .json)&#x7684;&#x4F4D;&#x7F6E;&#xFF08;URL&#x6216;&#x8005;&#x6587;&#x4EF6;&#x8DEF;&#x5F84;&#xFF09;&#x3002;&#x8FD9;&#x4E2A;&#x6587;&#x4EF6;&#x5C06;&#x88AB;&#x5BFC;&#x5165;&#x5230;&#x65B0;&#x7684;&#x6269;&#x5C55;</li>
+<li>Prompts for the extension identifier and will create a folder of that name in the current directory    </li>
+<li>&#x63D0;&#x793A;&#x5728;&#x5F53;&#x524D;&#x76EE;&#x5F55;&#x4E0B;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x4EE5;&#x6269;&#x5C55;&#x6807;&#x8BC6;&#x4E3A;&#x540D;&#x79F0;&#x7684;&#x6587;&#x4EF6;&#x5939;</li>
+</ul>
+<p>Once created, open VS Code on the created folder and run the extension to test the colorization. Check out <code>vsc-extension-quickstart.md</code> for the next steps. Have a look at the language configuration file that has been created and defines configuration options such what style of comments and brackets the language uses.<br>&#x521B;&#x5EFA;&#x6210;&#x529F;&#x540E;&#xFF0C;&#x7528;VSCode&#x6253;&#x5F00;&#x8FD9;&#x4E2A;&#x6587;&#x4EF6;&#x5939;&#x5E76;&#x8FD0;&#x884C;&#x6269;&#x5C55;&#x6765;&#x6D4B;&#x8BD5;&#x7740;&#x8272;&#x3002;&#x67E5;&#x770B;<code>vsc-extension-quickstart.md</code>&#x6587;&#x4EF6;&#x4E86;&#x89E3;&#x540E;&#x7EED;&#x6B65;&#x9AA4;&#x3002;&#x770B;&#x770B;&#x5DF2;&#x7ECF;&#x521B;&#x5EFA;&#x7684;&#x8BED;&#x8A00;&#x914D;&#x7F6E;&#x6587;&#x4EF6;&#xFF0C;&#x5E76;&#x5B9A;&#x4E49;&#x8BED;&#x8A00;&#x4F7F;&#x7528;&#x4EC0;&#x4E48;&#x6837;&#x7684;&#x6CE8;&#x91CA;&#x548C;&#x62EC;&#x53F7;&#x3002;</p>
+<h3 id="new-code-snippets">New Code Snippets</h3>
+<h3 id="&#x65B0;&#x4EE3;&#x7801;&#x6BB5;">&#x65B0;&#x4EE3;&#x7801;&#x6BB5;</h3>
+<p>Creates an extension that contributes new code snippets.<br>&#x4E3A;&#x65B0;&#x4EE3;&#x7801;&#x6BB5;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x6269;&#x5C55;&#x3002;</p>
+<ul>
+<li>Prompts for the folder location that contains TextMate snippets (.tmSnippet) or Sublime snippets (.sublime-snippet). These file are converted to a VS Code snippet file.    </li>
+<li>&#x63D0;&#x793A;&#x8F93;&#x5165;&#x5DF2;&#x6709;&#x7684;TextMate&#x7247;&#x6BB5;(.tmSnippet)&#x6216;&#x8005;Sublime&#x7247;&#x6BB5;(.sublime-snippet)&#x7684;&#x4F4D;&#x7F6E;&#x3002;&#x8FD9;&#x4E9B;&#x6587;&#x4EF6;&#x4F1A;&#x88AB;&#x8F6C;&#x6362;&#x6210;VSCode&#x4EE3;&#x7801;&#x6BB5;&#x6587;&#x4EF6;&#x3002;</li>
+<li>Prompts for the language for which these snippets will be active    </li>
+<li>&#x63D0;&#x793A;&#x8F93;&#x5165;&#x88AB;&#x6FC0;&#x6D3B;&#x7684;&#x4EE3;&#x7801;&#x6BB5;&#x7684;&#x8BED;&#x8A00;</li>
+<li>Prompts for the extension identifier and will create a folder of that name in the current directory   </li>
+<li>&#x63D0;&#x793A;&#x5728;&#x5F53;&#x524D;&#x76EE;&#x5F55;&#x4E0B;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x4EE5;&#x6269;&#x5C55;&#x6807;&#x8BC6;&#x4E3A;&#x540D;&#x79F0;&#x7684;&#x6587;&#x4EF6;&#x5939;</li>
+</ul>
+<p>Once created, open VS Code on the created folder and run the extension to test the snippets. Check out <code>vsc-extension-quickstart.md</code> for the next steps.<br>&#x521B;&#x5EFA;&#x6210;&#x529F;&#x540E;&#xFF0C;&#x7528;VSCode&#x6253;&#x5F00;&#x8FD9;&#x4E2A;&#x6587;&#x4EF6;&#x5939;&#x5E76;&#x8FD0;&#x884C;&#x6269;&#x5C55;&#x6765;&#x6D4B;&#x8BD5;&#x8FD9;&#x4E2A;&#x7247;&#x6BB5;&#x3002;&#x67E5;&#x770B;<code>vsc-extension-quickstart.md</code>&#x6587;&#x4EF6;&#x4E86;&#x89E3;&#x540E;&#x7EED;&#x6B65;&#x9AA4;</p>
+<h2 id="loading-an-extension">Loading an Extension</h2>
+<h2 id="&#x52A0;&#x8F7D;&#x6269;&#x5C55;">&#x52A0;&#x8F7D;&#x6269;&#x5C55;</h2>
+<p>To load an extension, you need to copy the files to your VS Code extensions folder. We cover this in detail here: <a href="../../docs/extensions/install-extension.md#your-extensions-folder">Installing Extensions</a>.<br>&#x8981;&#x52A0;&#x8F7D;&#x6269;&#x5C55;&#xFF0C;&#x4F60;&#x9700;&#x8981;&#x590D;&#x5236;&#x4E00;&#x4E9B;&#x6587;&#x4EF6;&#x5230;&#x4F60;&#x7684;VSCode&#x6269;&#x5C55;&#x6587;&#x4EF6;&#x5939;&#x3002; &#x6211;&#x4EEC;&#x5728;&#x8FD9;&#x91CC;&#x8FDB;&#x884C;&#x8BE6;&#x7EC6;&#x4ECB;&#x7ECD;: <a href="../../docs/extensions/install-extension.md#your-extensions-folder">&#x5B89;&#x88C5;&#x6269;&#x5C55;</a>&#x3002;</p>
+<h2 id="next-steps">Next Steps</h2>
+<h2 id="&#x540E;&#x7EED;&#x6B65;&#x9AA4;">&#x540E;&#x7EED;&#x6B65;&#x9AA4;</h2>
+<ul>
+<li><a href="../../docs/tools/vscecli.md">Publishing Tool</a> - Learn how to publish your extensions to the VS Code Marketplace   </li>
+<li><a href="../../docs/tools/vscecli.md">&#x53D1;&#x5E03;&#x5DE5;&#x5177;</a> - &#x5B66;&#x4E60;&#x5982;&#x4F55;&#x5C06;&#x4F60;&#x7684;&#x6269;&#x5C55;&#x53D1;&#x5E03;&#x5230;&#x5546;&#x5E97;&#x4E2D;</li>
+<li><a href="../../docs/extensions/example-hello-world.md">Hello World</a> - Try the &apos;Hello World&apos; walkthrough to build your first extension   * <a href="../../docs/extensions/example-hello-world.md">Hello World</a> - &#x5C1D;&#x8BD5;&apos;Hello World&apos;&#x6F14;&#x7EC3;&#x4F5C;&#x4E3A;&#x4F60;&#x7684;&#x7B2C;&#x4E00;&#x4E2A;&#x6269;&#x5C55;</li>
+</ul>
+<h2 id="common-questions">Common Questions</h2>
+<h2 id="&#x5E38;&#x89C1;&#x95EE;&#x9898;">&#x5E38;&#x89C1;&#x95EE;&#x9898;</h2>
+<p><strong>Q: The <code>yo code</code> generator doesn&apos;t respond to arrow keys on Windows 10.</strong><br><strong>&#x95EE;&#x9898;: <code>yo code</code>&#x5728;Win10&#x4E2D;&#x4E0D;&#x8FD4;&#x56DE;&#x8BB8;&#x53EF;Keys&#x3002;</strong></p>
+<p><strong>A:</strong> Try starting the Yeoman generator with just <code>yo</code> and then select the <code>Code</code> generator.<br><strong>&#x56DE;&#x7B54;:</strong> &#x5C1D;&#x8BD5;&#x4EC5;&#x9002;&#x7528;<code>yo</code>&#x542F;&#x52A8;Yeoman&#x751F;&#x6210;&#x5668;&#x7136;&#x540E;&#x518D;&#x9009;&#x62E9;<code>Code</code>&#x751F;&#x6210;&#x5668;&#x3002;</p>
+<p><img src="images/yocode/yo-workaround.png" alt="yo workaround"></p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="vse命令行工具.html" class="navigation navigation-prev " aria-label="Previous page: vse命令行工具">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="范例.html" class="navigation navigation-next " aria-label="Next page: 范例">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"Order":2,"Area":"tools","TOCTitle":"Extension Generator","ContentId":"C733425A-3F06-4DB9-90A0-472EF1DB58D3","PageTitle":"The Yo Code Visual Studio Code Extension Generator","DateApproved":"4/14/2016","MetaDescription":"Easily create VS Code extensions and customizations with the Yo Code generator.","title":"yocode扩展生成器","level":"1.7.2","depth":2,"next":{"title":"范例","level":"1.7.3","depth":2,"path":"md/工具/范例.md","ref":"md/工具/范例.md","articles":[]},"previous":{"title":"vse命令行工具","level":"1.7.1","depth":2,"path":"md/工具/vse命令行工具.md","ref":"md/工具/vse命令行工具.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-lunr","-search","search-pro","intopic-toc","livereload"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"intopic-toc":{"isCollapsed":false,"isScrollspyActive":true,"label":"On This Page","maxDepth":6,"mode":"nested","selector":".markdown-section h1, .markdown-section h2, .markdown-section h3, .markdown-section h4, .markdown-section h5","visible":true},"search-pro":{},"livereload":{},"highlight":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"VSCodeContributorsinChina","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"vscode-docs","language":"zh-hans","gitbook":"*"},"file":{"path":"md/工具/yocode扩展生成器.md","mtime":"2021-05-20T07:06:10.000Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2023-04-07T07:25:43.262Z"},"basePath":"../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search-pro/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search-pro/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-intopic-toc/anchor.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-intopic-toc/gumshoe.polyfills.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-intopic-toc/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

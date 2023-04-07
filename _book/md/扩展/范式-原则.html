@@ -1,0 +1,1339 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-hans" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>范式-原则 · vscode-docs</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="VSCodeContributorsinChina">
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search-pro/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-intopic-toc/style.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="测试-扩展.html" />
+    
+    
+    <link rel="prev" href="安装-扩展.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="输入并搜索" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    简介
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" >
+            
+                <a target="_blank" href="https://code.visualstudio.com/docs">
+            
+                    
+                    官方文档
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../Overview.html">
+            
+                <a href="../Overview.html">
+            
+                    
+                    概览
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../快速入门.md">
+            
+                <span>
+            
+                    
+                    快速入门(暂无)
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../快速入门/介绍视频.html">
+            
+                <a href="../快速入门/介绍视频.html">
+            
+                    
+                    视频介绍
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="../快速入门/小技巧.html">
+            
+                <a href="../快速入门/小技巧.html">
+            
+                    
+                    小技巧
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="../快速入门/用户接口.html">
+            
+                <a href="../快速入门/用户接口.html">
+            
+                    
+                    用户接口
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4" data-path="../快速入门/主题.html">
+            
+                <a href="../快速入门/主题.html">
+            
+                    
+                    主题
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.5" data-path="../快速入门/设置.html">
+            
+                <a href="../快速入门/设置.html">
+            
+                    
+                    设置
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.6" data-path="../快速入门/快捷键绑定.html">
+            
+                <a href="../快速入门/快捷键绑定.html">
+            
+                    
+                    快捷键绑定
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.7" data-path="../快速入门/语言区域.html">
+            
+                <a href="../快速入门/语言区域.html">
+            
+                    
+                    语言区域
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../../summary/编辑器.html">
+            
+                <a href="../../summary/编辑器.html">
+            
+                    
+                    编辑器
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../编辑器/基础.html">
+            
+                <a href="../编辑器/基础.html">
+            
+                    
+                    基础
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="../编辑器/安装.html">
+            
+                <a href="../编辑器/安装.html">
+            
+                    
+                    安装
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="../编辑器/扩展市场.html">
+            
+                <a href="../编辑器/扩展市场.html">
+            
+                    
+                    扩展市场
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.4" data-path="../编辑器/任务.html">
+            
+                <a href="../编辑器/任务.html">
+            
+                    
+                    任务
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.5" data-path="../编辑器/调试.html">
+            
+                <a href="../编辑器/调试.html">
+            
+                    
+                    调试
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.6" data-path="../编辑器/为什么选用VSCode.html">
+            
+                <a href="../编辑器/为什么选用VSCode.html">
+            
+                    
+                    为什么选用VSCode
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.7" data-path="../编辑器/版本控制.html">
+            
+                <a href="../编辑器/版本控制.html">
+            
+                    
+                    版本控制
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.8" data-path="../编辑器/易用性.html">
+            
+                <a href="../编辑器/易用性.html">
+            
+                    
+                    易用性
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.9" data-path="../编辑器/与时俱进的编辑体验.html">
+            
+                <a href="../编辑器/与时俱进的编辑体验.html">
+            
+                    
+                    与时俱进的编辑体验
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../../summary/定制化.html">
+            
+                <a href="../../summary/定制化.html">
+            
+                    
+                    定制化
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="../定制化/概述.html">
+            
+                <a href="../定制化/概述.html">
+            
+                    
+                    概述
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="../定制化/用户和工作空间.html">
+            
+                <a href="../定制化/用户和工作空间.html">
+            
+                    
+                    用户和工作空间
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3" data-path="../定制化/快捷键绑定.html">
+            
+                <a href="../定制化/快捷键绑定.html">
+            
+                    
+                    快捷键绑定
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.4" data-path="../定制化/用户定义代码段.html">
+            
+                <a href="../定制化/用户定义代码段.html">
+            
+                    
+                    用户定义代码段
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.5" data-path="../定制化/调色板.html">
+            
+                <a href="../定制化/调色板.html">
+            
+                    
+                    调色板
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.6" data-path="../定制化/主题.html">
+            
+                <a href="../定制化/主题.html">
+            
+                    
+                    主题
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.7" data-path="../定制化/语言区域.html">
+            
+                <a href="../定制化/语言区域.html">
+            
+                    
+                    语言区域
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../../summary/工具.html">
+            
+                <a href="../../summary/工具.html">
+            
+                    
+                    工具
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1" data-path="../工具/vse命令行工具.html">
+            
+                <a href="../工具/vse命令行工具.html">
+            
+                    
+                    vse命令行工具
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2" data-path="../工具/yocode扩展生成器.html">
+            
+                <a href="../工具/yocode扩展生成器.html">
+            
+                    
+                    yocode扩展生成器
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.3" data-path="../工具/范例.html">
+            
+                <a href="../工具/范例.html">
+            
+                    
+                    范例
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="../../summary/技术支持.html">
+            
+                <a href="../../summary/技术支持.html">
+            
+                    
+                    技术支持
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.1" data-path="../技术支持/常见问题.html">
+            
+                <a href="../技术支持/常见问题.html">
+            
+                    
+                    常见问题
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.2" data-path="../技术支持/错误代码.html">
+            
+                <a href="../技术支持/错误代码.html">
+            
+                    
+                    错误代码
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.3" data-path="../技术支持/如何升级.html">
+            
+                <a href="../技术支持/如何升级.html">
+            
+                    
+                    如何升级
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.4" data-path="../技术支持/系统要求.html">
+            
+                <a href="../技术支持/系统要求.html">
+            
+                    
+                    系统要求
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="../../summary/扩展.html">
+            
+                <a href="../../summary/扩展.html">
+            
+                    
+                    扩展
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.9.1" data-path="概述.html">
+            
+                <a href="概述.html">
+            
+                    
+                    概述
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.2" data-path="范例-hello-world.html">
+            
+                <a href="范例-hello-world.html">
+            
+                    
+                    范例-hello-world
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.3" data-path="范例-word-count.html">
+            
+                <a href="范例-word-count.html">
+            
+                    
+                    范例-word-count
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.4" data-path="范例-language-server.html">
+            
+                <a href="范例-language-server.html">
+            
+                    
+                    范例-language-server
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.5" data-path="范例-调试器.html">
+            
+                <a href="范例-调试器.html">
+            
+                    
+                    范例-调试器
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.6" data-path="调试-扩展.html">
+            
+                <a href="调试-扩展.html">
+            
+                    
+                    调试-扩展
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.7" data-path="安装-扩展.html">
+            
+                <a href="安装-扩展.html">
+            
+                    
+                    安装-扩展
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.9.8" data-path="范式-原则.html">
+            
+                <a href="范式-原则.html">
+            
+                    
+                    范式-原则
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.9" data-path="测试-扩展.html">
+            
+                <a href="测试-扩展.html">
+            
+                    
+                    测试-扩展
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.10" data-path="用我们的方法创造扩展.html">
+            
+                <a href="用我们的方法创造扩展.html">
+            
+                    
+                    用我们的方法创造扩展
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="../../summary/扩展API.html">
+            
+                <a href="../../summary/扩展API.html">
+            
+                    
+                    扩展API
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.10.1" data-path="../扩展API/概述.html">
+            
+                <a href="../扩展API/概述.html">
+            
+                    
+                    概述
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.2" data-path="../扩展API/扩展manifest文件.html">
+            
+                <a href="../扩展API/扩展manifest文件.html">
+            
+                    
+                    扩展manifest文件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.3" data-path="../扩展API/扩展点.html">
+            
+                <a href="../扩展API/扩展点.html">
+            
+                    
+                    扩展点
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.4" data-path="../扩展API/激活事件.html">
+            
+                <a href="../扩展API/激活事件.html">
+            
+                    
+                    激活事件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.5" data-path="../扩展API/vscode-api.html">
+            
+                <a href="../扩展API/vscode-api.html">
+            
+                    
+                    vscode-api
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.6" data-path="../扩展API/vscode-api-命令.html">
+            
+                <a href="../扩展API/vscode-api-命令.html">
+            
+                    
+                    vscode-api-命令
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.7" data-path="../扩展API/api调试.html">
+            
+                <a href="../扩展API/api调试.html">
+            
+                    
+                    api调试
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="../../summary/语言.html">
+            
+                <a href="../../summary/语言.html">
+            
+                    
+                    语言
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.11.1" data-path="../语言/概述.html">
+            
+                <a href="../语言/概述.html">
+            
+                    
+                    概述
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.2" data-path="../语言/javascript.html">
+            
+                <a href="../语言/javascript.html">
+            
+                    
+                    Javascript
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.3" data-path="../语言/json.html">
+            
+                <a href="../语言/json.html">
+            
+                    
+                    JSON
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.4" data-path="../语言/html.html">
+            
+                <a href="../语言/html.html">
+            
+                    
+                    HTML(暂无)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.5" data-path="../语言/css.html">
+            
+                <a href="../语言/css.html">
+            
+                    
+                    CSS, Sass and Less
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.6" data-path="../语言/typescript.html">
+            
+                <a href="../语言/typescript.html">
+            
+                    
+                    TypeScript
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.7" data-path="../语言/markdown.html">
+            
+                <a href="../语言/markdown.html">
+            
+                    
+                    Markdown
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.8" data-path="../语言/cpp.html">
+            
+                <a href="../语言/cpp.html">
+            
+                    
+                    C++
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.9" data-path="../语言/java.md">
+            
+                <span>
+            
+                    
+                    Java(暂无)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.10" data-path="../语言/php.html">
+            
+                <a href="../语言/php.html">
+            
+                    
+                    PHP
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.11" data-path="../语言/python.html">
+            
+                <a href="../语言/python.html">
+            
+                    
+                    Python
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.12" data-path="../语言/go.md">
+            
+                <span>
+            
+                    
+                    Go(暂无)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.13" data-path="../语言/dockerfile.html">
+            
+                <a href="../语言/dockerfile.html">
+            
+                    
+                    Dockerfile
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.14" data-path="../语言/t-sql.md">
+            
+                <span>
+            
+                    
+                    T-SQL(暂无)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.15" data-path="../语言/csharp.html">
+            
+                <a href="../语言/csharp.html">
+            
+                    
+                    C#
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="../../summary/运行时.html">
+            
+                <a href="../../summary/运行时.html">
+            
+                    
+                    运行时
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.12.1" data-path="../运行时/nodejs.html">
+            
+                <a href="../运行时/nodejs.html">
+            
+                    
+                    nodejs
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.2" data-path="../运行时/ASPnet5.html">
+            
+                <a href="../运行时/ASPnet5.html">
+            
+                    
+                    ASPnet5
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.3" data-path="../运行时/unity.html">
+            
+                <a href="../运行时/unity.html">
+            
+                    
+                    unity
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.4" data-path="../运行时/office.html">
+            
+                <a href="../运行时/office.html">
+            
+                    
+                    office
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            本书使用 GitBook 发布
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../.." >范式-原则</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="&#x6269;&#x5C55;&#xFF08;&#x4EE5;&#x4E0B;&#x7B80;&#x79F0;&#x63D2;&#x4EF6;&#xFF09;&#x7F16;&#x5199;&#x7684;&#x57FA;&#x672C;&#x65B9;&#x6CD5;&#x548C;&#x539F;&#x5219;">&#x6269;&#x5C55;&#xFF08;&#x4EE5;&#x4E0B;&#x7B80;&#x79F0;&#x63D2;&#x4EF6;&#xFF09;&#x7F16;&#x5199;&#x7684;&#x57FA;&#x672C;&#x65B9;&#x6CD5;&#x548C;&#x539F;&#x5219;</h1>
+<p>VS Code &#x7684;&#x63D2;&#x4EF6; API &#x9075;&#x5FAA;&#x4E00;&#x4E9B;&#x4F1A;&#x8D2F;&#x7A7F;&#x5230;&#x6574;&#x4E2A; API &#x7684;&#x57FA;&#x672C;&#x65B9;&#x6CD5;&#x548C;&#x539F;&#x5219;&#x3002;</p>
+<h2 id="promises">Promises</h2>
+<p>VS Code API &#x91C7;&#x7528; <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise" target="_blank">promises</a>&#x6765;&#x8FDB;&#x884C;&#x5F02;&#x6B65;&#x64CD;&#x4F5C;.&#x5728;&#x63D2;&#x4EF6;&#x5F53;&#x4E2D;&#xFF0C;&#x53EF;&#x4EE5;&#x8FD4;&#x56DE;&#x4EFB;&#x4F55;&#x7C7B;&#x578B;&#x7684; promise&#xFF0C;&#x6BD4;&#x5982;ES6, WinJS, A+ &#x7B49;&#x7B49;&#x3002;</p>
+<p>API&#x5F53;&#x4E2D;&#xFF0C;<code>Thenable</code>&#x7C7B;&#x578B;&#x7528;&#x4EE5;&#x4F9D;&#x8D56;&#x67D0;&#x4E2A; promise &#x5E93;&#x3002;<code>Thenable</code> &#x662F;<code>then</code>&#x5C5E;&#x6027;&#x7684;&#x201C;&#x516C;&#x5206;&#x6BCD;&#x201D;&#x3002;</p>
+<p>&#x5927;&#x90E8;&#x5206;&#x7684;promise&#x4F7F;&#x7528;&#x90FD;&#x4E0D;&#x662F;&#x5FC5;&#x8981;&#x7684;&#xFF0C;&#x5F53; VS Code &#x8FD0;&#x884C;&#x4E00;&#x4E2A;&#x63D2;&#x4EF6;&#x65F6;&#xFF0C;&#x53EF;&#x4EE5;&#x50CF;&#x5904;&#x7406; <em>result type</em> &#x7684;&#x4E00;&#x4E2A;<code>Thenable</code>&#x6765;&#x5904;&#x7406; <em>result type</em> &#x4ED6;&#x672C;&#x8EAB;&#x3002;&#x5F53; promise &#x6CA1;&#x5FC5;&#x8981;&#x7528;&#x4E0A;&#x65F6;&#xFF0C;API &#x4F1A;&#x901A;&#x8FC7;<code>or</code>-types &#x7ED9;&#x51FA;&#x63D0;&#x793A;&#x3002;</p>
+<pre><code class="lang-typescript">  provideNumber(): <span class="hljs-built_in">number</span> | Thenable&lt;<span class="hljs-built_in">number</span>&gt;
+</code></pre>
+<h2 id="cancellationtoken-&#x53D6;&#x6D88;&#x6807;&#x5FD7;">CancellationToken &#x53D6;&#x6D88;&#x6807;&#x5FD7;</h2>
+<p>&#x4E0D;&#x7A33;&#x5B9A;&#x7684;&#x72B6;&#x6001;&#x7ECF;&#x5E38;&#x89E6;&#x53D1;&#x64CD;&#x4F5C;&#x5F02;&#x6B65;&#x64CD;&#x4F5C;&#xFF0C;&#x72B6;&#x6001;&#x6709;&#x53EF;&#x80FD;&#x5728;&#x5F02;&#x6B65;&#x64CD;&#x4F5C;&#x7ED3;&#x675F;&#x524D;&#x6539;&#x53D8;&#x3002;&#x4E3E;&#x4E2A;&#x4F8B;&#x5B50;&#xFF0C;&#x667A;&#x80FD;&#x611F;&#x77E5;&#x5F00;&#x59CB;&#x8BA1;&#x7B97;&#xFF0C;&#x4F46;&#x662F;&#x7528;&#x6237;&#x7EE7;&#x7EED;&#x8F93;&#x5165;&#x4F7F;&#x5F97;&#x5F02;&#x6B65;&#x64CD;&#x4F5C;&#x201C;&#x8FC7;&#x671F;&#x201C;&#x4E86;&#x3002;</p>
+<p>&#x7ED9;&#x6B64;&#x7C7B;&#x884C;&#x4E3A;&#x7684;API&#x90FD;&#x4F1A;&#x88AB;&#x4F20;&#x9012;<code>CancellationToken</code>&#x53C2;&#x6570;&#xFF0C;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;<code>isCancellationRequested</code>&#x6765;&#x68C0;&#x67E5;&#x53D6;&#x6D88;&#x72B6;&#x6001;&#xFF0C;&#x6216;&#x8005;&#x53D6;&#x6D88;&#x65F6;&#x901A;&#x8FC7;<code>onCancellationRequested</code>&#x5F97;&#x5230;&#x901A;&#x77E5;&#x3002;&#x53D6;&#x6D88;&#x6807;&#x5FD7;&#x901A;&#x5E38;&#x662F;&#x51FD;&#x6570;&#x8C03;&#x7528;&#x7684;&#x6700;&#x540E;&#x4E00;&#x4E2A;&#x53EF;&#x9009;&#x53C2;&#x6570;&#x3002;</p>
+<h2 id="disposalibity-&#x91CA;&#x653E;&#x6A21;&#x5F0F;">Disposalibity &#x91CA;&#x653E;&#x6A21;&#x5F0F;</h2>
+<p>VS Code API &#x5728;&#x5176;&#x5185;&#x90E8;&#x8D44;&#x6E90;&#x4E0A;&#x4F7F;&#x7528; <a href="https://en.wikipedia.org/wiki/Dispose_pattern" target="_blank">&#x91CA;&#x653E;&#x6A21;&#x5F0F;</a>&#x3002;&#x8FD9;&#x6D89;&#x53CA;&#x5230;&#x4E8B;&#x4EF6;&#x76D1;&#x542C;&#xFF0C;&#x547D;&#x4EE4;&#x884C;&#xFF0C;UI&#x4EA4;&#x4E92;&#xFF0C;&#x8FD8;&#x6709;&#x5404;&#x79CD;&#x8BED;&#x8A00;&#x8D21;&#x732E;&#x3002;</p>
+<p>&#x5728;&#x5B9E;&#x4F8B;&#x5185;&#x90E8;&#xFF0C;<code>setStatusBarMessage(value: string)</code>&#x8FD4;&#x56DE;&#x4E00;&#x4E2A;&#x53EF;&#x91CA;&#x653E;&#x7C7B;&#x578B;<code>Disposable</code>&#xFF0C;&#x5728;&#x8C03;&#x7528;<code>dispose</code>&#x65B9;&#x6CD5;&#x7684;&#x65F6;&#x5019;&#x5B83;&#x518D;&#x4E00;&#x6B21;&#x79FB;&#x9664;&#x4E86;&#x6D88;&#x606F;&#x3002;</p>
+<h2 id="events">Events</h2>
+<p>VS Code API &#x5185;&#x7684;&#x4E8B;&#x4EF6;&#x662F;&#x901A;&#x8FC7;&#x8C03;&#x7528;&#x76D1;&#x542C;&#x5668;&#x51FD;&#x6570;&#x6765;&#x8BA2;&#x9605;&#x7684;&#x51FD;&#x6570;&#x3002;&#x8BA2;&#x9605;&#x51FD;&#x6570;&#x8FD4;&#x56DE;&#x4E00;&#x4E2A;&#x53EF;&#x91CA;&#x653E;&#x7C7B;&#x578B;<code>Disposable</code>&#xFF0C;&#x4ED6;&#x4F1A;&#x628A; dispose &#x65B9;&#x6CD5;&#x4E0A;&#x7684;&#x76D1;&#x542C;&#x5668;&#x7ED9;&#x79FB;&#x9664;&#x6389;&#x3002;
+Events in the VS Code API are exposed as functions which you call with a listener-function to subscribe. Calls to subscribe return a <code>Disposable</code> which removes the event listener upon dispose.</p>
+<pre><code class="lang-javascript"><span class="hljs-keyword">var</span> listener = <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">event</span>) </span>{
+    <span class="hljs-built_in">console</span>.log(&#x201C;It happened&#x201D;, event);
+};
+
+<span class="hljs-comment">// &#x5F00;&#x59CB;&#x76D1;&#x542C;</span>
+<span class="hljs-keyword">var</span> subscription = fsWatcher.onDidDelete(listener);
+
+<span class="hljs-comment">// &#x66F4;&#x591A;</span>
+subscriptions.dispose(); <span class="hljs-comment">// &#x505C;&#x6B62;&#x76D1;&#x542C;</span>
+</code></pre>
+<p>&#x4E8B;&#x4EF6;&#x540D;&#x91C7;&#x7528;<code>on[Will|Did]VerNoun</code>&#x7ED3;&#x6784;&#xFF0C;&#x610F;&#x601D;&#x662F;&#x4E8B;&#x4EF6;&#x662F;&#x5426;&#x5C06;&#x8981;&#x53D1;&#x751F; <em>(onWill)</em> &#x6216;&#x8005;&#x5DF2;&#x7ECF;&#x53D1;&#x751F; <em>(onDid)</em> &#xFF0C;&#x73B0;&#x5728;&#x53D1;&#x751F; <em>(verb)</em> &#xFF0C;&#x8FD8;&#x6709;&#x4E0A;&#x4E0B;&#x6587; <em>(noun)</em> &#xFF08;&#x9664;&#x975E;&#x4E0A;&#x4E0B;&#x6587;&#x660E;&#x786E;&#xFF09;&#x3002;</p>
+<p>&#x4E00;&#x4E2A; VS Code API &#x7684;&#x4F8B;&#x5B50;&#x662F;<code>window.onDidChangeActiveTextEditor</code>&#x4E8B;&#x4EF6;&#x4F1A;&#x5728;&#x6D3B;&#x52A8;&#x6587;&#x672C;&#x7F16;&#x8F91;&#x5668; <em>&#xFF08;noun&#xFF09;</em> &#x5DF2;&#x7ECF;&#xFF08;<em>onDid</em>&#xFF09;&#x6539;&#x53D8;&#x4E86;&#xFF08;<em>verb</em>&#xFF09;</p>
+<h2 id="&#x4F7F;&#x7528;-nodejs-&#x6A21;&#x5757;">&#x4F7F;&#x7528; Node.js &#x6A21;&#x5757;</h2>
+<p>&#x4F60;&#x7684;&#x63D2;&#x4EF6;&#x5141;&#x8BB8;&#x5728;&#x8FD0;&#x884C;&#x65F6;&#x4F9D;&#x8D56;<a href="https://nodejs.org" target="_blank">Node.js</a>&#x6A21;&#x5757;&#x3002;&#x548C;&#x4E00;&#x4E2A; node &#x6A21;&#x5757;&#x672C;&#x8EAB;&#x76F8;&#x4F3C;&#xFF0C;&#x8FD8;&#x53EF;&#x4EE5;&#x589E;&#x52A0;&#x4E00;&#x4E9B;&#x4F9D;&#x8D56;&#x5230; <a href="../../docs/extensionAPI/extension-manifest.md"><code>package.json</code> &#x63D2;&#x4EF6;&#x6E05;&#x5355;</a>&#x7684;<code>dependencies</code>&#x5B57;&#x6BB5;&#x4E0A;&#x53BB;&#x3002;</p>
+<h3 id="&#x5B89;&#x88C5;&#x548C;&#x6253;&#x5305;">&#x5B89;&#x88C5;&#x548C;&#x6253;&#x5305;</h3>
+<p>&#x4F60;&#x5B89;&#x88C5;VS Code&#x63D2;&#x4EF6;&#x7684;&#x65F6;&#x5019;&#xFF0C;VS Code <strong>&#x4E0D;&#x4F1A;</strong> &#x81EA;&#x52A8;&#x5B89;&#x88C5;&#x5176;&#x4F9D;&#x8D56;&#xFF0C;&#x6240;&#x4EE5;&#x4F60;&#x5FC5;&#x987B;&#x5728;&#x53D1;&#x5E03;&#x524D;&#x6267;&#x884C;<code>npm install</code>&#x3002;&#x63D2;&#x4EF6;&#x7684;&#x5B89;&#x88C5;&#x5305;&#x4F1A;&#x5305;&#x542B;&#x4ED6;&#x5185;&#x5728;&#x7684;&#x6240;&#x6709;&#x4F9D;&#x8D56;&#x3002;&#x4F60;&#x53EF;&#x4EE5;&#x8FD0;&#x884C;<code>vsce ls</code>&#x53BB;&#x679A;&#x4E3E;&#x51FA;&#x6240;&#x6709;<code>vsce</code>&#x5C06;&#x4F1A;&#x5305;&#x542B;&#x8FDB;&#x5B89;&#x88C5;&#x5305;&#x7684;&#x6587;&#x4EF6;&#x3002;</p>
+<h2 id="&#x4E0B;&#x4E00;&#x6B65;">&#x4E0B;&#x4E00;&#x6B65;</h2>
+<ul>
+<li><a href="../../docs/extensionAPI/extension-manifest.md">&#x63D2;&#x4EF6;&#x6E05;&#x5355;&#x6587;&#x4EF6;</a> - VS Code package.json &#x63D2;&#x4EF6;&#x6E05;&#x5355;&#x6587;&#x4EF6;&#x6307;&#x5357;</li>
+<li><a href="../../docs/extensionAPI/extension-points.md">&#x8D21;&#x732E;&#x5173;&#x952E;&#x70B9;</a> - VS Code &#x8D21;&#x732E;&#x5173;&#x952E;&#x70B9; &#x6307;&#x5357;</li>
+<li><a href="../../docs/extensionAPI/activation-events.md">&#x6FC0;&#x6D3B;&#x4E8B;&#x4EF6;</a> - VS Code &#x6FC0;&#x6D3B;&#x4E8B;&#x4EF6; &#x6307;&#x5357;</li>
+</ul>
+<h2 id="&#x5E38;&#x89C1;&#x95EE;&#x9898;">&#x5E38;&#x89C1;&#x95EE;&#x9898;</h2>
+<h4 id="&#x95EE;&#xFF1A;&#x6211;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x539F;&#x751F;-nodejs&#x6A21;&#x5757;&#x5417;">&#x95EE;&#xFF1A;&#x6211;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x539F;&#x751F; Node.js&#x6A21;&#x5757;&#x5417;</h4>
+<p><strong>&#x7B54;&#xFF1A;</strong> &#x4E00;&#x4E2A; VS Code &#x63D2;&#x4EF6;&#x5B89;&#x88C5;&#x5305;&#x5305;&#x542B;&#x8BB8;&#x591A;&#x4F9D;&#x8D56;&#x3002;&#x610F;&#x5473;&#x7740;&#x5982;&#x679C;&#x4F60;&#x5728; Windows &#x5F00;&#x53D1;&#x63D2;&#x4EF6;&#x800C;&#x4E14;&#x53D1;&#x5E03;&#x63D2;&#x4EF6;&#x65F6;&#x4F9D;&#x8D56;&#x539F;&#x751F; Node.js &#x6A21;&#x5757;&#xFF0C;&#x90A3;&#x4E48;&#x4F60;&#x7684;&#x63D2;&#x4EF6;&#x4F1A;&#x5305;&#x542B; Windows &#x4E0A;&#x7F16;&#x8BD1;&#x597D;&#x7684;&#x539F;&#x751F;&#x4F9D;&#x8D56;&#x3002;OS X &#x3001;Linux&#x7528;&#x6237;&#x5C31;&#x4E0D;&#x80FD;&#x4F7F;&#x7528;&#x8BE5;&#x63D2;&#x4EF6;&#x3002;</p>
+<p>&#x6B64;&#x523B;&#x594F;&#x6548;&#x7684;&#x552F;&#x4E00;&#x529E;&#x6CD5;&#x662F;&#x628A;&#x56DB;&#x4E2A;&#x5E73;&#x53F0;&#xFF08;Windows X86, X64, Linux, OSX&#xFF09;&#x7684;&#x4E8C;&#x8FDB;&#x5236;&#x6587;&#x4EF6;&#x90FD;&#x653E;&#x8FDB;&#x63D2;&#x4EF6;&#xFF0C;&#x5E76;&#x4E14;&#x63D2;&#x4EF6;&#x5305;&#x542B;&#x52A8;&#x6001;&#x52A0;&#x8F7D;&#x6B63;&#x786E;&#x4E8C;&#x8FDB;&#x5236;&#x6587;&#x4EF6;&#x7684;&#x4EE3;&#x7801;&#x3002;</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="安装-扩展.html" class="navigation navigation-prev " aria-label="Previous page: 安装-扩展">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="测试-扩展.html" class="navigation navigation-next " aria-label="Next page: 测试-扩展">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"Order":7,"Area":"extensions","TOCTitle":"Principles and Patterns","ContentId":"36C1E34B-2F41-4AA0-9443-015D92EF85FB","PageTitle":"Visual Studio Code Extensibility Patterns and Principles","DateApproved":"4/14/2016","MetaDescription":"The Visual Studio Code extensibility (plug-in) API is designed around a set of guiding patterns and principles to promote extension consistency, correctness and ease of development.","title":"范式-原则","level":"1.9.8","depth":2,"next":{"title":"测试-扩展","level":"1.9.9","depth":2,"path":"md/扩展/测试-扩展.md","ref":"md/扩展/测试-扩展.md","articles":[]},"previous":{"title":"安装-扩展","level":"1.9.7","depth":2,"path":"md/扩展/安装-扩展.md","ref":"md/扩展/安装-扩展.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-lunr","-search","search-pro","intopic-toc","livereload"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"intopic-toc":{"isCollapsed":false,"isScrollspyActive":true,"label":"On This Page","maxDepth":6,"mode":"nested","selector":".markdown-section h1, .markdown-section h2, .markdown-section h3, .markdown-section h4, .markdown-section h5","visible":true},"search-pro":{},"livereload":{},"highlight":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"VSCodeContributorsinChina","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"vscode-docs","language":"zh-hans","gitbook":"*"},"file":{"path":"md/扩展/范式-原则.md","mtime":"2021-05-20T07:06:10.000Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2023-04-07T07:25:43.262Z"},"basePath":"../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search-pro/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search-pro/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-intopic-toc/anchor.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-intopic-toc/gumshoe.polyfills.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-intopic-toc/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

@@ -1,0 +1,1986 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-hans" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>范例-language-server · vscode-docs</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="VSCodeContributorsinChina">
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search-pro/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-intopic-toc/style.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="范例-调试器.html" />
+    
+    
+    <link rel="prev" href="范例-word-count.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="输入并搜索" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    简介
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" >
+            
+                <a target="_blank" href="https://code.visualstudio.com/docs">
+            
+                    
+                    官方文档
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../Overview.html">
+            
+                <a href="../Overview.html">
+            
+                    
+                    概览
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../快速入门.md">
+            
+                <span>
+            
+                    
+                    快速入门(暂无)
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../快速入门/介绍视频.html">
+            
+                <a href="../快速入门/介绍视频.html">
+            
+                    
+                    视频介绍
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="../快速入门/小技巧.html">
+            
+                <a href="../快速入门/小技巧.html">
+            
+                    
+                    小技巧
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="../快速入门/用户接口.html">
+            
+                <a href="../快速入门/用户接口.html">
+            
+                    
+                    用户接口
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4" data-path="../快速入门/主题.html">
+            
+                <a href="../快速入门/主题.html">
+            
+                    
+                    主题
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.5" data-path="../快速入门/设置.html">
+            
+                <a href="../快速入门/设置.html">
+            
+                    
+                    设置
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.6" data-path="../快速入门/快捷键绑定.html">
+            
+                <a href="../快速入门/快捷键绑定.html">
+            
+                    
+                    快捷键绑定
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.7" data-path="../快速入门/语言区域.html">
+            
+                <a href="../快速入门/语言区域.html">
+            
+                    
+                    语言区域
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../../summary/编辑器.html">
+            
+                <a href="../../summary/编辑器.html">
+            
+                    
+                    编辑器
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../编辑器/基础.html">
+            
+                <a href="../编辑器/基础.html">
+            
+                    
+                    基础
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="../编辑器/安装.html">
+            
+                <a href="../编辑器/安装.html">
+            
+                    
+                    安装
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="../编辑器/扩展市场.html">
+            
+                <a href="../编辑器/扩展市场.html">
+            
+                    
+                    扩展市场
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.4" data-path="../编辑器/任务.html">
+            
+                <a href="../编辑器/任务.html">
+            
+                    
+                    任务
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.5" data-path="../编辑器/调试.html">
+            
+                <a href="../编辑器/调试.html">
+            
+                    
+                    调试
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.6" data-path="../编辑器/为什么选用VSCode.html">
+            
+                <a href="../编辑器/为什么选用VSCode.html">
+            
+                    
+                    为什么选用VSCode
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.7" data-path="../编辑器/版本控制.html">
+            
+                <a href="../编辑器/版本控制.html">
+            
+                    
+                    版本控制
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.8" data-path="../编辑器/易用性.html">
+            
+                <a href="../编辑器/易用性.html">
+            
+                    
+                    易用性
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.9" data-path="../编辑器/与时俱进的编辑体验.html">
+            
+                <a href="../编辑器/与时俱进的编辑体验.html">
+            
+                    
+                    与时俱进的编辑体验
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../../summary/定制化.html">
+            
+                <a href="../../summary/定制化.html">
+            
+                    
+                    定制化
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="../定制化/概述.html">
+            
+                <a href="../定制化/概述.html">
+            
+                    
+                    概述
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="../定制化/用户和工作空间.html">
+            
+                <a href="../定制化/用户和工作空间.html">
+            
+                    
+                    用户和工作空间
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3" data-path="../定制化/快捷键绑定.html">
+            
+                <a href="../定制化/快捷键绑定.html">
+            
+                    
+                    快捷键绑定
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.4" data-path="../定制化/用户定义代码段.html">
+            
+                <a href="../定制化/用户定义代码段.html">
+            
+                    
+                    用户定义代码段
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.5" data-path="../定制化/调色板.html">
+            
+                <a href="../定制化/调色板.html">
+            
+                    
+                    调色板
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.6" data-path="../定制化/主题.html">
+            
+                <a href="../定制化/主题.html">
+            
+                    
+                    主题
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.7" data-path="../定制化/语言区域.html">
+            
+                <a href="../定制化/语言区域.html">
+            
+                    
+                    语言区域
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../../summary/工具.html">
+            
+                <a href="../../summary/工具.html">
+            
+                    
+                    工具
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1" data-path="../工具/vse命令行工具.html">
+            
+                <a href="../工具/vse命令行工具.html">
+            
+                    
+                    vse命令行工具
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2" data-path="../工具/yocode扩展生成器.html">
+            
+                <a href="../工具/yocode扩展生成器.html">
+            
+                    
+                    yocode扩展生成器
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.3" data-path="../工具/范例.html">
+            
+                <a href="../工具/范例.html">
+            
+                    
+                    范例
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="../../summary/技术支持.html">
+            
+                <a href="../../summary/技术支持.html">
+            
+                    
+                    技术支持
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.1" data-path="../技术支持/常见问题.html">
+            
+                <a href="../技术支持/常见问题.html">
+            
+                    
+                    常见问题
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.2" data-path="../技术支持/错误代码.html">
+            
+                <a href="../技术支持/错误代码.html">
+            
+                    
+                    错误代码
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.3" data-path="../技术支持/如何升级.html">
+            
+                <a href="../技术支持/如何升级.html">
+            
+                    
+                    如何升级
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.4" data-path="../技术支持/系统要求.html">
+            
+                <a href="../技术支持/系统要求.html">
+            
+                    
+                    系统要求
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="../../summary/扩展.html">
+            
+                <a href="../../summary/扩展.html">
+            
+                    
+                    扩展
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.9.1" data-path="概述.html">
+            
+                <a href="概述.html">
+            
+                    
+                    概述
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.2" data-path="范例-hello-world.html">
+            
+                <a href="范例-hello-world.html">
+            
+                    
+                    范例-hello-world
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.3" data-path="范例-word-count.html">
+            
+                <a href="范例-word-count.html">
+            
+                    
+                    范例-word-count
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.9.4" data-path="范例-language-server.html">
+            
+                <a href="范例-language-server.html">
+            
+                    
+                    范例-language-server
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.5" data-path="范例-调试器.html">
+            
+                <a href="范例-调试器.html">
+            
+                    
+                    范例-调试器
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.6" data-path="调试-扩展.html">
+            
+                <a href="调试-扩展.html">
+            
+                    
+                    调试-扩展
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.7" data-path="安装-扩展.html">
+            
+                <a href="安装-扩展.html">
+            
+                    
+                    安装-扩展
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.8" data-path="范式-原则.html">
+            
+                <a href="范式-原则.html">
+            
+                    
+                    范式-原则
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.9" data-path="测试-扩展.html">
+            
+                <a href="测试-扩展.html">
+            
+                    
+                    测试-扩展
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.10" data-path="用我们的方法创造扩展.html">
+            
+                <a href="用我们的方法创造扩展.html">
+            
+                    
+                    用我们的方法创造扩展
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="../../summary/扩展API.html">
+            
+                <a href="../../summary/扩展API.html">
+            
+                    
+                    扩展API
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.10.1" data-path="../扩展API/概述.html">
+            
+                <a href="../扩展API/概述.html">
+            
+                    
+                    概述
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.2" data-path="../扩展API/扩展manifest文件.html">
+            
+                <a href="../扩展API/扩展manifest文件.html">
+            
+                    
+                    扩展manifest文件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.3" data-path="../扩展API/扩展点.html">
+            
+                <a href="../扩展API/扩展点.html">
+            
+                    
+                    扩展点
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.4" data-path="../扩展API/激活事件.html">
+            
+                <a href="../扩展API/激活事件.html">
+            
+                    
+                    激活事件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.5" data-path="../扩展API/vscode-api.html">
+            
+                <a href="../扩展API/vscode-api.html">
+            
+                    
+                    vscode-api
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.6" data-path="../扩展API/vscode-api-命令.html">
+            
+                <a href="../扩展API/vscode-api-命令.html">
+            
+                    
+                    vscode-api-命令
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.7" data-path="../扩展API/api调试.html">
+            
+                <a href="../扩展API/api调试.html">
+            
+                    
+                    api调试
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="../../summary/语言.html">
+            
+                <a href="../../summary/语言.html">
+            
+                    
+                    语言
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.11.1" data-path="../语言/概述.html">
+            
+                <a href="../语言/概述.html">
+            
+                    
+                    概述
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.2" data-path="../语言/javascript.html">
+            
+                <a href="../语言/javascript.html">
+            
+                    
+                    Javascript
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.3" data-path="../语言/json.html">
+            
+                <a href="../语言/json.html">
+            
+                    
+                    JSON
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.4" data-path="../语言/html.html">
+            
+                <a href="../语言/html.html">
+            
+                    
+                    HTML(暂无)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.5" data-path="../语言/css.html">
+            
+                <a href="../语言/css.html">
+            
+                    
+                    CSS, Sass and Less
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.6" data-path="../语言/typescript.html">
+            
+                <a href="../语言/typescript.html">
+            
+                    
+                    TypeScript
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.7" data-path="../语言/markdown.html">
+            
+                <a href="../语言/markdown.html">
+            
+                    
+                    Markdown
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.8" data-path="../语言/cpp.html">
+            
+                <a href="../语言/cpp.html">
+            
+                    
+                    C++
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.9" data-path="../语言/java.md">
+            
+                <span>
+            
+                    
+                    Java(暂无)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.10" data-path="../语言/php.html">
+            
+                <a href="../语言/php.html">
+            
+                    
+                    PHP
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.11" data-path="../语言/python.html">
+            
+                <a href="../语言/python.html">
+            
+                    
+                    Python
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.12" data-path="../语言/go.md">
+            
+                <span>
+            
+                    
+                    Go(暂无)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.13" data-path="../语言/dockerfile.html">
+            
+                <a href="../语言/dockerfile.html">
+            
+                    
+                    Dockerfile
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.14" data-path="../语言/t-sql.md">
+            
+                <span>
+            
+                    
+                    T-SQL(暂无)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.15" data-path="../语言/csharp.html">
+            
+                <a href="../语言/csharp.html">
+            
+                    
+                    C#
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="../../summary/运行时.html">
+            
+                <a href="../../summary/运行时.html">
+            
+                    
+                    运行时
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.12.1" data-path="../运行时/nodejs.html">
+            
+                <a href="../运行时/nodejs.html">
+            
+                    
+                    nodejs
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.2" data-path="../运行时/ASPnet5.html">
+            
+                <a href="../运行时/ASPnet5.html">
+            
+                    
+                    ASPnet5
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.3" data-path="../运行时/unity.html">
+            
+                <a href="../运行时/unity.html">
+            
+                    
+                    unity
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.4" data-path="../运行时/office.html">
+            
+                <a href="../运行时/office.html">
+            
+                    
+                    office
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            本书使用 GitBook 发布
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../.." >范例-language-server</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="&#x793A;&#x4F8B;---&#x8BED;&#x8A00;&#x670D;&#x52A1;--example---language-server">&#x793A;&#x4F8B; - &#x8BED;&#x8A00;&#x670D;&#x52A1;  Example - Language Server</h1>
+<p>&#x8BED;&#x8A00;&#x670D;&#x52A1;&#x5141;&#x8BB8;&#x4F60;&#x9488;&#x5BF9;VS Code&#x6253;&#x5F00;&#x7684;&#x6587;&#x4EF6;&#x6DFB;&#x52A0;&#x4E00;&#x4E2A;&#x7684;&#x9A8C;&#x8BC1;&#x903B;&#x8F91;&#x3002;&#x6700;&#x5178;&#x578B;&#x7684;&#x4E00;&#x4E2A;&#x5E94;&#x7528;&#x662F;&#x68C0;&#x67E5;&#x7F16;&#x7A0B;&#x8BED;&#x8A00;&#x7684;&#x8BED;&#x6CD5;&#x3002;However validating other file types is useful as well. A language server could, for example, check files for inappropriate language.</p>
+<p>&#x901A;&#x5E38;&#x6821;&#x68C0;&#x67E5;&#x7A0B;&#x8BED;&#x8A00;&#x7684;&#x4EE3;&#x4EF7;&#x975E;&#x5E38;&#x9AD8;&#xFF0C;&#x5C24;&#x5176;&#x662F;&#x5F53;&#x68C0;&#x67E5;&#x52A8;&#x4F5C;&#x9700;&#x8981;&#x89E3;&#x6790;&#x591A;&#x4E2A;&#x6587;&#x4EF6;&#x5E76;&#x4E14;&#x5EFA;&#x7ACB;&#x62BD;&#x8C61;&#x7684;&#x8BED;&#x6CD5;&#x6811;&#x3002;&#x4E3A;&#x4E86;&#x907F;&#x514D;&#x6027;&#x80FD;&#x95EE;&#x9898;&#xFF0C;&#x8BED;&#x8A00;&#x670D;&#x52A1;&#x8FD0;&#x884C;&#x5728;&#x4E00;&#x4E2A;&#x5355;&#x72EC;&#x7684;&#x8FDB;&#x7A0B;&#x3002;&#x8FD9;&#x4E2A;&#x7279;&#x6027;&#x4E5F;&#x8BA9;&#x4F7F;&#x7528;&#x9664;TypeScript/JavaScript&#x4E4B;&#x5916;&#x7684;&#x8BED;&#x8A00;&#x7F16;&#x5199;&#x8BED;&#x8A00;&#x670D;&#x52A1;&#x6210;&#x4E3A;&#x53EF;&#x80FD;&#xFF0C;&#x8FD9;&#x53EF;&#x4EE5;&#x652F;&#x6301;&#x4E00;&#x4E9B;&#x5F88;&#x8017;&#x8D39;&#x6027;&#x80FD;&#x7684;&#x64CD;&#x4F5C;&#xFF0C;&#x4F8B;&#x5982;&#x4EE3;&#x7801;&#x81EA;&#x52A8;&#x5B8C;&#x6210;&#x6216;&#x8005;<code>&#x67E5;&#x627E;&#x6240;&#x7528;&#x5F15;&#x7528;</code>&#x3002;</p>
+<p>&#x8FD9;&#x7BC7;&#x6587;&#x7AE0;&#x5047;&#x5B9A;&#x4F60;&#x719F;&#x6089;&#x6B63;&#x5E38;&#x7684;VS Code&#x63D2;&#x4EF6;&#x5F00;&#x53D1;&#x3002;</p>
+<p>Language servers allow you to add your own validation logic to files open in VS Code. Typically you just validate programming languages. However validating other file types is useful as well. A language server could, for example, check files for inappropriate language.</p>
+<p>In general, validating programming language can be expensive. Especially when validation requires parsing multiple files and building up abstract syntax trees. To avoid that performance cost, language servers in VS Code are executed in a separate process. This architecture also makes it possible that language servers can be written in other languages besides TypeScript/JavaScript and that they can support expensive additional language features like code completion or <code>Find All References</code>.</p>
+<p>The remaining document assumes that you are familiar with normal extension development for VS Code.</p>
+<h2 id="&#x5B9E;&#x73B0;&#x4F60;&#x81EA;&#x5DF1;&#x7684;&#x8BED;&#x8A00;&#x670D;&#x52A1;--implement-your-own-language-server">&#x5B9E;&#x73B0;&#x4F60;&#x81EA;&#x5DF1;&#x7684;&#x8BED;&#x8A00;&#x670D;&#x52A1;  Implement your own Language Server</h2>
+<p>&#x7406;&#x8BBA;&#x4E0A;&#x8BED;&#x8A00;&#x670D;&#x52A1;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x4EFB;&#x4F55;&#x8BED;&#x8A00;&#x5B9E;&#x73B0;&#xFF0C;&#x7136;&#x800C;&#x73B0;&#x5728;VS Code&#x53EA;&#x63D0;&#x4F9B;Node.js&#x7684;&#x5E93;&#x3002;&#x672A;&#x6765;&#x5C06;&#x63D0;&#x4F9B;&#x5176;&#x4ED6;&#x8BED;&#x8A00;&#x7684;&#x5E93;&#x3002;&#x4E00;&#x4E2A;&#x4F7F;&#x7528;Node.js&#x8BED;&#x8A00;&#x5B9E;&#x73B0;&#x7684;&#x670D;&#x52A1;&#x4F8B;&#x5B50;&#x662F;&#x8FD9;&#x4E2A;&#x793A;&#x4F8B;&#x4ED3;&#x5E93;<a href="https://github.com/Microsoft/vscode-languageserver-node-example.git" target="_blank">Node&#x8BED;&#x8A00;&#x670D;&#x52A1;&#x793A;&#x4F8B;</a>&#x3002;</p>
+<p>&#x514B;&#x9686;&#x8FD9;&#x4E2A;&#x4ED3;&#x5E93;&#x7136;&#x540E;&#x6267;&#x884C;&#x5982;&#x4E0B;&#x547D;&#x4EE4;&#xFF1A;</p>
+<pre><code class="lang-bash">&gt; <span class="hljs-built_in">cd</span> client
+&gt; npm install
+&gt; code .
+&gt; <span class="hljs-built_in">cd</span> ../server
+&gt; npm install
+&gt; code .
+</code></pre>
+<p>Language servers can be implemented in any language. However, right now VS Code only provides libraries for Node.js. Additional libraries will follow in the future. A good starting point for a language server implementation in Node.js is the example repository <a href="https://github.com/Microsoft/vscode-languageserver-node-example.git" target="_blank">Language Server Node Example</a>. </p>
+<p>Clone the repository and then do:</p>
+<pre><code class="lang-bash">&gt; <span class="hljs-built_in">cd</span> client
+&gt; npm install
+&gt; code .
+&gt; <span class="hljs-built_in">cd</span> ../server
+&gt; npm install
+&gt; code .
+</code></pre>
+<h2 id="&#x5BA2;&#x6237;&#x7AEF;&#x89E3;&#x6790;---explaining-the-client">&#x2018;&#x5BA2;&#x6237;&#x7AEF;&#x2019;&#x89E3;&#x6790;   Explaining the &apos;Client&apos;</h2>
+<p>&#x8FD9;&#x4E2A;&#x5BA2;&#x6237;&#x7AEF;&#x5B9E;&#x9645;&#x4E0A;&#x5C31;&#x662F;&#x4E00;&#x4E2A;&#x6B63;&#x5E38;&#x7684;VS Code&#x63D2;&#x4EF6;&#x3002;&#x5B83;&#x7684;&#x5DE5;&#x4F5C;&#x7A7A;&#x95F4;&#x6839;&#x76EE;&#x5F55;&#x5305;&#x542B;<code>package.json</code>&#x6587;&#x4EF6;&#x3002;&#x8FD9;&#x4E2A;&#x6587;&#x4EF6;&#x6709;3&#x4E2A;&#x503C;&#x5F97;&#x6CE8;&#x610F;&#x7684;&#x8282;&#x3002;</p>
+<p>&#x9996;&#x5148;&#x6765;&#x770B;<code>activationEvents</code>:</p>
+<pre><code class="lang-json"><span class="hljs-string">&quot;activationEvents&quot;</span>: [
+    <span class="hljs-string">&quot;onLanguage:plaintext&quot;</span>
+]
+</code></pre>
+<p>&#x8FD9;&#x4E2A;&#x8282;&#x544A;&#x8BC9;VS Code&#x5F53;&#x7EAF;&#x6587;&#x672C;&#x6587;&#x4EF6;&#x88AB;&#x6253;&#x5F00;&#x65F6;&#x6FC0;&#x6D3B;&#x8FD9;&#x4E2A;&#x63D2;&#x4EF6;(&#x4F8B;&#x5982;&#x540E;&#x7F00;&#x540D;&#x4E3A;<code>.txt</code>&#x7684;&#x6587;&#x4EF6;). </p>
+<p>&#x63A5;&#x4E0B;&#x6765;&#x770B;<code>configuration</code>&#x8282;:</p>
+<pre><code class="lang-json"><span class="hljs-string">&quot;configuration&quot;</span>: {
+    <span class="hljs-string">&quot;type&quot;</span>: <span class="hljs-string">&quot;object&quot;</span>,
+    <span class="hljs-string">&quot;title&quot;</span>: <span class="hljs-string">&quot;Example configuration&quot;</span>,
+    <span class="hljs-string">&quot;properties&quot;</span>: {
+        <span class="hljs-string">&quot;languageServerExample.maxNumberOfProblems&quot;</span>: {
+            <span class="hljs-string">&quot;type&quot;</span>: <span class="hljs-string">&quot;number&quot;</span>,
+            <span class="hljs-string">&quot;default&quot;</span>: <span class="hljs-number">100</span>,
+            <span class="hljs-string">&quot;description&quot;</span>: <span class="hljs-string">&quot;Controls the maximum number of problems produced by the server.&quot;</span>
+        }
+    }
+}
+</code></pre>
+<p>&#x8FD9;&#x4E2A;&#x6269;&#x5C55;&#x8282;&#x662F;<code>configuration</code>VS Code&#x7684;&#x914D;&#x7F6E;&#x3002;&#x8FD9;&#x4E2A;&#x4F8B;&#x5B50;&#x5C06;&#x89E3;&#x6790;&#x8FD9;&#x4E9B;&#x8BBE;&#x7F6E;&#x662F;&#x600E;&#x6837;&#x5728;&#x6BCF;&#x6B21;&#x914D;&#x7F6E;&#x6539;&#x53D8;&#x548C;&#x8BED;&#x8A00;&#x670D;&#x52A1;&#x542F;&#x52A8;&#x65F6;&#x53D1;&#x9001;&#x7ED9;&#x8BED;&#x8A00;&#x670D;&#x52A1;&#x7684;&#x3002;</p>
+<p>&#x6700;&#x540E;&#x4E00;&#x90E8;&#x5206;&#x6DFB;&#x52A0;&#x4E86;&#x4E00;&#x4E2A;<code>vscode-languageclient</code>&#x5E93;&#x7684;&#x4F9D;&#x8D56;&#xFF1A;</p>
+<pre><code class="lang-json"><span class="hljs-string">&quot;dependencies&quot;</span>: {
+    <span class="hljs-string">&quot;vscode-languageclient&quot;</span>: <span class="hljs-string">&quot;^1.4.2&quot;</span>
+}
+</code></pre>
+<p>&#x5982;&#x540C;&#x4E0A;&#x9762;&#x63D0;&#x5230;&#x7684;&#xFF0C;&#x8FD9;&#x4E2A;&#x5BA2;&#x6237;&#x7AEF;&#x5C31;&#x662F;&#x4E00;&#x4E2A;&#x666E;&#x901A;&#x7684;VS Code&#x63D2;&#x4EF6;&#x3002;</p>
+<p>&#x4E0B;&#x9762;&#x5C31;&#x662F;&#x76F8;&#x5E94;&#x7684;extension.ts&#x6587;&#x4EF6;&#x5185;&#x5BB9;&#xFF1A;</p>
+<pre><code class="lang-typescript"><span class="hljs-comment">/* --------------------------------------------------------------------------------------------
+ * Copyright (c) Microsoft Corporation. All rights reserved.
+ * Licensed under the MIT License. See License.txt in the project root for license information.
+ * ------------------------------------------------------------------------------------------ */</span>
+<span class="hljs-meta">&apos;use strict&apos;</span>;
+
+<span class="hljs-keyword">import</span> * as path from <span class="hljs-string">&apos;path&apos;</span>;
+
+<span class="hljs-keyword">import</span> { workspace, Disposable, ExtensionContext } from <span class="hljs-string">&apos;vscode&apos;</span>;
+<span class="hljs-keyword">import</span> { LanguageClient, LanguageClientOptions, SettingMonitor, ServerOptions } from <span class="hljs-string">&apos;vscode-languageclient&apos;</span>;
+
+<span class="hljs-keyword">export</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">activate</span>(<span class="hljs-params">context: ExtensionContext</span>) </span>{
+
+    <span class="hljs-comment">// &#x670D;&#x52A1;&#x4F7F;&#x7528;nodejs&#x5B9E;&#x73B0;</span>
+    <span class="hljs-keyword">let</span> serverModule = context.asAbsolutePath(path.join(<span class="hljs-string">&apos;server&apos;</span>, <span class="hljs-string">&apos;server.js&apos;</span>));
+    <span class="hljs-comment">// &#x670D;&#x52A1;&#x7684;&#x8C03;&#x8BD5;&#x9009;&#x9879;</span>
+    <span class="hljs-keyword">let</span> debugOptions = { execArgv: [<span class="hljs-string">&quot;--nolazy&quot;</span>, <span class="hljs-string">&quot;--debug=6004&quot;</span>] };
+
+    <span class="hljs-comment">// &#x670D;&#x52A1;&#x7684;&#x8C03;&#x8BD5;&#x9009;&#x9879;&#x5C06;&#x5728;&#x63D2;&#x4EF6;&#x4EE5;&#x8C03;&#x8BD5;&#x6A21;&#x5F0F;&#x542F;&#x52A8;&#x7684;&#x60C5;&#x51B5;&#x4E0B;&#x751F;&#x6548;</span>
+    <span class="hljs-comment">// &#x8FD0;&#x884C;&#x9009;&#x9879;&#x5C06;&#x5728;&#x5176;&#x4ED6;&#x60C5;&#x51B5;&#x4E0B;&#x751F;&#x6548;</span>
+    <span class="hljs-keyword">let</span> serverOptions: ServerOptions = {
+        run : { <span class="hljs-keyword">module</span>: serverModule, transport: TransportKind.ipc },
+        debug: { <span class="hljs-keyword">module</span>: serverModule, transport: TransportKind.ipc, options: debugOptions }
+    }
+
+    // &#x63A7;&#x5236;&#x8BED;&#x8A00;&#x5BA2;&#x6237;&#x7AEF;&#x7684;&#x9009;&#x9879;
+    let clientOptions: LanguageClientOptions = {
+        <span class="hljs-comment">// &#x4E3A;&#x7EAF;&#x6587;&#x672C;&#x6587;&#x6863;&#x6CE8;&#x518C;&#x670D;&#x52A1;</span>
+        documentSelector: [<span class="hljs-string">&apos;plaintext&apos;</span>],
+        synchronize: {
+            <span class="hljs-comment">// &#x5C06;&apos;languageServerExample&apos;&#x9009;&#x9879;&#x540C;&#x6B65;&#x5230;&#x670D;&#x52A1;</span>
+            configurationSection: <span class="hljs-string">&apos;languageServerExample&apos;</span>,
+            <span class="hljs-comment">// &#x5F53;&#x5DE5;&#x4F5C;&#x7A7A;&#x95F4;&#x4E2D;&#x7684;&apos;.clientrc&apos;&#x6587;&#x4EF6;&#x6539;&#x53D8;&#x65F6;&#x901A;&#x77E5;&#x670D;&#x52A1;</span>
+            fileEvents: workspace.createFileSystemWatcher(<span class="hljs-string">&apos;**/.clientrc&apos;</span>)
+        }
+    }
+
+    <span class="hljs-comment">// &#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x8BED;&#x8A00;&#x5BA2;&#x6237;&#x7AEF;&#x5E76;&#x542F;&#x52A8;&#x8FD9;&#x4E2A;&#x5BA2;&#x6237;&#x7AEF;&#x3002;</span>
+    <span class="hljs-keyword">let</span> disposable = <span class="hljs-keyword">new</span> LanguageClient(<span class="hljs-string">&apos;Language Server Example&apos;</span>, serverOptions, clientOptions).start();
+
+    <span class="hljs-comment">// &#x5411;context&#x7684;&#x8BA2;&#x9605;&#x91CC;&#x63D2;&#x5165;&#x4E00;&#x4E2A;disposable&#x5BF9;&#x8C61;&#x4F7F;&#x7684;&#x5BA2;&#x6237;&#x7AEF;&#x53EF;&#x4EE5;&#x5728;&#x63D2;&#x4EF6;</span>
+    <span class="hljs-comment">// &#x5173;&#x95ED;&#x7684;&#x65F6;&#x5019;&#x88AB;&#x9500;&#x6BC1;</span>
+    context.subscriptions.push(disposable);
+}
+</code></pre>
+<p>The client is actually a normal VS Code extension. It contains a <code>package.json</code> file in the root of the workspace folder. There are three interesting sections of that file.  </p>
+<p>First look the <code>activationEvents</code>:</p>
+<pre><code class="lang-json"><span class="hljs-string">&quot;activationEvents&quot;</span>: [
+    <span class="hljs-string">&quot;onLanguage:plaintext&quot;</span>
+]
+</code></pre>
+<p>This section tells VS Code to activate the extension as soon as a plain text file is opened (e.g. a file with the extension <code>.txt</code>). </p>
+<p>Next look at the <code>configuration</code> section:</p>
+<pre><code class="lang-json"><span class="hljs-string">&quot;configuration&quot;</span>: {
+    <span class="hljs-string">&quot;type&quot;</span>: <span class="hljs-string">&quot;object&quot;</span>,
+    <span class="hljs-string">&quot;title&quot;</span>: <span class="hljs-string">&quot;Example configuration&quot;</span>,
+    <span class="hljs-string">&quot;properties&quot;</span>: {
+        <span class="hljs-string">&quot;languageServerExample.maxNumberOfProblems&quot;</span>: {
+            <span class="hljs-string">&quot;type&quot;</span>: <span class="hljs-string">&quot;number&quot;</span>,
+            <span class="hljs-string">&quot;default&quot;</span>: <span class="hljs-number">100</span>,
+            <span class="hljs-string">&quot;description&quot;</span>: <span class="hljs-string">&quot;Controls the maximum number of problems produced by the server.&quot;</span>
+        }
+    }
+}
+</code></pre>
+<p>This section contributes <code>configuration</code> settings to VS Code. The example will explain how these settings are sent over to the language server on startup and on every change of the settings. </p>
+<p>The last part adds a dependency to the <code>vscode-languageclient</code> library:</p>
+<pre><code class="lang-json"><span class="hljs-string">&quot;dependencies&quot;</span>: {
+    <span class="hljs-string">&quot;vscode-languageclient&quot;</span>: <span class="hljs-string">&quot;^1.4.2&quot;</span>
+}
+</code></pre>
+<p>As mentioned, the client is implemented as a normal VS Code extension.</p>
+<p>Below is the content of the corresponding extension.ts file:</p>
+<pre><code class="lang-typescript"><span class="hljs-comment">/* --------------------------------------------------------------------------------------------
+ * Copyright (c) Microsoft Corporation. All rights reserved.
+ * Licensed under the MIT License. See License.txt in the project root for license information.
+ * ------------------------------------------------------------------------------------------ */</span>
+<span class="hljs-meta">&apos;use strict&apos;</span>;
+
+<span class="hljs-keyword">import</span> * as path from <span class="hljs-string">&apos;path&apos;</span>;
+
+<span class="hljs-keyword">import</span> { workspace, Disposable, ExtensionContext } from <span class="hljs-string">&apos;vscode&apos;</span>;
+<span class="hljs-keyword">import</span> { LanguageClient, LanguageClientOptions, SettingMonitor, ServerOptions } from <span class="hljs-string">&apos;vscode-languageclient&apos;</span>;
+
+<span class="hljs-keyword">export</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">activate</span>(<span class="hljs-params">context: ExtensionContext</span>) </span>{
+
+    <span class="hljs-comment">// The server is implemented in node</span>
+    <span class="hljs-keyword">let</span> serverModule = context.asAbsolutePath(path.join(<span class="hljs-string">&apos;server&apos;</span>, <span class="hljs-string">&apos;server.js&apos;</span>));
+    <span class="hljs-comment">// The debug options for the server</span>
+    <span class="hljs-keyword">let</span> debugOptions = { execArgv: [<span class="hljs-string">&quot;--nolazy&quot;</span>, <span class="hljs-string">&quot;--debug=6004&quot;</span>] };
+
+    <span class="hljs-comment">// If the extension is launch in debug mode the debug server options are use</span>
+    <span class="hljs-comment">// Otherwise the run options are used</span>
+    <span class="hljs-keyword">let</span> serverOptions: ServerOptions = {
+        run : { <span class="hljs-keyword">module</span>: serverModule, transport: TransportKind.ipc },
+        debug: { <span class="hljs-keyword">module</span>: serverModule, transport: TransportKind.ipc, options: debugOptions }
+    }
+
+    // Options to control the language client
+    let clientOptions: LanguageClientOptions = {
+        <span class="hljs-comment">// Register the server for plain text documents</span>
+        documentSelector: [<span class="hljs-string">&apos;plaintext&apos;</span>],
+        synchronize: {
+            <span class="hljs-comment">// Synchronize the setting section &apos;languageServerExample&apos; to the server</span>
+            configurationSection: <span class="hljs-string">&apos;languageServerExample&apos;</span>,
+            <span class="hljs-comment">// Notify the server about file changes to &apos;.clientrc files contain in the workspace</span>
+            fileEvents: workspace.createFileSystemWatcher(<span class="hljs-string">&apos;**/.clientrc&apos;</span>)
+        }
+    }
+
+    <span class="hljs-comment">// Create the language client and start the client.</span>
+    <span class="hljs-keyword">let</span> disposable = <span class="hljs-keyword">new</span> LanguageClient(<span class="hljs-string">&apos;Language Server Example&apos;</span>, serverOptions, clientOptions).start();
+
+    <span class="hljs-comment">// Push the disposable to the context&apos;s subscriptions so that the </span>
+    <span class="hljs-comment">// client can be deactivated on extension deactivation</span>
+    context.subscriptions.push(disposable);
+}
+</code></pre>
+<h2 id="&#x670D;&#x52A1;&#x89E3;&#x6790;--explaining-the-server">&apos;&#x670D;&#x52A1;&apos;&#x89E3;&#x6790;  Explaining the &apos;Server&apos;</h2>
+<p>&#x5728;&#x8FD9;&#x4E2A;&#x4F8B;&#x5B50;&#x91CC;&#xFF0C;&#x670D;&#x52A1;&#x4E5F;&#x4F7F;&#x7528;TypeScript&#x8BED;&#x8A00;&#x5B9E;&#x73B0;&#x5E76;&#x4F7F;&#x7528;Node.js&#x6267;&#x884C;&#x3002;&#x56E0;&#x4E3A;VS Code&#x5DF2;&#x7ECF;&#x63D0;&#x4F9B;&#x4E86;Node.js&#x8FD0;&#x884C;&#x65F6;&#xFF0C;&#x4E0D;&#x9700;&#x8981;&#x4F60;&#x81EA;&#x5DF1;&#x518D;&#x63D0;&#x4F9B;&#xFF0C;&#x9664;&#x975E;&#x4F60;&#x5BF9;&#x8FD0;&#x884C;&#x65F6;&#x6709;&#x7279;&#x6B8A;&#x7684;&#x8981;&#x6C42;&#x3002;</p>
+<p>&#x5728;&#x670D;&#x52A1;&#x7684;package.json&#x6587;&#x4EF6;&#x4E2D;&#x6211;&#x4EEC;&#x611F;&#x5174;&#x8DA3;&#x7684;&#x7684;&#x8282;&#x662F;&#x8FD9;&#x4E2A;&#xFF1A;</p>
+<pre><code class="lang-json"><span class="hljs-string">&quot;dependencies&quot;</span>: {
+    <span class="hljs-string">&quot;vscode-languageserver&quot;</span>: <span class="hljs-string">&quot;^1.4.1&quot;</span>
+}
+</code></pre>
+<p>&#x8FD9;&#x5C06;&#x62C9;&#x53D6;vscode-languageserver&#x5E93;&#x3002;</p>
+<p>&#x4E0B;&#x9762;&#x7684;&#x4EE3;&#x7801;&#x662F;&#x4E00;&#x4E2A;&#x670D;&#x52A1;&#x5B9E;&#x73B0;&#xFF0C;&#x8FD9;&#x4E2A;&#x670D;&#x52A1;&#x5B9E;&#x73B0;&#x4E86;&#x4E00;&#x4E2A;&#x901A;&#x8FC7;VS Code&#x53D1;&#x9001;&#x8FC7;&#x5168;&#x90E8;&#x6587;&#x672C;&#x5185;&#x5BB9;&#x6765;&#x540C;&#x6B65;&#x6587;&#x6863;&#x7684;&#x7B80;&#x5355;&#x7684;&#x6587;&#x672C;&#x6587;&#x6863;&#x7BA1;&#x7406;&#x5668;&#x3002;</p>
+<pre><code class="lang-typescript"><span class="hljs-comment">/* --------------------------------------------------------------------------------------------
+ * Copyright (c) Microsoft Corporation. All rights reserved.
+ * Licensed under the MIT License. See License.txt in the project root for license information.
+ * ------------------------------------------------------------------------------------------ */</span>
+<span class="hljs-meta">&apos;use strict&apos;</span>;
+
+<span class="hljs-keyword">import</span> {
+    createConnection, IConnection,
+    TextDocuments, ITextDocument, Diagnostic,
+    InitializeParams, InitializeResult
+} from <span class="hljs-string">&apos;vscode-languageserver&apos;</span>;
+
+<span class="hljs-comment">// &#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x670D;&#x52A1;&#x7684;&#x8FDE;&#x63A5;&#xFF0C;&#x8FDE;&#x63A5;&#x4F7F;&#x7528;Node&#x7684;IPC&#x4F5C;&#x4E3A;&#x4F20;&#x8F93;</span>
+<span class="hljs-keyword">let</span> connection: IConnection = createConnection(<span class="hljs-keyword">new</span> IPCMessageReader(process), <span class="hljs-keyword">new</span> IPCMessageWriter(process));
+
+<span class="hljs-comment">// &#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x7B80;&#x5355;&#x7684;&#x6587;&#x672C;&#x6587;&#x6863;&#x7BA1;&#x7406;&#x5668;&#xFF0C;&#x8FD9;&#x4E2A;&#x7BA1;&#x7406;&#x5668;&#x4EC5;&#x4EC5;&#x652F;&#x6301;&#x540C;&#x6B65;&#x6240;&#x6709;&#x6587;&#x6863;</span>
+<span class="hljs-keyword">let</span> documents: TextDocuments = <span class="hljs-keyword">new</span> TextDocuments();
+<span class="hljs-comment">// &#x8BA9;&#x6587;&#x672C;&#x6587;&#x6863;&#x7BA1;&#x7406;&#x5668;&#x5728;&#x8FDE;&#x63A5;&#x4E0A;&#x76D1;&#x542C;&#x6587;&#x672C;&#x6587;&#x6863;&#x7684;&#x6253;&#x5F00;&#x3001;&#x6539;&#x53D8;&#x3001;&#x5173;&#x95ED;&#x4E8B;&#x4EF6;</span>
+documents.listen(connection);
+
+<span class="hljs-comment">// &#x5728;&#x670D;&#x52A1;&#x542F;&#x52A8;&#x540E;&#xFF0C;&#x5BA2;&#x6237;&#x7AEF;&#x53D1;&#x9001;&#x521D;&#x59CB;&#x5316;&#x8BF7;&#x6C42;&#x3002;&#x670D;&#x52A1;&#x6536;&#x5230;&#x7684;&#x53C2;&#x6570;&#x4E2D;&#x5305;&#x542B;&#x5DE5;&#x4F5C;&#x7A7A;&#x95F4;&#x7684;&#x6839;&#x76EE;&#x5F55;&#x548C;&#x5BA2;&#x6237;&#x7AEF;&#x7684;&#x80FD;&#x529B;&#x3002;</span>
+<span class="hljs-keyword">let</span> workspaceRoot: <span class="hljs-built_in">string</span>;
+connection.onInitialize((params): InitializeResult =&gt; {
+    workspaceRoot = params.rootPath;
+    <span class="hljs-keyword">return</span> {
+        capabilities: {
+            <span class="hljs-comment">// &#x544A;&#x8BC9;&#x5BA2;&#x6237;&#x7AEF;&#x670D;&#x52A1;&#x5DE5;&#x4F5C;&#x5728;&#x5168;&#x6587;&#x672C;&#x6587;&#x6863;&#x540C;&#x6B65;&#x6A21;&#x5F0F;</span>
+            textDocumentSync: documents.syncKind
+        }
+    }
+});
+
+<span class="hljs-comment">// &#x76D1;&#x542C;&#x8FDE;&#x63A5;</span>
+connection.listen();
+</code></pre>
+<p>In the example, the server is also implemented in TypeScript and executed using Node.js. Since VS Code already ships with a Node.js runtime, there is no need to provide your own, unless you have very specific requirements for the runtime. </p>
+<p>The interesting section in the server&apos;s package.json file is:</p>
+<pre><code class="lang-json"><span class="hljs-string">&quot;dependencies&quot;</span>: {
+    <span class="hljs-string">&quot;vscode-languageserver&quot;</span>: <span class="hljs-string">&quot;^1.4.1&quot;</span>
+}
+</code></pre>
+<p>This pulls in the vscode-languageserver library.</p>
+<p>Below is a server implementation that uses the provided simple text document manager which synchronizes text documents by always sending the file&apos;s full content from VS Code to the server.</p>
+<pre><code class="lang-typescript"><span class="hljs-comment">/* --------------------------------------------------------------------------------------------
+ * Copyright (c) Microsoft Corporation. All rights reserved.
+ * Licensed under the MIT License. See License.txt in the project root for license information.
+ * ------------------------------------------------------------------------------------------ */</span>
+<span class="hljs-meta">&apos;use strict&apos;</span>;
+
+<span class="hljs-keyword">import</span> {
+    createConnection, IConnection,
+    TextDocuments, ITextDocument, Diagnostic,
+    InitializeParams, InitializeResult
+} from <span class="hljs-string">&apos;vscode-languageserver&apos;</span>;
+
+<span class="hljs-comment">// Create a connection for the server. The connection uses Node&apos;s IPC as a transport</span>
+<span class="hljs-keyword">let</span> connection: IConnection = createConnection(<span class="hljs-keyword">new</span> IPCMessageReader(process), <span class="hljs-keyword">new</span> IPCMessageWriter(process));
+
+<span class="hljs-comment">// Create a simple text document manager. The text document manager</span>
+<span class="hljs-comment">// supports full document sync only</span>
+<span class="hljs-keyword">let</span> documents: TextDocuments = <span class="hljs-keyword">new</span> TextDocuments();
+<span class="hljs-comment">// Make the text document manager listen on the connection</span>
+<span class="hljs-comment">// for open, change and close text document events</span>
+documents.listen(connection);
+
+<span class="hljs-comment">// After the server has started the client sends an initilize request. The server receives</span>
+<span class="hljs-comment">// in the passed params the rootPath of the workspace plus the client capabilites. </span>
+<span class="hljs-keyword">let</span> workspaceRoot: <span class="hljs-built_in">string</span>;
+connection.onInitialize((params): InitializeResult =&gt; {
+    workspaceRoot = params.rootPath;
+    <span class="hljs-keyword">return</span> {
+        capabilities: {
+            <span class="hljs-comment">// Tell the client that the server works in FULL text document sync mode</span>
+            textDocumentSync: documents.syncKind
+        }
+    }
+});
+
+<span class="hljs-comment">// Listen on the connection</span>
+connection.listen();
+</code></pre>
+<h2 id="&#x5B8C;&#x6210;&#x4E00;&#x4E2A;&#x7B80;&#x5355;&#x7684;&#x6821;&#x9A8C;&#x5668;--adding-a-simple-validation">&#x5B8C;&#x6210;&#x4E00;&#x4E2A;&#x7B80;&#x5355;&#x7684;&#x6821;&#x9A8C;&#x5668;  Adding a Simple Validation</h2>
+<p>&#x60F3;&#x5B8C;&#x6210;&#x4E00;&#x4E2A;&#x6587;&#x6863;&#x6821;&#x9A8C;&#x5668;&#xFF0C;&#x6211;&#x4EEC;&#x53EA;&#x9700;&#x8981;&#x7B80;&#x5355;&#x7684;&#x6DFB;&#x52A0;&#x6587;&#x672C;&#x6587;&#x6863;&#x7BA1;&#x7406;&#x5668;&#x7684;&#x76D1;&#x542C;&#x5668;&#x53BB;&#x76D1;&#x542C;&#x6587;&#x672C;&#x6587;&#x6863;&#x7684;&#x6539;&#x53D8;&#x3002;&#x5B83;&#x4F1A;&#x5728;&#x6700;&#x9002;&#x5408;&#x6821;&#x9A8C;&#x6587;&#x6863;&#x7684;&#x65F6;&#x673A;&#x901A;&#x77E5;&#x670D;&#x52A1;&#x3002;&#x5728;&#x8FD9;&#x4E2A;&#x5B9E;&#x4F8B;&#x5B9E;&#x73B0;&#x91CC;&#xFF0C;&#x670D;&#x52A1;&#x6821;&#x9A8C;&#x7EAF;&#x6587;&#x672C;&#x6587;&#x6863;&#x5E76;&#x4E14;&#x901A;&#x8FC7;&#x6D88;&#x606F;&#x62FC;&#x5199;&#x4E3A;<code>TypeScript</code>&#x6765;&#x6807;&#x8BB0;&#x6240;&#x6709;&#x7684;<code>typescript</code>&#x6587;&#x5B57;&#x3002;&#x4EE3;&#x7801;&#x7247;&#x6BB5;&#x5982;&#x4E0B;&#xFF1A;</p>
+<pre><code class="lang-typescript"><span class="hljs-comment">// The content of a text document has changed. This event is emitted</span>
+<span class="hljs-comment">// when the text document first opened or when its content has changed.</span>
+documents.onDidChangeContent((change) =&gt; {
+    <span class="hljs-keyword">let</span> diagnostics: Diagnostic[] = [];
+    <span class="hljs-keyword">let</span> lines = change.document.getText().split(<span class="hljs-regexp">/\r?\n/g</span>);
+    lines.forEach((line, i) =&gt; {
+        <span class="hljs-keyword">let</span> index = line.indexOf(<span class="hljs-string">&apos;typescript&apos;</span>);
+        <span class="hljs-keyword">if</span> (index &gt;= <span class="hljs-number">0</span>) {
+            diagnostics.push({
+                severity: DiagnosticSeverity.Warning,
+                range: {
+                    start: { line: i, character: index},
+                    end: { line: i, character: index + <span class="hljs-number">10</span> }
+                },
+                message: <span class="hljs-string">`<span class="hljs-subst">${line.substr(index, 10)}</span> should be spelled TypeScript`</span>,
+                source: <span class="hljs-string">&apos;ex&apos;</span>
+            });
+        }
+    })
+    <span class="hljs-comment">// Send the computed diagnostics to VS Code.</span>
+    connection.sendDiagnostics({ uri: change.document.uri, diagnostics });
+});
+</code></pre>
+<p>To add document validation to the server, we simply add a listener to the text document manager that gets called whenever the content of a text document changes. It is then up to the server to decide when the best time is to validate a document. In the example implementation, the server validates the plain text document and flags all occurrences of <code>typescript</code> with a message to spell it <code>TypeScript</code>. The corresponding code snippet looks like this:</p>
+<pre><code class="lang-typescript"><span class="hljs-comment">// The content of a text document has changed. This event is emitted</span>
+<span class="hljs-comment">// when the text document first opened or when its content has changed.</span>
+documents.onDidChangeContent((change) =&gt; {
+    <span class="hljs-keyword">let</span> diagnostics: Diagnostic[] = [];
+    <span class="hljs-keyword">let</span> lines = change.document.getText().split(<span class="hljs-regexp">/\r?\n/g</span>);
+    lines.forEach((line, i) =&gt; {
+        <span class="hljs-keyword">let</span> index = line.indexOf(<span class="hljs-string">&apos;typescript&apos;</span>);
+        <span class="hljs-keyword">if</span> (index &gt;= <span class="hljs-number">0</span>) {
+            diagnostics.push({
+                severity: DiagnosticSeverity.Warning,
+                range: {
+                    start: { line: i, character: index},
+                    end: { line: i, character: index + <span class="hljs-number">10</span> }
+                },
+                message: <span class="hljs-string">`<span class="hljs-subst">${line.substr(index, 10)}</span> should be spelled TypeScript`</span>,
+                source: <span class="hljs-string">&apos;ex&apos;</span>
+            });
+        }
+    })
+    <span class="hljs-comment">// Send the computed diagnostics to VS Code.</span>
+    connection.sendDiagnostics({ uri: change.document.uri, diagnostics });
+});
+</code></pre>
+<h3 id="&#x8BCA;&#x65AD;&#x63D0;&#x793A;&#x548C;&#x7A8D;&#x95E8;--diagnostics-tips-and-tricks">&#x8BCA;&#x65AD;&#x63D0;&#x793A;&#x548C;&#x7A8D;&#x95E8;  Diagnostics Tips and Tricks!</h3>
+<ul>
+<li>&#x5982;&#x679C;&#x5F00;&#x59CB;&#x548C;&#x7ED3;&#x675F;&#x4F4D;&#x7F6E;&#x76F8;&#x540C;&#xFF0C;VS Code&#x5C06;&#x5728;&#x8FD9;&#x4E2A;&#x5355;&#x8BCD;de&#x7684;&#x4F4D;&#x7F6E;&#x753B;&#x66F2;&#x7EBF;</li>
+<li>&#x5982;&#x679C;&#x4F60;&#x60F3;&#x753B;&#x66F2;&#x7EBF;&#x4E00;&#x76F4;&#x5230;&#x884C;&#x5C3E;&#xFF0C;&#x8BBE;&#x7F6E;&#x7ED3;&#x675F;&#x4F4D;&#x7F6E;&#x7684;&#x5B57;&#x7B26;&#x4E3A;Number.MAX_VALUE&#x3002;</li>
+</ul>
+<p>&#x5411;&#x4E0B;&#x9762;&#x8FD9;&#x6837;&#x6D4B;&#x8BD5;&#x8BED;&#x8A00;&#x670D;&#x52A1;&#xFF1A;</p>
+<ul>
+<li>&#x5230;&#x5305;&#x542B;&#x670D;&#x52A1;&#x4EE3;&#x7801;&#xFF08;&#x89C1;&#x4E0A;&#x6587;&#xFF09;&#x7684;VS Code&#x7684;&#x5B9E;&#x4F8B;&#x4E2D;&#x5E76;&#x4E14;&#x6309;&#x4E0B;<code>kb(workbench.action.tasks.build)</code>&#x542F;&#x52A8;&#x6784;&#x5EFA;&#x4EFB;&#x52A1;&#x3002;&#x4EFB;&#x52A1;&#x5C06;&#x7F16;&#x8BD1;&#x670D;&#x52A1;&#x4EE3;&#x7801;&#x5E76;&#x4E14;&#x5B89;&#x88C5;&#x670D;&#x52A1;&#x5230;&#x63D2;&#x4EF6;&#x76EE;&#x5F55;&#x3002;</li>
+<li>&#x73B0;&#x5728;&#x4F1A;&#x5E26;&#x6709;&#x5BA2;&#x6237;&#x7AEF;&#x63D2;&#x4EF6;&#x7684;VS Code&#x5B9E;&#x4F8B;&#x4E2D;&#x5E76;&#x4E14;&#x6309;&#x4E0B;<code>kb(workbench.action.debug.start)</code>&#x542F;&#x52A8;<code>&#x6269;&#x5C55;&#x5F00;&#x53D1;&#x4E3B;&#x673A;</code>VS Code&#x5B9E;&#x4F8B;&#x6267;&#x884C;&#x63D2;&#x4EF6;&#x4EE3;&#x7801;&#x3002;</li>
+<li>&#x5728;&#x6839;&#x76EE;&#x5F55;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;test.txt&#x6587;&#x4EF6;&#x5E76;&#x4E14;&#x7C98;&#x8D34;&#x5982;&#x4E0B;&#x5185;&#x5BB9;&#xFF1A;</li>
+</ul>
+<pre><code class="lang-plaintext">typescript lets you write JavaScript the way you really want to.
+typescript is a typed superset of JavaScript that compiles to plain JavaScript.
+Any browser. Any host. Any OS. Open Source.
+</code></pre>
+<p><code>&#x6269;&#x5C55;&#x5F00;&#x53D1;&#x4E3B;&#x673A;</code>&#x5B9E;&#x4F8B;&#x5C06;&#x770B;&#x8D77;&#x6765;&#x5982;&#x4E0B;&#x56FE;&#x8FD9;&#x6837;</p>
+<p><img src="images/example-language-server/validation.png" alt="Validating a text file"></p>
+<ul>
+<li>If the start and end positions are the same, VS Code will squiggle the word at that position.</li>
+<li>If you want to squiggle until the end of the line, then set the character of the end position to Number.MAX_VALUE.</li>
+</ul>
+<p>To test the language server do the following:</p>
+<ul>
+<li>Go to the VS Code instance containing the server code (see above) and press <code>kb(workbench.action.tasks.build)</code> to start the build task. The task compiles the server code and installs (e.g. copies) it into the extension folder.</li>
+<li>Now go back to the VS Code instance with the extension (client) and press <code>kb(workbench.action.debug.start)</code> to launch an additional <code>Extension Development Host</code> instance of VS Code that executes the extension code.</li>
+<li>Create a test.txt file in the root folder and paste the following content:</li>
+</ul>
+<pre><code class="lang-plaintext">typescript lets you write JavaScript the way you really want to.
+typescript is a typed superset of JavaScript that compiles to plain JavaScript.
+Any browser. Any host. Any OS. Open Source.
+</code></pre>
+<p>The <code>Extension Development Host</code> instance will then look like this:</p>
+<p><img src="images/example-language-server/validation.png" alt="Validating a text file"></p>
+<h2 id="&#x4E00;&#x8D77;&#x8C03;&#x8BD5;&#x5BA2;&#x6237;&#x7AEF;&#x548C;&#x670D;&#x52A1;--debugging-both-client-and-server">&#x4E00;&#x8D77;&#x8C03;&#x8BD5;&#x5BA2;&#x6237;&#x7AEF;&#x548C;&#x670D;&#x52A1;  Debugging both Client and Server</h2>
+<p>&#x8C03;&#x8BD5;&#x5BA2;&#x6237;&#x7AEF;&#x4EE3;&#x7801;&#x5C31;&#x50CF;&#x8C03;&#x8BD5;&#x666E;&#x901A;&#x63D2;&#x4EF6;&#x4E00;&#x6837;&#x7B80;&#x5355;&#x3002;&#x5728;&#x5305;&#x542B;&#x5BA2;&#x6237;&#x7AEF;&#x4EE3;&#x7801;&#x7684;VS Code&#x5B9E;&#x4F8B;&#x4E2D;&#x7B80;&#x5355;&#x7684;&#x8BBE;&#x7F6E;&#x65AD;&#x70B9;&#x7136;&#x540E;&#x6309;&#x4E0B;<code>kb(workbench.action.debug.start)</code>&#x8C03;&#x8BD5;&#x63D2;&#x4EF6;&#x3002;&#x5173;&#x4E8E;&#x542F;&#x52A8;&#x548C;&#x8C03;&#x8BD5;&#x63D2;&#x4EF6;&#x7684;&#x8BE6;&#x7EC6;&#x63CF;&#x8FF0;&#x8BF7;&#x770B;<a href="../../docs/extensions/debugging-extensions.md">&#x8FD0;&#x884C;&#x548C;&#x8C03;&#x8BD5;&#x4F60;&#x7684;&#x63D2;&#x4EF6;</a>&#x3002;</p>
+<p><img src="images/example-language-server/debugging-client.png" alt="&#x8C03;&#x8BD5;&#x5BA2;&#x6237;&#x7AEF;"></p>
+<p>&#x56E0;&#x4E3A;&#x670D;&#x52A1;&#x662F;&#x88AB;&#x5728;&#x5BA2;&#x6237;&#x7AEF;&#x4E2D;&#x8FD0;&#x884C;<code>LanguageClient</code>&#x542F;&#x52A8;&#x7684;&#x3002;&#x6211;&#x4EEC;&#x9700;&#x8981;&#x9644;&#x52A0;&#x5230;&#x8FD0;&#x884C;&#x4E2D;&#x7684;&#x670D;&#x52A1;&#x53BB;&#x8C03;&#x8BD5;&#x3002;&#x8981;&#x5B8C;&#x6210;&#x8FD9;&#x4E00;&#x5207;&#xFF0C;&#x5207;&#x6362;&#x5230;&#x670D;&#x52A1;&#x4EE3;&#x7801;&#x7684;VS Code&#x5B9E;&#x4F8B;&#x4E2D;&#x5E76;&#x4E14;&#x6309;&#x4E0B;<code>kb(workbench.action.debug.start)</code>&#x3002;&#x8FD9;&#x5C06;&#x9644;&#x52A0;&#x4E00;&#x4E2A;&#x8C03;&#x8BD5;&#x5668;&#x5230;&#x670D;&#x52A1;&#x4E2D;&#x3002;&#x7136;&#x540E;&#x4F7F;&#x7528;&#x6B63;&#x5E38;&#x7684;&#x8C03;&#x8BD5;&#x89C6;&#x56FE;&#x8C03;&#x8BD5;&#x5373;&#x53EF;&#x3002;</p>
+<p><img src="images/example-language-server/debugging-server.png" alt="&#x8C03;&#x8BD5;&#x670D;&#x52A1;"></p>
+<p>Debugging the client code is as easy as debugging a normal extension. Simply set a breakpoint in the VS Code instance that contains the client code and debug the extension by pressing <code>kb(workbench.action.debug.start)</code>. For a detailed description about launching and debugging an extension see <a href="../../docs/extensions/debugging-extensions.md">Running and Debugging Your Extension</a>.</p>
+<p><img src="images/example-language-server/debugging-client.png" alt="Debugging the client"></p>
+<p>Since the server is started by the <code>LanguageClient</code> running in the extension (client), we need to attach a debugger to the running server. To do so, switch to the VS Code instance containing the server code and press <code>kb(workbench.action.debug.start)</code>. This will attach the debugger to the server. Use the normal Debug View to interact with the running server.</p>
+<p><img src="images/example-language-server/debugging-server.png" alt="Debugging the server"></p>
+<h2 id="&#x5728;&#x670D;&#x52A1;&#x4E2D;&#x4F7F;&#x7528;&#x8BBE;&#x7F6E;&#x9009;&#x9879;---using-configuration-settings-in-the-server">&#x5728;&#x670D;&#x52A1;&#x4E2D;&#x4F7F;&#x7528;&#x8BBE;&#x7F6E;&#x9009;&#x9879;   Using Configuration Settings in the Server</h2>
+<p>&#x5F53;&#x6211;&#x4EEC;&#x7F16;&#x5199;&#x5DF2;&#x7ECF;&#x5B9A;&#x4E49;&#x4E86;&#x6700;&#x5927;&#x95EE;&#x9898;&#x6570;&#x8BBE;&#x7F6E;&#x7684;&#x63D2;&#x4EF6;&#x7684;&#x5BA2;&#x6237;&#x7AEF;&#x90E8;&#x5206;&#x65F6;&#xFF0C;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x7528;&#x540C;&#x6B65;&#x9009;&#x9879;&#x8BA9;<code>LanguageClient</code>&#x5BF9;&#x8C61;&#x53BB;&#x540C;&#x6B65;&#x8FD9;&#x4E9B;&#x8BBE;&#x7F6E;&#x5230;&#x670D;&#x52A1;&#x7AEF;&#x3002;</p>
+<pre><code class="lang-typescript">synchronize: {
+    <span class="hljs-comment">// &#x5C06;&apos;languageServerExample&apos;&#x9009;&#x9879;&#x540C;&#x6B65;&#x5230;&#x670D;&#x52A1;</span>
+    configurationSection: <span class="hljs-string">&apos;languageServerExample&apos;</span>,
+    <span class="hljs-comment">// &#x5F53;&#x5DE5;&#x4F5C;&#x7A7A;&#x95F4;&#x4E2D;&#x7684;&apos;.clientrc&apos;&#x6587;&#x4EF6;&#x6539;&#x53D8;&#x65F6;&#x901A;&#x77E5;&#x670D;&#x52A1;</span>
+    fileEvents: workspace.createFileSystemWatcher(<span class="hljs-string">&apos;**/.clientrc&apos;</span>)
+}
+</code></pre>
+<p>&#x73B0;&#x5728;&#x6211;&#x4EEC;&#x552F;&#x4E00;&#x9700;&#x8981;&#x505A;&#x7684;&#x5C31;&#x662F;&#x5728;&#x670D;&#x52A1;&#x7AEF;&#x76D1;&#x542C;&#x8BBE;&#x7F6E;&#x6539;&#x53D8;&#x5E76;&#x4E14;&#x5982;&#x679C;&#x6709;&#x8BBE;&#x7F6E;&#x6539;&#x53D8;&#x5C31;&#x5BF9;&#x6253;&#x5F00;&#x7684;&#x6587;&#x672C;&#x6587;&#x6863;&#x91CD;&#x65B0;&#x751F;&#x6548;&#x3002;&#x4E3A;&#x4E86;&#x91CD;&#x7528;&#x6587;&#x6863;&#x6539;&#x53D8;&#x4E8B;&#x4EF6;&#x5904;&#x7406;&#x7684;&#x903B;&#x8F91;&#xFF0C;&#x6211;&#x4EEC;&#x63D0;&#x53D6;&#x8FD9;&#x90E8;&#x5206;&#x4EE3;&#x7801;&#x5230;<code>validateTextDocument</code>&#x51FD;&#x6570;&#x4E2D;&#x5E76;&#x4E14;&#x6DFB;&#x52A0;&#x6DFB;&#x52A0;<code>maxNumberOfProblems</code>&#x53D8;&#x91CF;&#xFF1A;</p>
+<pre><code class="lang-typescript"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">validateTextDocument</span>(<span class="hljs-params">textDocument: ITextDocument</span>): <span class="hljs-title">void</span> </span>{
+    <span class="hljs-keyword">let</span> diagnostics: Diagnostic[] = [];
+    <span class="hljs-keyword">let</span> lines = textDocument.getText().split(<span class="hljs-regexp">/\r?\n/g</span>);
+    <span class="hljs-keyword">let</span> problems = <span class="hljs-number">0</span>;
+    <span class="hljs-keyword">for</span> (<span class="hljs-keyword">var</span> i = <span class="hljs-number">0</span>; i &lt; lines.length &amp;&amp; problems &lt; maxNumberOfProblems; i++) {
+        <span class="hljs-keyword">let</span> line = lines[i];
+        <span class="hljs-keyword">let</span> index = line.indexOf(<span class="hljs-string">&apos;typescript&apos;</span>);
+        <span class="hljs-keyword">if</span> (index &gt;= <span class="hljs-number">0</span>) {
+            problems++;
+            diagnostics.push({
+                severity: DiagnosticSeverity.Warning,
+                range: {
+                    start: { line: i, character: index},
+                    end: { line: i, character: index + <span class="hljs-number">10</span> }
+                },
+                message: <span class="hljs-string">`<span class="hljs-subst">${line.substr(index, 10)}</span> should be spelled TypeScript`</span>
+            });
+        }
+    }
+    <span class="hljs-comment">// &#x53D1;&#x9001;&#x8BCA;&#x65AD;&#x4FE1;&#x606F;&#x5230;VS Code.</span>
+    connection.sendDiagnostics({ uri: textDocument.uri, diagnostics });
+}
+</code></pre>
+<p>&#x901A;&#x8FC7;&#x5411;&#x8FDE;&#x63A5;&#x6DFB;&#x52A0;&#x914D;&#x7F6E;&#x6539;&#x53D8;&#x901A;&#x77E5;&#x5904;&#x7406;&#x5668;&#x6765;&#x5904;&#x7406;&#x914D;&#x7F6E;&#x53D8;&#x5316;&#x7684;&#x5904;&#x7406;&#x3002;&#x76F8;&#x5E94;&#x7684;&#x4EE3;&#x7801;&#x5982;&#x4E0B;&#xFF1A;</p>
+<pre><code class="lang-typescript"><span class="hljs-comment">// &#x8BBE;&#x7F6E;&#x63A5;&#x53E3;&#x63CF;&#x8FF0;&#x4E86;&#x670D;&#x52A1;&#x76F8;&#x5173;&#x7684;&#x8BBE;&#x7F6E;&#x90E8;&#x5206;</span>
+<span class="hljs-keyword">interface</span> Settings {
+    languageServerExample: ExampleSettings;
+}
+
+<span class="hljs-comment">// &#x8FD9;&#x4E9B;&#x662F;&#x6211;&#x4EEC;&#x5728;&#x5BA2;&#x6237;&#x7AEF;&#x7684;package.json&#x6587;&#x4EF6;&#x4E2D;&#x5B9A;&#x4E49;&#x7684;&#x8BBE;&#x7F6E;&#x793A;&#x4F8B;</span>
+<span class="hljs-keyword">interface</span> ExampleSettings {
+    maxNumberOfProblems: <span class="hljs-built_in">number</span>;
+}
+
+<span class="hljs-comment">// &#x63A7;&#x5236;&#x6700;&#x5927;&#x95EE;&#x9898;&#x6570;&#x8BBE;&#x7F6E;</span>
+<span class="hljs-keyword">let</span> maxNumberOfProblems: <span class="hljs-built_in">number</span>;
+<span class="hljs-comment">// &#x8BBE;&#x7F6E;&#x6539;&#x53D8;&#xFF0C;&#x4E5F;&#x53D1;&#x9001;&#x670D;&#x52A1;&#x5668;&#x6FC0;&#x6D3B;</span>
+connection.onDidChangeConfiguration((change) =&gt; {
+    <span class="hljs-keyword">let</span> settings = &lt;Settings&gt;change.settings;
+    maxNumberOfProblems = settings.languageServerExample.maxNumberOfProblems || <span class="hljs-number">100</span>;
+    <span class="hljs-comment">// &#x9A8C;&#x8BC1;&#x6240;&#x6709;&#x6253;&#x5F00;&#x7684;&#x6587;&#x6863;</span>
+    documents.all().forEach(validateTextDocument);
+});
+</code></pre>
+<p>&#x4FEE;&#x6539;&#x6700;&#x5927;&#x62A5;&#x544A;&#x95EE;&#x9898;&#x6570;&#x4E3A;1&#x4E2A;&#x5E76;&#x518D;&#x6B21;&#x542F;&#x52A8;&#x5BA2;&#x6237;&#x7AEF;&#x7684;&#x7ED3;&#x679C;&#xFF1A;</p>
+<p><img src="images/example-language-server/validationOneProblem.png" alt="Maximum One Problem"></p>
+<p>When writing the client part of the extension we already defined a setting to control the maximum numbers of problems reported. We also instructed the <code>LanguageClient</code> to sync these settings to the server using the syncronization configuration</p>
+<pre><code class="lang-typescript">synchronize: {
+    <span class="hljs-comment">// Synchronize the setting section &apos;languageClientExample&apos; to the server</span>
+    configurationSection: <span class="hljs-string">&apos;languageServerExample&apos;</span>,
+    <span class="hljs-comment">// Notify the server about file changes to &apos;.clientrc files contain in the workspace</span>
+    fileEvents: workspace.createFileSystemWatcher(<span class="hljs-string">&apos;**/.clientrc&apos;</span>)
+}
+</code></pre>
+<p>The only thing we need to do now is to listen to configuration changes on the server side and if a settings changes revalidate the open text documents. To be able to reuse the validate logic of the document change event handling we extract the code into a <code>validateTextDocument</code> function and modify the code to honor a <code>maxNumberOfProblems</code> variable:</p>
+<pre><code class="lang-typescript"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">validateTextDocument</span>(<span class="hljs-params">textDocument: ITextDocument</span>): <span class="hljs-title">void</span> </span>{
+    <span class="hljs-keyword">let</span> diagnostics: Diagnostic[] = [];
+    <span class="hljs-keyword">let</span> lines = textDocument.getText().split(<span class="hljs-regexp">/\r?\n/g</span>);
+    <span class="hljs-keyword">let</span> problems = <span class="hljs-number">0</span>;
+    <span class="hljs-keyword">for</span> (<span class="hljs-keyword">var</span> i = <span class="hljs-number">0</span>; i &lt; lines.length &amp;&amp; problems &lt; maxNumberOfProblems; i++) {
+        <span class="hljs-keyword">let</span> line = lines[i];
+        <span class="hljs-keyword">let</span> index = line.indexOf(<span class="hljs-string">&apos;typescript&apos;</span>);
+        <span class="hljs-keyword">if</span> (index &gt;= <span class="hljs-number">0</span>) {
+            problems++;
+            diagnostics.push({
+                severity: DiagnosticSeverity.Warning,
+                range: {
+                    start: { line: i, character: index},
+                    end: { line: i, character: index + <span class="hljs-number">10</span> }
+                },
+                message: <span class="hljs-string">`<span class="hljs-subst">${line.substr(index, 10)}</span> should be spelled TypeScript`</span>
+            });
+        }
+    }
+    <span class="hljs-comment">// Send the computed diagnostics to VS Code.</span>
+    connection.sendDiagnostics({ uri: textDocument.uri, diagnostics });
+}
+</code></pre>
+<p>The handling of the configuration change is done by adding a notification handler for configuration changes to the connection. The corresponding code looks like this:</p>
+<pre><code class="lang-typescript"><span class="hljs-comment">// The settings interface describe the server relevant settings part</span>
+<span class="hljs-keyword">interface</span> Settings {
+    languageServerExample: ExampleSettings;
+}
+
+<span class="hljs-comment">// These are the example settings we defined in the client&apos;s package.json</span>
+<span class="hljs-comment">// file</span>
+<span class="hljs-keyword">interface</span> ExampleSettings {
+    maxNumberOfProblems: <span class="hljs-built_in">number</span>;
+}
+
+<span class="hljs-comment">// hold the maxNumberOfProblems setting</span>
+<span class="hljs-keyword">let</span> maxNumberOfProblems: <span class="hljs-built_in">number</span>;
+<span class="hljs-comment">// The settings have changed. Is send on server activation</span>
+<span class="hljs-comment">// as well.</span>
+connection.onDidChangeConfiguration((change) =&gt; {
+    <span class="hljs-keyword">let</span> settings = &lt;Settings&gt;change.settings;
+    maxNumberOfProblems = settings.languageServerExample.maxNumberOfProblems || <span class="hljs-number">100</span>;
+    <span class="hljs-comment">// Revalidate any open text documents</span>
+    documents.all().forEach(validateTextDocument);
+});
+</code></pre>
+<p>Starting the client again and changing the setting to maximum report 1 problem results in the following validation:</p>
+<p><img src="images/example-language-server/validationOneProblem.png" alt="Maximum One Problem"></p>
+<h2 id="&#x6DFB;&#x52A0;&#x989D;&#x5916;&#x7684;&#x8BED;&#x8A00;&#x7279;&#x6027;---adding-additional-language-features">&#x6DFB;&#x52A0;&#x989D;&#x5916;&#x7684;&#x8BED;&#x8A00;&#x7279;&#x6027;   Adding additional Language Features</h2>
+<p>&#x7B2C;&#x4E00;&#x4E2A;&#x6709;&#x8DA3;&#x7684;&#x7279;&#x6027;&#x662F;&#xFF0C;&#x8BED;&#x8A00;&#x670D;&#x52A1;&#x901A;&#x5E38;&#x5B9E;&#x73B0;&#x7684;&#x529F;&#x80FD;&#x90FD;&#x662F;&#x6821;&#x9A8C;&#x6587;&#x6863;&#x3002;&#x751A;&#x81F3;&#x611F;&#x89C9;&#x8BED;&#x6CD5;&#x68C0;&#x67E5;&#x5668;&#x5C31;&#x662F;&#x8BED;&#x8A00;&#x670D;&#x52A1;&#xFF0C;&#x56E0;&#x4E3A;&#x5728;VS Code&#x4E2D;&#x8BED;&#x6CD5;&#x68C0;&#x67E5;&#x5668;&#x901A;&#x5E38;&#x90FD;&#x662F;&#x4F5C;&#x4E3A;&#x8BED;&#x8A00;&#x670D;&#x52A1;&#x6765;&#x5B9E;&#x73B0;&#x7684;(&#x53C2;&#x8003; <a href="https://github.com/Microsoft/vscode-eslint" target="_blank">eslint</a> &#x548C; <a href="https://github.com/Microsoft/vscode-jshint" target="_blank">jshint</a> &#x4F8B;&#x5B50;)&#x3002;&#x4F46;&#x662F;&#x5B9E;&#x9645;&#x4E0A;&#x6709;&#x66F4;&#x591A;&#x7684;&#x8BED;&#x8A00;&#x670D;&#x52A1;&#xFF0C;&#x63D0;&#x4F9B;&#x4EE3;&#x7801;&#x81EA;&#x52A8;&#x5B8C;&#x6210;&#xFF0C;&#x67E5;&#x627E;&#x6240;&#x6709;&#x5F15;&#x7528;&#x6216;&#x8005;&#x8DF3;&#x8F6C;&#x5230;&#x5B9A;&#x4E49;&#x7684;&#x529F;&#x80FD;&#x3002;&#x4E0B;&#x9762;&#x7684;&#x4EE3;&#x7801;&#x7ED9;&#x670D;&#x52A1;&#x6DFB;&#x52A0;&#x4E86;&#x4EE3;&#x7801;&#x81EA;&#x52A8;&#x5B8C;&#x6210;&#x3002;&#x5B83;&#x7B80;&#x5355;&#x7684;&#x63D0;&#x540D;&#x4E24;&#x4E2A;&#x5355;&#x8BCD;&apos;TypeScript&apos;&#x548C;&apos;JavaScript&apos;&#x3002;</p>
+<pre><code class="lang-typescript"><span class="hljs-comment">// &#x8FD9;&#x4E2A;&#x5904;&#x7406;&#x5668;&#x63D0;&#x4F9B;&#x5B8C;&#x6210;&#x9879;&#x7684;&#x521D;&#x59CB;&#x5316;&#x5217;&#x8868;&#x3002;</span>
+connection.onCompletion((textDocumentPosition: TextDocumentIdentifier): CompletionItem[] =&gt; {
+    <span class="hljs-comment">// &#x4F20;&#x9012;&#x7684;&#x53C2;&#x6570;&#x4E2D;&#x5305;&#x542B;&#x4E86;&#x5728;&#x6587;&#x672C;&#x6587;&#x6863;&#x4E2D;&#x8BF7;&#x6C42;&#x4EE3;&#x7801;&#x81EA;&#x52A8;&#x5B8C;&#x6210;&#x7684;&#x4F4D;&#x7F6E;&#x3002;</span>
+    <span class="hljs-comment">// &#x8FD9;&#x4E2A;&#x4F8B;&#x5B50;&#x4E2D;&#x5FFD;&#x7565;&#x4E86;&#x8FD9;&#x4E9B;&#x4FE1;&#x606F;&#xFF0C;&#x603B;&#x662F;&#x63D0;&#x4F9B;&#x76F8;&#x540C;&#x7684;&#x5B8C;&#x6210;&#x9009;&#x9879;&#x3002;</span>
+    <span class="hljs-keyword">return</span> [
+        {
+            label: <span class="hljs-string">&apos;TypeScript&apos;</span>,
+            kind: CompletionItemKind.Text,
+            data: <span class="hljs-number">1</span>
+        },
+        {
+            label: <span class="hljs-string">&apos;JavaScript&apos;</span>,
+            kind: CompletionItemKind.Text,
+            data: <span class="hljs-number">2</span>
+        }
+    ]
+});
+
+<span class="hljs-comment">// &#x8FD9;&#x4E2A;&#x5904;&#x7406;&#x5668;&#x89E3;&#x6790;&#x4E86;&#x5728;&#x81EA;&#x52A8;&#x5B8C;&#x6210;&#x5217;&#x8868;&#x91CC;&#x9009;&#x62E9;&#x7684;&#x9009;&#x9879;&#x7684;&#x989D;&#x5916;&#x4FE1;&#x606F;&#x3002;</span>
+connection.onCompletionResolve((item: CompletionItem): CompletionItem =&gt; {
+    <span class="hljs-keyword">if</span> (item.data === <span class="hljs-number">1</span>) {
+        item.detail = <span class="hljs-string">&apos;TypeScript details&apos;</span>,
+        item.documentation = <span class="hljs-string">&apos;TypeScript documentation&apos;</span>
+    } <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span> (item.data === <span class="hljs-number">2</span>) {
+        item.detail = <span class="hljs-string">&apos;JavaScript details&apos;</span>,
+        item.documentation = <span class="hljs-string">&apos;JavaScript documentation&apos;</span>
+    }
+    <span class="hljs-keyword">return</span> item;
+});
+</code></pre>
+<p>&#x5728;&#x89E3;&#x6790;&#x5904;&#x7406;&#x5668;&#x4E2D;<code>data</code>&#x6210;&#x5458;&#x901A;&#x5E38;&#x7528;&#x6765;&#x4F5C;&#x4E3A;&#x81EA;&#x52A8;&#x5B8C;&#x6210;&#x9009;&#x9879;&#x7684;&#x552F;&#x4E00;&#x6807;&#x8BC6;&#x7B26;&#x3002;&#x8FD9;&#x4E2A;&#x6570;&#x636E;&#x5C5E;&#x6027;&#x901A;&#x8FC7;&#x534F;&#x8BAE;&#x6765;&#x4F20;&#x8F93;&#x3002;&#x56E0;&#x4E3A;&#x5E95;&#x5C42;&#x7684;&#x6D88;&#x606F;&#x4F20;&#x8F93;&#x534F;&#x8BAE;&#x662F;&#x57FA;&#x4E8E;&#x6570;&#x636E;&#x6210;&#x5458;&#x7684;JSON&#xFF0C;&#x6240;&#x4EE5;&#x5E94;&#x8BE5;&#x4FDD;&#x8BC1;&#x6570;&#x636E;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;JSON&#x5E8F;&#x5217;&#x5316;&#x548C;&#x53CD;&#x5E8F;&#x5217;&#x5316;&#x3002;</p>
+<p>&#x5269;&#x4E0B;&#x7684;&#x5C31;&#x662F;&#x544A;&#x8BC9;VS Code&#x670D;&#x52A1;&#x652F;&#x6301;&#x4EE3;&#x7801;&#x81EA;&#x52A8;&#x5B8C;&#x6210;&#x3002;&#x8981;&#x5B8C;&#x6210;&#x8FD9;&#x4E2A;&#x529F;&#x80FD;&#xFF0C;&#x9700;&#x8981;&#x5728;&#x521D;&#x59CB;&#x5316;&#x5904;&#x7406;&#x5668;&#x4E2D;&#x58F0;&#x660E;&#x76F8;&#x5E94;&#x7684;&#x80FD;&#x529B;&#xFF1A;</p>
+<pre><code class="lang-typescript">connection.onInitialize((params): InitializeResult =&gt; {
+    ...
+    <span class="hljs-keyword">return</span> {
+        capabilities: {
+            ...
+            <span class="hljs-comment">// &#x544A;&#x8BC9;&#x5BA2;&#x6237;&#x7AEF;&#x670D;&#x52A1;&#x652F;&#x6301;&#x4EE3;&#x7801;&#x81EA;&#x52A8;&#x5B8C;&#x6210;</span>
+            completionProvider: {
+                resolveProvider: <span class="hljs-literal">true</span>
+            }
+        }
+    }
+});
+</code></pre>
+<p>&#x4E0B;&#x9762;&#x7684;&#x5C4F;&#x5E55;&#x622A;&#x56FE;&#x663E;&#x793A;&#x7EAF;&#x6587;&#x672C;&#x6587;&#x4EF6;&#x4E2D;&#x8FD0;&#x884C;&#x7684;&#x4EE3;&#x7801;&#x5B8C;&#x6210;&#xFF1A;</p>
+<p><img src="images/example-language-server/codeComplete.png" alt="Code Complete"></p>
+<p>The first interesting feature a language server usually implements is validation of documents. In that sense even a linter counts as a language server and in VS Code linters are usually implemented as language servers (see <a href="https://github.com/Microsoft/vscode-eslint" target="_blank">eslint</a> and <a href="https://github.com/Microsoft/vscode-jshint" target="_blank">jshint</a> for examples). But there is more to language servers. They can provide code complete, find all references or goto definition. The example code below adds code completion to the server. It simply proposes the two words &apos;TypeScript&apos; and &apos;JavaScript&apos;.</p>
+<pre><code class="lang-typescript"><span class="hljs-comment">// This handler provides the initial list of the completion items.</span>
+connection.onCompletion((textDocumentPosition: TextDocumentIdentifier): CompletionItem[] =&gt; {
+    <span class="hljs-comment">// The pass parameter contains the position of the text document in </span>
+    <span class="hljs-comment">// which code complete got requested. For the example we ignore this</span>
+    <span class="hljs-comment">// info and always provide the same completion items.</span>
+    <span class="hljs-keyword">return</span> [
+        {
+            label: <span class="hljs-string">&apos;TypeScript&apos;</span>,
+            kind: CompletionItemKind.Text,
+            data: <span class="hljs-number">1</span>
+        },
+        {
+            label: <span class="hljs-string">&apos;JavaScript&apos;</span>,
+            kind: CompletionItemKind.Text,
+            data: <span class="hljs-number">2</span>
+        }
+    ]
+});
+
+<span class="hljs-comment">// This handler resolve additional information for the item selected in</span>
+<span class="hljs-comment">// the completion list.</span>
+connection.onCompletionResolve((item: CompletionItem): CompletionItem =&gt; {
+    <span class="hljs-keyword">if</span> (item.data === <span class="hljs-number">1</span>) {
+        item.detail = <span class="hljs-string">&apos;TypeScript details&apos;</span>,
+        item.documentation = <span class="hljs-string">&apos;TypeScript documentation&apos;</span>
+    } <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span> (item.data === <span class="hljs-number">2</span>) {
+        item.detail = <span class="hljs-string">&apos;JavaScript details&apos;</span>,
+        item.documentation = <span class="hljs-string">&apos;JavaScript documentation&apos;</span>
+    }
+    <span class="hljs-keyword">return</span> item;
+});
+</code></pre>
+<p>The <code>data</code> fields is used to uniquely identify a completion item in the resolve handler. The data property is transparent for the protocol. Since the underlying message passing protocol is JSON based the data field should only hold data that is serializable to and from JSON.</p>
+<p>All that is missing is to tell VS Code that the server support code completion requests. To do so, flag the corresponding capability in the intialize handler:</p>
+<pre><code class="lang-typescript">connection.onInitialize((params): InitializeResult =&gt; {
+    ...
+    <span class="hljs-keyword">return</span> {
+        capabilities: {
+            ...
+            <span class="hljs-comment">// Tell the client that the server support code complete</span>
+            completionProvider: {
+                resolveProvider: <span class="hljs-literal">true</span>
+            }
+        }
+    }
+});
+</code></pre>
+<p>The screen shot below shows the completed code running on a plain text file:</p>
+<p><img src="images/example-language-server/codeComplete.png" alt="Code Complete"></p>
+<h2 id="additional-language-server-features">Additional Language Server features</h2>
+<p>&#x4E0B;&#x9762;&#x7684;&#x6765;&#x7684;&#x8BED;&#x8A00;&#x7279;&#x6027;&#x662F;&#x8BED;&#x8A00;&#x670D;&#x52A1;&#x73B0;&#x5728;&#x652F;&#x6301;&#x7684;&#x9664;&#x4EE3;&#x7801;&#x5B8C;&#x6210;&#x4EE5;&#x5916;&#x7684;&#x7279;&#x6027;&#xFF1A;</p>
+<ul>
+<li><em>Document Highlights</em>: &#x9AD8;&#x4EAE;&#x663E;&#x793A;&#x6240;&#x6709;&#x5728;&#x6587;&#x672C;&#x6587;&#x6863;&#x4E2D;&#x76F8;&#x540C;&#x7684;&#x7B26;&#x53F7;&#x3002;</li>
+<li><em>Hover</em>: &#x63D0;&#x4F9B;&#x5728;&#x6587;&#x672C;&#x6587;&#x6863;&#x4E2D;&#x9009;&#x62E9;&#x7684;&#x7B26;&#x53F7;&#x7684;&#x60AC;&#x505C;&#x4FE1;&#x606F;&#x3002;</li>
+<li><em>Signature Help</em>: &#x63D0;&#x4F9B;&#x5728;&#x6587;&#x672C;&#x6587;&#x6863;&#x4E2D;&#x9009;&#x62E9;&#x7684;&#x7B26;&#x53F7;&#x7684;&#x7B7E;&#x540D;&#x4FE1;&#x606F;&#x3002;</li>
+<li><em>Goto Definition</em>: &#x63D0;&#x4F9B;&#x8DF3;&#x8F6C;&#x5230;&#x6587;&#x672C;&#x6587;&#x6863;&#x4E2D;&#x9009;&#x62E9;&#x7684;&#x7B26;&#x53F7;&#x7684;&#x5B9A;&#x4E49;&#x5904;&#x652F;&#x6301;&#x3002;</li>
+<li><em>Find References</em>: &#x63D0;&#x4F9B;&#x67E5;&#x627E;&#x6587;&#x672C;&#x6587;&#x6863;&#x4E2D;&#x9009;&#x62E9;&#x7684;&#x7B26;&#x53F7;&#x5728;&#x6240;&#x6709;&#x9879;&#x76EE;&#x4E2D;&#x7684;&#x5F15;&#x7528;&#x3002;</li>
+<li><em>List Document Symbols</em>: &#x5217;&#x51FA;&#x6587;&#x672C;&#x6587;&#x6863;&#x4E2D;&#x5B9A;&#x4E49;&#x7684;&#x6240;&#x6709;&#x7B26;&#x53F7;&#x3002;</li>
+<li><em>List Workspace Symbols</em>: &#x5217;&#x51FA;&#x6240;&#x6709;&#x9879;&#x76EE;&#x4E2D;&#x7684;&#x7B26;&#x53F7;&#x3002;</li>
+<li><em>Code Actions</em>: &#x5BF9;&#x7ED9;&#x51FA;&#x7684;&#x6587;&#x672C;&#x6587;&#x6863;&#x548C;&#x8303;&#x56F4;&#x6267;&#x884C;&#x547D;&#x4EE4;&#x3002;</li>
+<li><em>CodeLens</em>: &#x5BF9;&#x7ED9;&#x51FA;&#x7684;&#x6587;&#x672C;&#x6587;&#x6863;&#x8BA1;&#x7B97;&#x4EE3;&#x7801;&#x5143;&#x4FE1;&#x606F;&#x7EDF;&#x8BA1;&#x3002;</li>
+<li><em>Document Formatting</em>: &#x5305;&#x62EC;&#x683C;&#x5F0F;&#x5316;&#x6574;&#x4E2A;&#x6587;&#x6863;&#x3001;&#x6587;&#x6863;&#x8303;&#x56F4;&#x3001;&#x548C;&#x7C7B;&#x578B;&#x683C;&#x5F0F;&#x5316;&#x3002;</li>
+<li><em>Rename</em>: &#x5728;&#x9879;&#x76EE;&#x5185;&#x91CD;&#x547D;&#x540D;&#x7B26;&#x53F7;&#x3002;</li>
+</ul>
+<p>The following language features are currently support in a language server besides code complete:</p>
+<ul>
+<li><em>Document Highlights</em>: highlights all &apos;equal&apos; symbols in a text document.</li>
+<li><em>Hover</em>: provides hover information for a symbol selected in a text document.</li>
+<li><em>Signature Help</em>: provides signature help for a symbol selected in a text document.</li>
+<li><em>Goto Definition</em>: provides goto definition support for a symbol selected in a text document.</li>
+<li><em>Find References</em>: finds all project-wide references for a symbol selected in a text document.</li>
+<li><em>List Document Symbols</em>: lists all symbols defined in a text document.</li>
+<li><em>List Workspace Symbols</em>: lists all project-wide symbols.</li>
+<li><em>Code Actions</em>: compute commands for a given text document and range.</li>
+<li><em>CodeLens</em>: compute CodeLens statistics for a given text document.</li>
+<li><em>Document Formatting</em>: this includes formatting of whole documents, document ranges and formatting on type.</li>
+<li><em>Rename</em>: project-wide rename of a symbol.</li>
+</ul>
+<h2 id="&#x589E;&#x91CF;&#x540C;&#x6B65;&#x6587;&#x672C;&#x6587;&#x6863;---incremental-text-document-synchronization">&#x589E;&#x91CF;&#x540C;&#x6B65;&#x6587;&#x672C;&#x6587;&#x6863;   Incremental Text Document Synchronization</h2>
+<p>&#x793A;&#x4F8B;&#x4E2D;&#x901A;&#x8FC7;<code>vscode-languageserver</code>&#x6A21;&#x5757;&#x63D0;&#x4F9B;&#x7684;&#x7B80;&#x5355;&#x7684;&#x6587;&#x672C;&#x6587;&#x6863;&#x7BA1;&#x7406;&#x5668;&#x5728;VS Code&#x548C;&#x8BED;&#x8A00;&#x670D;&#x52A1;&#x95F4;&#x540C;&#x6B65;&#x6587;&#x6863;&#x3002;&#x6709;&#x4E24;&#x4E2A;&#x7F3A;&#x70B9;&#xFF1A;</p>
+<ul>
+<li>&#x56E0;&#x4E3A;&#x6574;&#x4E2A;&#x6587;&#x672C;&#x6587;&#x6863;&#x5185;&#x5BB9;&#x88AB;&#x91CD;&#x590D;&#x53D1;&#x9001;&#x7ED9;&#x670D;&#x52A1;&#x9020;&#x6210;&#x5927;&#x91CF;&#x6570;&#x636E;&#x4F20;&#x8F93;&#x3002;</li>
+<li>&#x5982;&#x679C;&#x4F7F;&#x7528;&#x4E86;&#x8BED;&#x8A00;&#x5E93;&#xFF0C;&#x5F88;&#x591A;&#x5E93;&#x652F;&#x6301;&#x589E;&#x91CF;&#x6587;&#x6863;&#x66F4;&#x65B0;&#x4EE5;&#x907F;&#x514D;&#x975E;&#x5FC5;&#x987B;&#x7684;&#x89E3;&#x6790;&#x548C;&#x865A;&#x62DF;&#x8BED;&#x6CD5;&#x6811;&#x521B;&#x5EFA;&#x3002;</li>
+</ul>
+<p>&#x56E0;&#x4E3A;&#x534F;&#x8BAE;&#x4E5F;&#x652F;&#x6301;&#x589E;&#x91CF;&#x6587;&#x6863;&#x540C;&#x6B65;&#x3002;&#x4F7F;&#x7528;&#x589E;&#x91CF;&#x6587;&#x6863;&#x540C;&#x6B65;&#x9700;&#x8981;&#x5B89;&#x88C5;&#x4E09;&#x4E2A;&#x901A;&#x77E5;&#x5904;&#x7406;&#x5668;&#xFF1A;</p>
+<ul>
+<li><em>onDidOpenTextDocument</em>: &#x5F53;&#x6587;&#x6863;&#x5728;VS Code&#x4E2D;&#x88AB;&#x6253;&#x5F00;&#x65F6;&#x8C03;&#x7528;&#x3002;</li>
+<li><em>onDidChangeTextDocument</em>: &#x5F53;&#x6587;&#x6863;&#x5185;&#x5BB9;&#x5728;VS Code&#x4E2D;&#x88AB;&#x4FEE;&#x6539;&#x65F6;&#x8C03;&#x7528;&#x3002;</li>
+<li><em>onDidCloseTextDocument</em>: &#x5F53;&#x6587;&#x6863;&#x5728;VS Code&#x4E2D;&#x88AB;&#x5173;&#x95ED;&#x65F6;&#x8C03;&#x7528;&#x3002;</li>
+</ul>
+<p>&#x4E0B;&#x9762;&#x7684;&#x4EE3;&#x7801;&#x7247;&#x6BB5;&#x5C06;&#x8BF4;&#x660E;&#x600E;&#x6837;&#x5728;&#x8FDE;&#x63A5;&#x4E0A;&#x5B89;&#x88C5;&#x8FD9;&#x4E9B;&#x901A;&#x77E5;&#x5904;&#x7406;&#x5668;&#x5E76;&#x4E14;&#x5728;&#x521D;&#x59CB;&#x5316;&#x91CC;&#x8FD4;&#x56DE;&#x6B63;&#x786E;&#x7684;&#x80FD;&#x529B;&#x58F0;&#x660E;&#xFF1A;</p>
+<pre><code class="lang-typescript">connection.onInitialize((params): InitializeResult =&gt; {
+    ...
+    <span class="hljs-keyword">return</span> {
+        capabilities: {
+            <span class="hljs-comment">// &#x542F;&#x7528;&#x589E;&#x91CF;&#x6587;&#x6863;&#x540C;&#x6B65;</span>
+            textDocumentSync: TextDocumentSyncKind.Incremental,
+            ...
+        }
+    }
+});
+
+connection.onDidOpenTextDocument((params) =&gt; {
+    <span class="hljs-comment">// &#x4E00;&#x4E2A;&#x6587;&#x6863;&#x5728;VS Code&#x4E2D;&#x88AB;&#x6253;&#x5F00;&#x3002;</span>
+    <span class="hljs-comment">// params.uri &#x552F;&#x4E00;&#x6807;&#x8BC6;&#x4E00;&#x4E2A;&#x6587;&#x6863;&#x3002;&#x5BF9;&#x4E8E;&#x5B58;&#x50A8;&#x5728;&#x78C1;&#x76D8;&#x4E0A;&#x7684;&#x6587;&#x6863;&#x8FD9;&#x662F;&#x6587;&#x4EF6;URI&#x3002;</span>
+    <span class="hljs-comment">// params.text &#x6587;&#x6863;&#x7684;&#x5168;&#x90E8;&#x521D;&#x59CB;&#x5316;&#x5185;&#x5BB9;&#x3002;</span>
+});
+
+connection.onDidChangeTextDocument((params) =&gt; {
+    <span class="hljs-comment">// &#x6587;&#x6863;&#x5185;&#x5BB9;&#x5728;VS Code&#x4E2D;&#x88AB;&#x4FEE;&#x6539;&#x3002;</span>
+    <span class="hljs-comment">// params.uri &#x552F;&#x4E00;&#x6807;&#x8BC6;&#x4E00;&#x4E2A;&#x6587;&#x6863;&#x3002;</span>
+    <span class="hljs-comment">// params.contentChanges &#x63CF;&#x8FF0;&#x6587;&#x6863;&#x7684;&#x5185;&#x5BB9;&#x53D8;&#x5316;&#x3002;</span>
+});
+
+connection.onDidCloseTextDocument((params) =&gt; {
+    <span class="hljs-comment">// &#x4E00;&#x4E2A;&#x6587;&#x6863;&#x5728;VS Code&#x4E2D;&#x88AB;&#x5173;&#x95ED;&#x3002;</span>
+    <span class="hljs-comment">// params.uri &#x552F;&#x4E00;&#x6807;&#x8BC6;&#x4E00;&#x4E2A;&#x6587;&#x6863;&#x3002;</span>
+});
+</code></pre>
+<p>The example uses the simple text document manager provided by the <code>vscode-languageserver</code> module to synchronize documents between VS Code and the language server. This has two drawbacks:</p>
+<ul>
+<li>lots of data transfer since the whole content of a text document is sent to the server repeatedly.</li>
+<li>if an existing language library is used, such libraries usually support incremental document updates to avoid unnecessary parsing and abstract syntax tree creation.</li>
+</ul>
+<p>The protocol therefore supports incremental document synchronization as well. To make use of incremental document synchronization a server needs to install three notification handlers:</p>
+<ul>
+<li><em>onDidOpenTextDocument</em>: is called when a text document got opened in VS Code.</li>
+<li><em>onDidChangeTextDocument</em>: is called when the content of a text document changes in VS Code.</li>
+<li><em>onDidCloseTextDocument</em>: is called when a text document got closed in VS Code.</li>
+</ul>
+<p>Below a code snippet that illustrates how to hook these notification handlers on a connection and how to return the right capability on initialize: </p>
+<pre><code class="lang-typescript">connection.onInitialize((params): InitializeResult =&gt; {
+    ...
+    <span class="hljs-keyword">return</span> {
+        capabilities: {
+            <span class="hljs-comment">// Enable incremental document sync</span>
+            textDocumentSync: TextDocumentSyncKind.Incremental,
+            ...
+        }
+    }
+});
+
+connection.onDidOpenTextDocument((params) =&gt; {
+    <span class="hljs-comment">// A text document got opened in VS Code.</span>
+    <span class="hljs-comment">// params.uri uniquely identifies the document. For documents store on disk this is a file URI.</span>
+    <span class="hljs-comment">// params.text the initial full content of the document.</span>
+});
+
+connection.onDidChangeTextDocument((params) =&gt; {
+    <span class="hljs-comment">// The content of a text document did change in VS Code.</span>
+    <span class="hljs-comment">// params.uri uniquely identifies the document.</span>
+    <span class="hljs-comment">// params.contentChanges describe the content changes to the document.</span>
+});
+
+connection.onDidCloseTextDocument((params) =&gt; {
+    <span class="hljs-comment">// A text document got closed in VS Code.</span>
+    <span class="hljs-comment">// params.uri uniquely identifies the document.</span>
+});
+</code></pre>
+<h2 id="&#x4E0B;&#x4E00;&#x6B65;---next-steps">&#x4E0B;&#x4E00;&#x6B65;   Next Steps</h2>
+<p>&#x5411;&#x5B66;&#x4E60;&#x66F4;&#x591A;&#x7684;VS COde&#x63D2;&#x4EF6;&#x6A21;&#x578B;&#xFF0C;&#x8BD5;&#x8BD5;&#x9605;&#x8BFB;&#x8FD9;&#x4E9B;&#x6587;&#x6863;&#xFF1A;</p>
+<ul>
+<li><a href="../../docs/extensionAPI/vscode-api.md">vscode API Reference</a> - &#x5B66;&#x4E60;VS Code&#x8BED;&#x8A00;&#x670D;&#x52A1;&#x548C;&#x8BED;&#x8A00;&#x7684;&#x6DF1;&#x5EA6;&#x6574;&#x5408;&#x3002;</li>
+</ul>
+<p>To learn more about VS Code extensibility model, try these topic:</p>
+<ul>
+<li><a href="../../docs/extensionAPI/vscode-api.md">vscode API Reference</a> - Learn about deep language integration with VS Code language services.</li>
+</ul>
+<h2 id="&#x5E38;&#x89C1;&#x95EE;&#x9898;----common-questions">&#x5E38;&#x89C1;&#x95EE;&#x9898;    Common Questions</h2>
+<p><strong>&#x95EE;: &#x5F53;&#x6211;&#x5C1D;&#x8BD5;&#x53BB;&#x9644;&#x52A0;&#x5230;&#x670D;&#x52A1;&#x65F6;&#xFF0C;&#x6211;&#x9047;&#x5230;&quot;cannot connect to runtime process (timeout after 5000ms)&quot;?</strong></p>
+<p><strong>&#x7B54;:</strong> &#x5982;&#x679C;&#x4F60;&#x7684;&#x670D;&#x52A1;&#x6CA1;&#x6709;&#x6B63;&#x5728;&#x8FD0;&#x884C;&#x90A3;&#x4E48;&#x5F53;&#x4F60;&#x8BD5;&#x56FE;&#x53BB;&#x9644;&#x52A0;&#x8C03;&#x8BD5;&#x5668;&#x65F6;&#x5C31;&#x4F1A;&#x770B;&#x5230;&#x8D85;&#x65F6;&#x9519;&#x8BEF;&#x3002;&#x5BA2;&#x6237;&#x7AEF;&#x542F;&#x52A8;&#x592B;&#x5987;&#xFF0C;&#x6240;&#x4EE5;&#x4E3A;&#x4E86;&#x62E5;&#x6709;&#x4E00;&#x4E2A;&#x5DF2;&#x7ECF;&#x8FD0;&#x884C;&#x7684;&#x670D;&#x52A1;&#xFF0C;&#x786E;&#x4FDD;&#x4F60;&#x5DF2;&#x7ECF;&#x542F;&#x52A8;&#x5BA2;&#x6237;&#x7AEF;&#x3002;</p>
+<p><strong>Q: When I try to attach to the server, I get &quot;cannot connect to runtime process (timeout after 5000ms)&quot;?</strong></p>
+<p><strong>A:</strong> You will see this timeout error if the server isn&apos;t running when you try to attach the debugger.  The client starts the language server so make sure you have started the client in order to have a running server.</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="范例-word-count.html" class="navigation navigation-prev " aria-label="Previous page: 范例-word-count">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="范例-调试器.html" class="navigation navigation-next " aria-label="Next page: 范例-调试器">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"Order":5,"Area":"extensions","TOCTitle":"Example-Language Server","ContentId":"A8CBE8D6-1FEE-47BF-B81E-D79FA0DB5D03","PageTitle":"Creating Language Servers for Visual Studio Code","DateApproved":"4/14/2016","MetaDescription":"Learn how to create Language Servers for Visual Studio Code.  These can be used to easily integrate existing Linters into VS Code.","title":"范例-language-server","level":"1.9.4","depth":2,"next":{"title":"范例-调试器","level":"1.9.5","depth":2,"path":"md/扩展/范例-调试器.md","ref":"md/扩展/范例-调试器.md","articles":[]},"previous":{"title":"范例-word-count","level":"1.9.3","depth":2,"path":"md/扩展/范例-word-count.md","ref":"md/扩展/范例-word-count.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-lunr","-search","search-pro","intopic-toc","livereload"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"intopic-toc":{"isCollapsed":false,"isScrollspyActive":true,"label":"On This Page","maxDepth":6,"mode":"nested","selector":".markdown-section h1, .markdown-section h2, .markdown-section h3, .markdown-section h4, .markdown-section h5","visible":true},"search-pro":{},"livereload":{},"highlight":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"VSCodeContributorsinChina","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"vscode-docs","language":"zh-hans","gitbook":"*"},"file":{"path":"md/扩展/范例-language-server.md","mtime":"2021-05-20T07:06:10.000Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2023-04-07T07:25:43.262Z"},"basePath":"../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search-pro/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search-pro/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-intopic-toc/anchor.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-intopic-toc/gumshoe.polyfills.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-intopic-toc/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

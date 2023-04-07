@@ -1,0 +1,1333 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-hans" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Dockerfile · vscode-docs</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="VSCodeContributorsinChina">
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search-pro/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-intopic-toc/style.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="t-sql.md" />
+    
+    
+    <link rel="prev" href="go.md" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="输入并搜索" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    简介
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" >
+            
+                <a target="_blank" href="https://code.visualstudio.com/docs">
+            
+                    
+                    官方文档
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../Overview.html">
+            
+                <a href="../Overview.html">
+            
+                    
+                    概览
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../快速入门.md">
+            
+                <span>
+            
+                    
+                    快速入门(暂无)
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../快速入门/介绍视频.html">
+            
+                <a href="../快速入门/介绍视频.html">
+            
+                    
+                    视频介绍
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="../快速入门/小技巧.html">
+            
+                <a href="../快速入门/小技巧.html">
+            
+                    
+                    小技巧
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="../快速入门/用户接口.html">
+            
+                <a href="../快速入门/用户接口.html">
+            
+                    
+                    用户接口
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4" data-path="../快速入门/主题.html">
+            
+                <a href="../快速入门/主题.html">
+            
+                    
+                    主题
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.5" data-path="../快速入门/设置.html">
+            
+                <a href="../快速入门/设置.html">
+            
+                    
+                    设置
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.6" data-path="../快速入门/快捷键绑定.html">
+            
+                <a href="../快速入门/快捷键绑定.html">
+            
+                    
+                    快捷键绑定
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.7" data-path="../快速入门/语言区域.html">
+            
+                <a href="../快速入门/语言区域.html">
+            
+                    
+                    语言区域
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../../summary/编辑器.html">
+            
+                <a href="../../summary/编辑器.html">
+            
+                    
+                    编辑器
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../编辑器/基础.html">
+            
+                <a href="../编辑器/基础.html">
+            
+                    
+                    基础
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="../编辑器/安装.html">
+            
+                <a href="../编辑器/安装.html">
+            
+                    
+                    安装
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="../编辑器/扩展市场.html">
+            
+                <a href="../编辑器/扩展市场.html">
+            
+                    
+                    扩展市场
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.4" data-path="../编辑器/任务.html">
+            
+                <a href="../编辑器/任务.html">
+            
+                    
+                    任务
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.5" data-path="../编辑器/调试.html">
+            
+                <a href="../编辑器/调试.html">
+            
+                    
+                    调试
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.6" data-path="../编辑器/为什么选用VSCode.html">
+            
+                <a href="../编辑器/为什么选用VSCode.html">
+            
+                    
+                    为什么选用VSCode
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.7" data-path="../编辑器/版本控制.html">
+            
+                <a href="../编辑器/版本控制.html">
+            
+                    
+                    版本控制
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.8" data-path="../编辑器/易用性.html">
+            
+                <a href="../编辑器/易用性.html">
+            
+                    
+                    易用性
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.9" data-path="../编辑器/与时俱进的编辑体验.html">
+            
+                <a href="../编辑器/与时俱进的编辑体验.html">
+            
+                    
+                    与时俱进的编辑体验
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../../summary/定制化.html">
+            
+                <a href="../../summary/定制化.html">
+            
+                    
+                    定制化
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="../定制化/概述.html">
+            
+                <a href="../定制化/概述.html">
+            
+                    
+                    概述
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="../定制化/用户和工作空间.html">
+            
+                <a href="../定制化/用户和工作空间.html">
+            
+                    
+                    用户和工作空间
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3" data-path="../定制化/快捷键绑定.html">
+            
+                <a href="../定制化/快捷键绑定.html">
+            
+                    
+                    快捷键绑定
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.4" data-path="../定制化/用户定义代码段.html">
+            
+                <a href="../定制化/用户定义代码段.html">
+            
+                    
+                    用户定义代码段
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.5" data-path="../定制化/调色板.html">
+            
+                <a href="../定制化/调色板.html">
+            
+                    
+                    调色板
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.6" data-path="../定制化/主题.html">
+            
+                <a href="../定制化/主题.html">
+            
+                    
+                    主题
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.7" data-path="../定制化/语言区域.html">
+            
+                <a href="../定制化/语言区域.html">
+            
+                    
+                    语言区域
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../../summary/工具.html">
+            
+                <a href="../../summary/工具.html">
+            
+                    
+                    工具
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1" data-path="../工具/vse命令行工具.html">
+            
+                <a href="../工具/vse命令行工具.html">
+            
+                    
+                    vse命令行工具
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2" data-path="../工具/yocode扩展生成器.html">
+            
+                <a href="../工具/yocode扩展生成器.html">
+            
+                    
+                    yocode扩展生成器
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.3" data-path="../工具/范例.html">
+            
+                <a href="../工具/范例.html">
+            
+                    
+                    范例
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="../../summary/技术支持.html">
+            
+                <a href="../../summary/技术支持.html">
+            
+                    
+                    技术支持
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.1" data-path="../技术支持/常见问题.html">
+            
+                <a href="../技术支持/常见问题.html">
+            
+                    
+                    常见问题
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.2" data-path="../技术支持/错误代码.html">
+            
+                <a href="../技术支持/错误代码.html">
+            
+                    
+                    错误代码
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.3" data-path="../技术支持/如何升级.html">
+            
+                <a href="../技术支持/如何升级.html">
+            
+                    
+                    如何升级
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.4" data-path="../技术支持/系统要求.html">
+            
+                <a href="../技术支持/系统要求.html">
+            
+                    
+                    系统要求
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="../../summary/扩展.html">
+            
+                <a href="../../summary/扩展.html">
+            
+                    
+                    扩展
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.9.1" data-path="../扩展/概述.html">
+            
+                <a href="../扩展/概述.html">
+            
+                    
+                    概述
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.2" data-path="../扩展/范例-hello-world.html">
+            
+                <a href="../扩展/范例-hello-world.html">
+            
+                    
+                    范例-hello-world
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.3" data-path="../扩展/范例-word-count.html">
+            
+                <a href="../扩展/范例-word-count.html">
+            
+                    
+                    范例-word-count
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.4" data-path="../扩展/范例-language-server.html">
+            
+                <a href="../扩展/范例-language-server.html">
+            
+                    
+                    范例-language-server
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.5" data-path="../扩展/范例-调试器.html">
+            
+                <a href="../扩展/范例-调试器.html">
+            
+                    
+                    范例-调试器
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.6" data-path="../扩展/调试-扩展.html">
+            
+                <a href="../扩展/调试-扩展.html">
+            
+                    
+                    调试-扩展
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.7" data-path="../扩展/安装-扩展.html">
+            
+                <a href="../扩展/安装-扩展.html">
+            
+                    
+                    安装-扩展
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.8" data-path="../扩展/范式-原则.html">
+            
+                <a href="../扩展/范式-原则.html">
+            
+                    
+                    范式-原则
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.9" data-path="../扩展/测试-扩展.html">
+            
+                <a href="../扩展/测试-扩展.html">
+            
+                    
+                    测试-扩展
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.10" data-path="../扩展/用我们的方法创造扩展.html">
+            
+                <a href="../扩展/用我们的方法创造扩展.html">
+            
+                    
+                    用我们的方法创造扩展
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="../../summary/扩展API.html">
+            
+                <a href="../../summary/扩展API.html">
+            
+                    
+                    扩展API
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.10.1" data-path="../扩展API/概述.html">
+            
+                <a href="../扩展API/概述.html">
+            
+                    
+                    概述
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.2" data-path="../扩展API/扩展manifest文件.html">
+            
+                <a href="../扩展API/扩展manifest文件.html">
+            
+                    
+                    扩展manifest文件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.3" data-path="../扩展API/扩展点.html">
+            
+                <a href="../扩展API/扩展点.html">
+            
+                    
+                    扩展点
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.4" data-path="../扩展API/激活事件.html">
+            
+                <a href="../扩展API/激活事件.html">
+            
+                    
+                    激活事件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.5" data-path="../扩展API/vscode-api.html">
+            
+                <a href="../扩展API/vscode-api.html">
+            
+                    
+                    vscode-api
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.6" data-path="../扩展API/vscode-api-命令.html">
+            
+                <a href="../扩展API/vscode-api-命令.html">
+            
+                    
+                    vscode-api-命令
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.7" data-path="../扩展API/api调试.html">
+            
+                <a href="../扩展API/api调试.html">
+            
+                    
+                    api调试
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="../../summary/语言.html">
+            
+                <a href="../../summary/语言.html">
+            
+                    
+                    语言
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.11.1" data-path="概述.html">
+            
+                <a href="概述.html">
+            
+                    
+                    概述
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.2" data-path="javascript.html">
+            
+                <a href="javascript.html">
+            
+                    
+                    Javascript
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.3" data-path="json.html">
+            
+                <a href="json.html">
+            
+                    
+                    JSON
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.4" data-path="html.html">
+            
+                <a href="html.html">
+            
+                    
+                    HTML(暂无)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.5" data-path="css.html">
+            
+                <a href="css.html">
+            
+                    
+                    CSS, Sass and Less
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.6" data-path="typescript.html">
+            
+                <a href="typescript.html">
+            
+                    
+                    TypeScript
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.7" data-path="markdown.html">
+            
+                <a href="markdown.html">
+            
+                    
+                    Markdown
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.8" data-path="cpp.html">
+            
+                <a href="cpp.html">
+            
+                    
+                    C++
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.9" data-path="java.md">
+            
+                <span>
+            
+                    
+                    Java(暂无)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.10" data-path="php.html">
+            
+                <a href="php.html">
+            
+                    
+                    PHP
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.11" data-path="python.html">
+            
+                <a href="python.html">
+            
+                    
+                    Python
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.12" data-path="go.md">
+            
+                <span>
+            
+                    
+                    Go(暂无)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.11.13" data-path="dockerfile.html">
+            
+                <a href="dockerfile.html">
+            
+                    
+                    Dockerfile
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.14" data-path="t-sql.md">
+            
+                <span>
+            
+                    
+                    T-SQL(暂无)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.15" data-path="csharp.html">
+            
+                <a href="csharp.html">
+            
+                    
+                    C#
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="../../summary/运行时.html">
+            
+                <a href="../../summary/运行时.html">
+            
+                    
+                    运行时
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.12.1" data-path="../运行时/nodejs.html">
+            
+                <a href="../运行时/nodejs.html">
+            
+                    
+                    nodejs
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.2" data-path="../运行时/ASPnet5.html">
+            
+                <a href="../运行时/ASPnet5.html">
+            
+                    
+                    ASPnet5
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.3" data-path="../运行时/unity.html">
+            
+                <a href="../运行时/unity.html">
+            
+                    
+                    unity
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.4" data-path="../运行时/office.html">
+            
+                <a href="../运行时/office.html">
+            
+                    
+                    office
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            本书使用 GitBook 发布
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../.." >Dockerfile</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="&#x4F7F;&#x7528;docker&#x5DE5;&#x4F5C;">&#x4F7F;&#x7528;Docker&#x5DE5;&#x4F5C;</h1>
+<p><a href="http://www.docker.com" target="_blank">Docker</a> &#x662F;&#x73B0;&#x4ECA;&#x5341;&#x5206;&#x70ED;&#x95E8;&#x7684;&#x5BB9;&#x5668;&#x5F15;&#x64CE;&#xFF0C;&#x53EF;&#x4EE5;&#x8BA9;&#x4F60;&#x8F7B;&#x677E;&#x5730;&#x6253;&#x5305;&#x3001;&#x90E8;&#x7F72;&#x548C;&#x4F7F;&#x7528;&#x5E94;&#x7528;&#x7A0B;&#x5E8F;&#x4EE5;&#x53CA;&#x670D;&#x52A1;&#x3002;&#x65E0;&#x8BBA;&#x4F60;&#x662F;&#x4E00;&#x4E2A;&#x7ECF;&#x9A8C;&#x4E30;&#x5BCC;&#x7684;Docker&#x5F00;&#x53D1;&#x8005;&#x8FD8;&#x662F;&#x521A;&#x521A;&#x5F00;&#x59CB;&#x5B66;&#x4E60;&#x5B83;&#xFF0C;Visual Studio Code&#x90FD;&#x53EF;&#x4EE5;&#x8BA9;&#x4F60;&#x8F7B;&#x677E;&#x5730;&#x521B;&#x9020;<code>Dockerfile</code>&#x548C;<code>docker-compose.yml</code>&#x4E24;&#x4E2A;&#x6587;&#x4EF6;&#x5230;&#x4F60;&#x7684;&#x5F00;&#x53D1;&#x76EE;&#x5F55;&#x4E2D;&#x3002;</p>
+<h2 id="&#x5B89;&#x88C5;docker&#x6269;&#x5C55;&#x63D2;&#x4EF6;">&#x5B89;&#x88C5;Docker&#x6269;&#x5C55;&#x63D2;&#x4EF6;</h2>
+<p>VS Code&#x901A;&#x8FC7;&#x63D2;&#x4EF6;&#x7684;&#x65B9;&#x5F0F;&#x652F;&#x6301;Docker&#x7684;&#x4F7F;&#x7528;&#x3002;&#x5B89;&#x88C5;&#x8FD9;&#x4E00;&#x6269;&#x5C55;&#x63D2;&#x4EF6;&#xFF0C;&#x53EA;&#x9700;&#x8981;&#x6309;&#x4E0B;<code>kb(workbench.action.showCommands)</code>&#xFF0C;&#x7136;&#x540E;&#x8F93;&#x5165;&quot;ext install&quot;&#x5E76;&#x4E14;&#x8FD0;&#x884C;<strong>Extensions: Install Extension</strong>&#x547D;&#x4EE4;&#x6765;&#x83B7;&#x5F97;&#x76EE;&#x524D;&#x652F;&#x6301;&#x7684;&#x63D2;&#x4EF6;&#x5217;&#x8868;&#x3002;&#x73B0;&#x5728;&#x8F93;&#x5165;docker&#x641C;&#x7D22;&#x6240;&#x9700;&#x63D2;&#x4EF6;&#x7136;&#x540E;&#x9009;&#x62E9;<a href="https://marketplace.visualstudio.com/items?itemName=PeterJausovec.vscode-docker" target="_blank">Dockerfile and Docker Compose File (yml) Support</a>&#x63D2;&#x4EF6;&#x3002;</p>
+<p><img src="images/docker/installdockerextension.png" alt="Select Docker extension"></p>
+<h2 id="dockerfiles">Dockerfiles</h2>
+<p>&#x901A;&#x8FC7;Docker&#xFF0C;&#x4F60;&#x53EF;&#x4EE5;&#x6307;&#x5B9A;&#x4E00;&#x7CFB;&#x5217;&#x7684;&#x547D;&#x4EE4;&#xFF0C;&#x901A;&#x8FC7;&#x5B83;&#x4EEC;&#x5728;<code>Dockerfile</code>&#x4E2D;&#x5EFA;&#x7ACB;&#x955C;&#x50CF;&#x3002;&#x4E00;&#x4E2A;Dockerfile&#x662F;&#x5305;&#x542B;&#x7740;&#x4E00;&#x7CFB;&#x5217;&#x5B89;&#x88C5;&#x6307;&#x4EE4;&#x7684;&#x6587;&#x672C;&#x811A;&#x672C;&#x3002;</p>
+<p>VS Code &#x5F88;&#x6E05;&#x695A;Dockerfiles&#x7684;&#x7ED3;&#x6784;&#x4EE5;&#x53CA;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x7684;&#x6307;&#x4EE4;&#x96C6;&#xFF0C;&#x8FD9;&#x610F;&#x5473;&#x7740;&#x5F53;&#x4F60;&#x4F7F;&#x7528;VS Code&#x7F16;&#x8F91;&#x8FD9;&#x4E9B;&#x6587;&#x4EF6;&#x65F6;&#x5B83;&#x53EF;&#x4EE5;&#x7ED9;&#x4E88;&#x4F60;&#x5F88;&#x591A;&#x7684;&#x7ECF;&#x9A8C;&#x6307;&#x5BFC;&#x3002;</p>
+<ol>
+<li>&#x5728;&#x4F60;&#x7684;&#x5DE5;&#x4F5C;&#x76EE;&#x5F55;&#x4E2D;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x65B0;&#x7684;&#x6587;&#x4EF6;&#x547D;&#x540D;&#x4E3A;<code>Dockerfile</code></li>
+<li><p>&#x6309;&#x4E0B;<code>kb(editor.action.triggerSuggest)</code>&#x6765;&#x83B7;&#x5F97;<code>Dockerfile</code>&#x4E2D;&#x547D;&#x4EE4;&#x7684;&#x8865;&#x5168;</p>
+<p><img src="images/docker/dockerfileintellisense.png" alt="Dockerfile snippets"></p>
+</li>
+<li><p>&#x6309;&#x4E0B;<code>kbstyle(Tab)</code>&#x5728;&#x6BB5;&#x843D;&#x4E2D;&#x4E0D;&#x540C;&#x7684;&#x533A;&#x57DF;&#x79FB;&#x52A8;&#x3002;&#x6BD4;&#x5982;&#x8BF4;&#xFF0C;&#x5728;<code>COPY</code>&#x90E8;&#x5206;&#x4F60;&#x53EF;&#x4EE5;&#x8F93;&#x5165;<code>source</code>&#xFF0C;&#x63A5;&#x7740;&#x6309;&#x4E0B;<code>kbstyle(Tab)</code>&#x79FB;&#x52A8;&#x5230;<code>dest</code>&#x90E8;&#x5206;&#x3002;</p>
+<p><img src="images/docker/dockerfiletemplate.png" alt="Dockerfile snippet navigation"></p>
+</li>
+</ol>
+<p>&#x9664;&#x4E86;&#x7F16;&#x8F91;<code>Dockerfile</code>&#x65F6;&#x7684;&#x5404;&#x79CD;&#x529F;&#x80FD;&#xFF0C;&#x5F53;&#x4F60;&#x653E;&#x7F6E;&#x9F20;&#x6807;&#x5728;&#x4E00;&#x4E2A;Docker&#x547D;&#x4EE4;&#x4E0A;&#x7684;&#x65F6;&#x5019;&#xFF0C;Visual Studio Code&#x5C06;&#x4F1A;&#x63D0;&#x4F9B;&#x5173;&#x4E8E;&#x8FD9;&#x4E2A;&#x547D;&#x4EE4;&#x7684;&#x63CF;&#x8FF0;&#x3002;&#x6BD4;&#x5982;&#x8BF4;&#xFF0C;&#x5F53;&#x4F60;&#x7684;&#x9F20;&#x6807;&#x653E;&#x5230;<code>WORKDIR</code>&#x4E0A;&#x9762;&#x7684;&#x65F6;&#x5019;&#x4F60;&#x5C06;&#x53EF;&#x4EE5;&#x770B;&#x5230;&#x4EE5;&#x4E0B;&#x63CF;&#x8FF0;&#x3002;</p>
+<p><img src="images/docker/dockerfiletooltip.png" alt="Dockerfile hover tooltip"></p>
+<p>&#x60F3;&#x8981;&#x83B7;&#x53D6;&#x66F4;&#x591A;&#x5173;&#x4E8E;Dockerfiles&#x7684;&#x4FE1;&#x606F;&#xFF0C;&#x53EF;&#x4EE5;&#x8FDB;&#x5165;&#x5728;<a href="http://docker.com" target="_blank">docker.com</a>&#x4E0A;&#x9762;&#x7684;<a href="https://docs.docker.com/articles/dockerfile_best-practices/" target="_blank">Dockerfile best practices</a></p>
+<h2 id="docker-compose">Docker compose</h2>
+<p><a href="https://docs.docker.com/compose/" target="_blank">Docker Compose</a>&#x8BA9;&#x4F60;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;Docker&#x5B9A;&#x4E49;&#x4EE5;&#x53CA;&#x8FD0;&#x884C;&#x591A;&#x5BB9;&#x5668;&#x5E94;&#x7528;&#x3002;&#x4F60;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x4E00;&#x4E2A;&#x53EB;&#x505A;<code>docker-compose.yml</code>&#x7684;&#x6587;&#x4EF6;&#x6765;&#x5B9A;&#x4E49;&#x5BB9;&#x5668;&#x7684;&#x5916;&#x5F62;&#x3002;</p>
+<p>&#x5BF9;&#x4E8E;<code>docker-compose.yml</code>&#xFF0C;Visual Studio Code&#x7684;&#x529F;&#x80FD;&#x540C;&#x6837;&#x4E5F;&#x662F;&#x5341;&#x5206;&#x4E30;&#x5BCC;&#x7684;&#x3002;&#x5B83;&#x53EF;&#x4EE5;&#x4E3A;&#x5408;&#x6CD5;&#x7684;Docker compose&#x6307;&#x4EE4;&#x63D0;&#x4F9B;IntelliSense,&#x4EE5;&#x53CA;&#x5E2E;&#x52A9;&#x4F60;&#x67E5;&#x8BE2;Docker Hub&#x627E;&#x5230;&#x9002;&#x5408;&#x7684;&#x955C;&#x50CF;&#x3002;</p>
+<ol>
+<li>&#x5728;&#x4F60;&#x7684;&#x5DE5;&#x4F5C;&#x76EE;&#x5F55;&#x4E2D;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x540D;&#x4E3A;<code>docker-compose.yml</code>&#x7684;&#x65B0;&#x6587;&#x4EF6;</li>
+<li>&#x5B9A;&#x4E49;&#x4E00;&#x4E2A;&#x65B0;&#x7684;&#x670D;&#x52A1;&#x6210;&#x4E3A;<code>web:</code></li>
+<li><p>&#x5728;&#x7B2C;&#x4E8C;&#x884C;&#xFF0C;&#x901A;&#x8FC7;<code>kb(editor.action.triggerSuggest)</code>&#x5F15;&#x5165;IntelliSense&#x6765;&#x67E5;&#x770B;&#x6240;&#x6709;&#x5408;&#x6CD5;&#x7684;&#x6307;&#x4EE4;&#x5217;&#x8868;</p>
+<p><img src="images/docker/dockercomposeintellisense.png" alt="Docker Compose IntelliSense"></p>
+</li>
+</ol>
+<ol>
+<li><p>&#x5BF9;&#x4E8E;<code>image</code>&#x6307;&#x4EE4;&#xFF0C;&#x4F60;&#x53EF;&#x4EE5;&#x518D;&#x6B21;&#x8F93;&#x5165;<code>kb(editor.action.triggerSuggest)</code>&#x6765;&#x5B8C;&#x6210;&#xFF0C;&#x800C;&#x4E14;VS Code&#x4F1A;&#x5E2E;&#x4F60;&#x5728;Docker Hub&#x4E0A;&#x67E5;&#x8BE2;&#x516C;&#x5F00;&#x7684;&#x955C;&#x50CF;&#x3002;</p>
+<p><img src="images/docker/dockercomposeimageintellisense.png" alt="Docker Compose image suggestions"></p>
+</li>
+</ol>
+<p>VS Code &#x7B2C;&#x4E00;&#x6B21;&#x4F7F;&#x7528;&#x4F1A;&#x6839;&#x636E;&#x4E00;&#x4E9B;&#x5143;&#x6570;&#x636E;&#x6BD4;&#x5982;&#x8BF4;star&#x7684;&#x6570;&#x91CF;&#x548C;&#x63CF;&#x8FF0;&#x53BB;&#x4E3A;&#x4F60;&#x663E;&#x793A;&#x4E00;&#x7CFB;&#x5217;&#x70ED;&#x95E8;&#x7684;&#x955C;&#x50CF;&#x3002;&#x5982;&#x679C;&#x4F60;&#x7EE7;&#x7EED;&#x8F93;&#x5165;&#xFF0C;VS code&#x4F1A;&#x67E5;&#x8BE2;Docker Hub&#x7684;&#x7D22;&#x5F15;&#x53BB;&#x627E;&#x5230;&#x66F4;&#x52A0;&#x7B26;&#x5408;&#x7684;&#x955C;&#x50CF;&#xFF0C;&#x5305;&#x62EC;&#x641C;&#x7D22;&#x516C;&#x5F00;&#x7684;profiles&#x3002;&#x6BD4;&#x5982;&#x8BF4;&#xFF0C;&#x641C;&#x7D22;<code>Microsoft</code>&#x4F1A;&#x663E;&#x793A;&#x6240;&#x6709;&#x5FAE;&#x8F6F;&#x7684;&#x955C;&#x50CF;&#x3002;</p>
+<p> <img src="images/docker/dockercomposesearch.png" alt="Docker Compose Microsoft image suggestions"></p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="go.md" class="navigation navigation-prev " aria-label="Previous page: Go(暂无)">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="t-sql.md" class="navigation navigation-next " aria-label="Next page: T-SQL(暂无)">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"Order":11,"Area":"languages","TOCTitle":"Dockerfile","ContentId":"42F8B9F8-BD03-4159-9479-17C5BDE30531","PageTitle":"Working with Dockerfiles in Visual Studio Code","DateApproved":"4/14/2016","MetaDescription":"Find out how to get the best out of Visual Studio Code and Docker.","title":"Dockerfile","level":"1.11.13","depth":2,"next":{"title":"T-SQL(暂无)","level":"1.11.14","depth":2,"path":"md/语言/t-sql.md","ref":"md/语言/t-sql.md","articles":[]},"previous":{"title":"Go(暂无)","level":"1.11.12","depth":2,"path":"md/语言/go.md","ref":"md/语言/go.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-lunr","-search","search-pro","intopic-toc","livereload"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"intopic-toc":{"isCollapsed":false,"isScrollspyActive":true,"label":"On This Page","maxDepth":6,"mode":"nested","selector":".markdown-section h1, .markdown-section h2, .markdown-section h3, .markdown-section h4, .markdown-section h5","visible":true},"search-pro":{},"livereload":{},"highlight":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"VSCodeContributorsinChina","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"vscode-docs","language":"zh-hans","gitbook":"*"},"file":{"path":"md/语言/dockerfile.md","mtime":"2021-05-20T07:06:10.000Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2023-04-07T07:25:43.262Z"},"basePath":"../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search-pro/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search-pro/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-intopic-toc/anchor.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-intopic-toc/gumshoe.polyfills.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-intopic-toc/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

@@ -1,0 +1,22 @@
+{
+    "title" : "vscode-docs",
+    "author" : "VSCodeContributorsinChina",
+    "language" : "zh-hans",
+    "plugins": [
+      "-lunr",
+      "-search",
+      "search-pro",
+      "intopic-toc"
+    ],
+    "pluginsConfig": {
+      "intopic-toc": {
+        "selector": ".markdown-section h1, .markdown-section h2, .markdown-section h3, .markdown-section h4, .markdown-section h5",
+        "maxDepth": 6,
+        "mode": "nested",
+        "isCollapsed": false,
+        "isScrollspyActive": true,
+        "visible": true,
+        "label": "On This Page"
+      }
+    } 
+}
