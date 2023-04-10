@@ -1,6 +1,5 @@
 [原文链接](https://code.visualstudio.com/docs/python/python-tutorial)
 
-[TOC]
 
 在这个教程里，你使用 Python 3 在 Visual Studio Code 中创建一个简单的 “Hello World” Python 应用。通过使用 Python 扩展，你可以将 VS Code 变成一个不错的轻量级 Python IDE（你可能会发现这是 PyCharm 之外的一个高效替代选择）。
 
