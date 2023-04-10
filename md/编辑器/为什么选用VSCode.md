@@ -18,6 +18,6 @@ VSCode 的初衷是提供一个强大的，迅捷的源代码编辑器，并且�
 
 继续阅读以继续发现：
 
-* [基础](/docs/editor/codebasics.md) - 关于 VSCode 的快速预览
-* [更进一步](/docs/editor/editingevolved.md) - 代码着色，多光标以及智能补全
-* [调试](/docs/editor/debugging.md) - 是时候用些真正好玩的了 - break, step, watch
+* [基础](/md/编辑器/基础.md) - 关于 VSCode 的快速预览
+* [更进一步](/md/编辑器/与时俱进的编辑体验.md) - 代码着色，多光标以及智能补全
+* [调试](/md/编辑器/调试.md) - 是时候用些真正好玩的了 - break, step, watch
