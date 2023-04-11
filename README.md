@@ -8,6 +8,15 @@ Visual Studio Code 是微软推出的跨平台编辑器。它采用经典的VS�
 本项目的初衷是为想使用或者正在使用 Visual Studio Code 的同学提供一个中文手册，方便大家学习使用这个优秀的工具，提高程序开发效率和质量！
 
 
+## 重要申明
+
+> [!NOTE]  
+> 此手册为fork github作者jeasonstudio的项目 https://github.com/jeasonstudio/CN-VScode-Docs  
+> 仅对部分内容参照最新的VSCode手册进行了修改和添加，  
+> 主要是手动修复了markdown笔记之间的链接以及下载了快速入门目录下所有md中的图片到`/images`目录下，方便无互联网查询  
+> 添加了`node_modules`目录，主要存放`search-pro`插件和`intopic-toc`两个插件  
+
+
 ## 翻译流程
 
 ### 第一阶段

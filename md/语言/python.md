@@ -11,6 +11,10 @@ MetaDescription: Learn about Visual Studio Code editor features (code completion
 
 VS Code 通过[扩展](/md/编辑器/扩展市场.md)对 Python 充分支持。[市场](https://marketplace.visualstudio.com)中流行的扩展对代码补全、linting、调试、代码格式化、代码片段等等提供了支持。
 
+> [!NOTE]  
+> **重要参考资料** [Getting Started with Python in VS Code](/md/Python/在VSCode中开始使用Python.md)
+
+
 > [下载 VS Code](https://code.visualstudio.com/download) - 如果您还未下载 VS Code，那就快为您的平台（Windows，Mac，Linux）安装一个吧。
 
 ## 安装 Python 扩展
