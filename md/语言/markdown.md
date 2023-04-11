@@ -32,9 +32,9 @@ Here is an example with a very simple file.
 
 ## Using your own CSS - 使用你自己的CSS
 
-By default, we use a CSS style for the preview that matches the style of VS Code. If you want to use your own CSS for the Markdown preview, update the `"markdown.styles": []` [setting](/docs/customization/userandworkspace.md) with the comma-separated list of URL(s) for your style sheet(s).
+By default, we use a CSS style for the preview that matches the style of VS Code. If you want to use your own CSS for the Markdown preview, update the `"markdown.styles": []` [setting](/md/定制化/用户和工作空间.md) with the comma-separated list of URL(s) for your style sheet(s).
 
-默认的，我们使用CSS风格的预览模式用以适应VS Code的风格。如果你想用自己的Markdown预览风格，请使用逗号分隔的URLs升级`"markdown.styles": []` [setting](/docs/customization/userandworkspace.md)。
+默认的，我们使用CSS风格的预览模式用以适应VS Code的风格。如果你想用自己的Markdown预览风格，请使用逗号分隔的URLs升级`"markdown.styles": []` [setting](/md/定制化/用户和工作空间.md)。
 
 For instance, in the screen shot above we used a custom CSS to change the default font for the page and changed the color for the H1 title.
 
@@ -69,11 +69,11 @@ Use **File** > **Preferences** > **Workspace Settings** to bring up the workspac
 
 There are several built-in Markdown snippets included in VS Code - simply press `kb(editor.action.triggerSuggest)` (Trigger Suggest) and we will give you a context specific list of suggestions.
 
->**Tip:** You can add in your own User Defined Snippets for Markdown.  Take a look at [User Defined Snippets](/docs/customization/userdefinedsnippets.md) to find out how.
+>**Tip:** You can add in your own User Defined Snippets for Markdown.  Take a look at [User Defined Snippets](/md/定制化/用户定义代码段.md) to find out how.
 
 ## Compiling Markdown into HTML
 
-VS Code can integrate with Markdown compilers through our integrated [task runner](/docs/editor/tasks.md).  We can use this to compile `.md` files into `.html` files.  Let's walk through compiling a simple Markdown document.
+VS Code can integrate with Markdown compilers through our integrated [task runner](/md/编辑器/任务.md).  We can use this to compile `.md` files into `.html` files.  Let's walk through compiling a simple Markdown document.
 
 ### Step 1: Install a Markdown compiler
 
@@ -103,7 +103,7 @@ Things you'll need:
 
 * [node](https://nodejs.org)
 * [marked](https://www.npmjs.com/package/marked)
-* [tasks.json](/docs/editor/tasks.md)
+* [tasks.json](/md/编辑器/任务.md)
 
 ## Section Title
 
@@ -225,7 +225,7 @@ Again, as this is the only task in the file you can execute it by simply pressin
 
 ![Task watching spinner](images/Markdown/taskwatching.png)
 
-At this point, if you create and/or modify other Markdown files, you will see the respective HTML files generated and/or changes reflected on save.  You can also enable [Auto Save](/docs/editor/codebasics.md#saveauto-save) to make things even more streamlined.
+At this point, if you create and/or modify other Markdown files, you will see the respective HTML files generated and/or changes reflected on save.  You can also enable [Auto Save](/md/编辑器/基础.md#saveauto-save) to make things even more streamlined.
 
 If you want to stop the watch, you can press `kb(workbench.action.tasks.build)` again and click **Terminate Running Task** in the message box. Or you can use the **Command Palette** with `kb(workbench.action.showCommands)` and find the terminate command there.
 
@@ -233,8 +233,8 @@ If you want to stop the watch, you can press `kb(workbench.action.tasks.build)` 
 
 Read on to find out about:
 
-* [Customization](/docs/customization/overview.md) - Dig into additional settings such as word wrap and User Defined Snippets.
-* [CSS, Less and Sass](/docs/languages/css.md) - Want to edit your CSS? VS Code has great support for CSS, Less and Sass editing.
+* [Customization](/md/定制化/概述.md) - Dig into additional settings such as word wrap and User Defined Snippets.
+* [CSS, Less and Sass](/md/语言/css.md) - Want to edit your CSS? VS Code has great support for CSS, Less and Sass editing.
 
 
 ## Common Questions

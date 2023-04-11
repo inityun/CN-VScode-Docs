@@ -32,13 +32,13 @@ Proposals contain extensive documentation, including a list of browsers that sup
 
 >**小贴士:** Emmet对CSS的支持详见 [Emmet cheat sheet](http://docs.emmet.io/cheat-sheet).
 
-我们同样支持 [用户定义代码段](/docs/customization/userdefinedsnippets.md).
+我们同样支持 [用户定义代码段](/md/定制化/用户定义代码段.md).
 
 Press `kb(editor.emmet.action.expandAbbreviation)` to expand the current abbreviation.
 
 >**Tip:** See the CSS section of the [Emmet cheat sheet](http://docs.emmet.io/cheat-sheet) for valid abbreviations.
 
-We also support [User Defined Snippets](/docs/customization/userdefinedsnippets.md).
+We also support [User Defined Snippets](/md/定制化/用户定义代码段.md).
 
 ##语法高亮及颜色浏览 Syntax coloring & Color preview
 
@@ -52,14 +52,14 @@ As you type, we provide syntax highlighting as well as in context preview of col
 
 该功能对 CSS 版本 <= 2.1, Sass 版本 <= 3.2 and Less 版本 <= 1.7有效。
 
->**注意:** 你可以在通过在用户定义代码段 [设置](/docs/customization/userandworkspace.md)来禁用VS Code对于CSS,Sass或者Less的默认语法验证。
+>**注意:** 你可以在通过在用户定义代码段 [设置](/md/定制化/用户和工作空间.md)来禁用VS Code对于CSS,Sass或者Less的默认语法验证。
 >```json
 >    "css.validate": false
 >```
 
 We support CSS version <= 2.1, Sass version <= 3.2 and Less version <= 1.7.
 
->**Note:** You can disable VS Code's default CSS, Sass or Less validation by setting the corresponding `.validate` User or Workspace [setting](/docs/customization/userandworkspace.md) to false.
+>**Note:** You can disable VS Code's default CSS, Sass or Less validation by setting the corresponding `.validate` User or Workspace [setting](/md/定制化/用户和工作空间.md) to false.
 >```json
 >    "css.validate": false
 >```
@@ -90,9 +90,9 @@ This is supported for Sass and Less variables in the same file.
 
 ## 将Sass和Less编译成CSS Transpiling Sass and Less into CSS
 
-VS Code可以通过自带的[task runner](/docs/editor/tasks.md)将Sass和Less编译为CSS。我们可以用这个功能将 `.scss` 或者 `.less` 文件编译为 `.css` ，这个功能对一个简单的Sass/Less文件有效。
+VS Code可以通过自带的[task runner](/md/编辑器/任务.md)将Sass和Less编译为CSS。我们可以用这个功能将 `.scss` 或者 `.less` 文件编译为 `.css` ，这个功能对一个简单的Sass/Less文件有效。
 
-VS Code can integrate with Sass and Less transpilers through our integrated [task runner](/docs/editor/tasks.md).  We can use this to transpile `.scss` or `.less` files into `.css` files.  Let's walk through transpiling a simple Sass/Less file.
+VS Code can integrate with Sass and Less transpilers through our integrated [task runner](/md/编辑器/任务.md).  We can use this to transpile `.scss` or `.less` files into `.css` files.  Let's walk through transpiling a simple Sass/Less file.
 
 ### 第一步：安装一个Sass或者Less的编译器。Step 1: Install a Sass or Less transpiler
 
@@ -374,13 +374,13 @@ Again, as this is the only task in the file you can execute it by simply pressin
 
 ![Task watching spinner](images/css/taskwatching.png)
 
-At this point, if you create and/or modify other Less/Sass files, you will see the respective CSS files generated and/or changes reflected on save.  You can also enable [Auto Save](/docs/editor/codebasics.md#saveauto-save) to make things even more streamlined.
+At this point, if you create and/or modify other Less/Sass files, you will see the respective CSS files generated and/or changes reflected on save.  You can also enable [Auto Save](/md/编辑器/基础.md#saveauto-save) to make things even more streamlined.
 
 If you want to stop the watch, you can press `kb(workbench.action.tasks.build)` again and click **Terminate Running Task** in the message box. Or you can use the **Command Palette** with `kb(workbench.action.showCommands)` and find the terminate command there.
 
 ## Customizing CSS, Sass and Less Settings
 
-You can configure the following lint warnings as [User and Workspace Settings](/docs/customization/userandworkspace.md).
+You can configure the following lint warnings as [User and Workspace Settings](/md/定制化/用户和工作空间.md).
 
 The `validate` setting allows you turn off the built-in validation. You would do this if you rather use a different linter.
 
@@ -422,13 +422,13 @@ idSelector | Warn when using selectors for an id `#id` as selectors should not c
 
 Read on to find out about:
 
-* [任务：配置运行程序](/docs/editor/tasks.md) - 深入挖掘这个能帮助你将Sass和Less编译成CSS。
-* [提升编辑体验](/docs/editor/editingevolved.md) -了解编辑器对语言提供的丰富的功能集，正如CSS。
-* [HTML](/docs/languages/html.md) - 除了CSS，HTML在VS Code中同样被很好的支持。
+* [任务：配置运行程序](/md/编辑器/任务.md) - 深入挖掘这个能帮助你将Sass和Less编译成CSS。
+* [提升编辑体验](/md/编辑器/与时俱进的编辑体验.md) -了解编辑器对语言提供的丰富的功能集，正如CSS。
+* [HTML](/md/语言/html.md) - 除了CSS，HTML在VS Code中同样被很好的支持。
 
-* [Configure Tasks](/docs/editor/tasks.md) - Dig into Tasks to help you transpile your Sass and Less to CSS.
-* [Editing Evolved](/docs/editor/editingevolved.md) - Find out about the rich set of features the editor offers for languages such as CSS.
-* [HTML](/docs/languages/html.md) - CSS is just the start, HTML is also very well supported in VS Code.
+* [Configure Tasks](/md/编辑器/任务.md) - Dig into Tasks to help you transpile your Sass and Less to CSS.
+* [Editing Evolved](/md/编辑器/与时俱进的编辑体验.md) - Find out about the rich set of features the editor offers for languages such as CSS.
+* [HTML](/md/语言/html.md) - CSS is just the start, HTML is also very well supported in VS Code.
 
 ##常见问题解答 Common Questions
 

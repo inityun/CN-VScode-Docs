@@ -96,7 +96,7 @@ Before you can debug your app you'll need to set a few things up. Navigate to th
 
 This file, ```launch.json```, contains configurations that tell the debugger how to interact with your app. Two configurations are included by default -- one that defines the properties for launching your app under GDB from VS Code, and another that defines the properties for attaching GDB to a process that's already running. Note that launching your app under GDB is not currently supported on OS X, for now you have to use Attach to debug OS X apps.
 
-At the minimum, you'll need to update the 'program' property to contain the program name and path, but you can modify other properties as well. You can view a tooltip that describes each property and its possible values by placing your cursor over a property. For more information about the properties inside the launch.json file and how to use them, see the VS Code [debugging documentation](/docs/editor/debugging.md).
+At the minimum, you'll need to update the 'program' property to contain the program name and path, but you can modify other properties as well. You can view a tooltip that describes each property and its possible values by placing your cursor over a property. For more information about the properties inside the launch.json file and how to use them, see the VS Code [debugging documentation](/md/编辑器/调试.md).
 
 After your launch.json file is configured you're ready to start debugging, but remember that VS Code won't rebuild your program when you make changes to it between debugging sessions unless you also create a task.json file to invoke the build and set it as the preLaunchTask property in the launch.json file
 
@@ -128,7 +128,7 @@ The C/C++ extension for VS Code also has the ability to debug using a memory dum
 
 ### GDB and MI commands
 
-You can execute GDB or MI commands directly through the debug console with the `-exec` command, but be careful -- executing GDB commands directly in the debug console is untested and might crash VS Code in some cases. For more information on debugging with VS Code, see this introduction to [debugging in VS Code](/docs/editor/debugging.md).
+You can execute GDB or MI commands directly through the debug console with the `-exec` command, but be careful -- executing GDB commands directly in the debug console is untested and might crash VS Code in some cases. For more information on debugging with VS Code, see this introduction to [debugging in VS Code](/md/编辑器/调试.md).
 
 ### Other Debugging Features
 * Unconditional breakpoints
@@ -165,9 +165,9 @@ OS X:
 
 Read on to find out about:
 
-* [Editing Evolved](/docs/editor/editingevolved.md) - find out more about advanced editing features
-* [Tasks](/docs/editor/tasks.md) - use tasks to build your project and more
-* [Debugging](/docs/editor/debugging.md) - find out how to use the debugger with your project
+* [Editing Evolved](/md/编辑器/与时俱进的编辑体验.md) - find out more about advanced editing features
+* [Tasks](/md/编辑器/任务.md) - use tasks to build your project and more
+* [Debugging](/md/编辑器/调试.md) - find out how to use the debugger with your project
 
 ## Common Questions
 
@@ -189,5 +189,5 @@ Read on to find out about:
 
 **Q: How do I build/run my project?**
 
-**A:** VS Code supports tasks that you can configure to build your application, and natively understands the output of MSBuild, CSC, and XBuild. For more information, see the [Tasks](/docs/editor/tasks.md) documentation.
+**A:** VS Code supports tasks that you can configure to build your application, and natively understands the output of MSBuild, CSC, and XBuild. For more information, see the [Tasks](/md/编辑器/任务.md) documentation.
 

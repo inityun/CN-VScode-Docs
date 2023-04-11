@@ -121,15 +121,15 @@ Once created, open VS Code on the created folder and run the extension to test t
 ## Loading an Extension   
 ## 加载扩展
 
-To load an extension, you need to copy the files to your VS Code extensions folder. We cover this in detail here: [Installing Extensions](/docs/extensions/install-extension.md#your-extensions-folder).    
-要加载扩展，你需要复制一些文件到你的VSCode扩展文件夹。 我们在这里进行详细介绍: [安装扩展](/docs/extensions/install-extension.md#your-extensions-folder)。
+To load an extension, you need to copy the files to your VS Code extensions folder. We cover this in detail here: [Installing Extensions](/md/扩展/安装-扩展.md#your-extensions-folder).    
+要加载扩展，你需要复制一些文件到你的VSCode扩展文件夹。 我们在这里进行详细介绍: [安装扩展](/md/扩展/安装-扩展.md#your-extensions-folder)。
 
 ## Next Steps   
 ## 后续步骤
 
-* [Publishing Tool](/docs/tools/vscecli.md) - Learn how to publish your extensions to the VS Code Marketplace   
-* [发布工具](/docs/tools/vscecli.md) - 学习如何将你的扩展发布到商店中
-* [Hello World](/docs/extensions/example-hello-world.md) - Try the 'Hello World' walkthrough to build your first extension   * [Hello World](/docs/extensions/example-hello-world.md) - 尝试'Hello World'演练作为你的第一个扩展
+* [Publishing Tool](/md/工具/vse命令行工具.md) - Learn how to publish your extensions to the VS Code Marketplace   
+* [发布工具](/md/工具/vse命令行工具.md) - 学习如何将你的扩展发布到商店中
+* [Hello World](/md/扩展/范例-hello-world.md) - Try the 'Hello World' walkthrough to build your first extension   * [Hello World](/md/扩展/范例-hello-world.md) - 尝试'Hello World'演练作为你的第一个扩展
 
 ## Common Questions  
 ## 常见问题

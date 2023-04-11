@@ -63,9 +63,9 @@ Now when you create a `.ts` file as part of the project we will offer up rich ed
 
 将TypeScript转化为JavaScript
 
-VS Code integrates with `tsc` through our integrated [task runner](/docs/editor/tasks.md).  We can use this to transpile `.ts` files into `.js` files.  Let's walk through transpiling a simple TypeScript Hello World program.
+VS Code integrates with `tsc` through our integrated [task runner](/md/编辑器/任务.md).  We can use this to transpile `.ts` files into `.js` files.  Let's walk through transpiling a simple TypeScript Hello World program.
 
-VSCode通过[task runner](/docs/editor/tasks.md)集成`tsc`。我们可以使用它将`.ts`文件转换为`.js`文件，让我们通过一个简单的Hello World程序来了解下转化过程。
+VSCode通过[task runner](/md/编辑器/任务.md)集成`tsc`。我们可以使用它将`.ts`文件转换为`.js`文件，让我们通过一个简单的Hello World程序来了解下转化过程。
 
 ### Step 1: Create a simple TS file
 
@@ -151,9 +151,9 @@ If you have [Node.js](https://nodejs.org) installed, you can run your simple Hel
 node HelloWorld.js
 ```
 
-> **Tips** You can also run the program using VS Code's Run/Debug feature. Details about running and debugging node apps in VS Code can be found [here](/docs/runtimes/nodejs#_debugging-your-node-application)
+> **Tips** You can also run the program using VS Code's Run/Debug feature. Details about running and debugging node apps in VS Code can be found [here](/md/运行时/nodejs.md#_debugging-your-node-application)
 
-> **提示:** 你也可以使用VS Code's的执行/调试功能运行代码。[这里](/docs/runtimes/nodejs#_debugging-your-node-application)可以找到有关在VS Code中运行和调试节点应用程序的详细信息。
+> **提示:** 你也可以使用VS Code's的执行/调试功能运行代码。[这里](/md/运行时/nodejs#_debugging-your-node-application)可以找到有关在VS Code中运行和调试节点应用程序的详细信息。
 
 
 ### Step 4: Reviewing Build Issues
@@ -181,9 +181,9 @@ You can also use the keyboard to open the list `kb(workbench.action.showErrorsWa
 
 你也可以使用键盘打开问题列表`kb(workbench.action.showErrorsWarnings)`
 
->**Tip:** Tasks offer rich support for many actions. Check the [Tasks](/docs/editor/tasks.md) topic for more information on how to configure them.
+>**Tip:** Tasks offer rich support for many actions. Check the [Tasks](/md/编辑器/任务.md) topic for more information on how to configure them.
 
->**提示:** 任务为许多操作提供了丰富的支持，[Tasks](/docs/editor/tasks.md) 将得到很多配置他们的信息.
+>**提示:** 任务为许多操作提供了丰富的支持，[Tasks](/md/编辑器/任务.md) 将得到很多配置他们的信息.
 
 ## Goto Symbol & Show All Symbols
 ## 跳转到符号 & 显示所有符号
@@ -241,9 +241,9 @@ If generated (transpiled) JavaScript files do not live next to their source, you
 
 ## 隐藏派生的JavaScript Files
 
-When you are working with TypeScript, you often don’t want to see generated JavaScript files in the explorer or in search results. VS Code offers filtering capabilities with a `files.exclude` [setting](/docs/customization/userandworkspace.md) (**File** > **Preferences** > **Workspace Settings**) and you can easily create an expression to hide those derived files:
+When you are working with TypeScript, you often don’t want to see generated JavaScript files in the explorer or in search results. VS Code offers filtering capabilities with a `files.exclude` [setting](/md/定制化/用户和工作空间.md) (**File** > **Preferences** > **Workspace Settings**) and you can easily create an expression to hide those derived files:
 
-当使用TypeScript时，通常不希望在文件资源管理器和搜索结果中看到生成的JavaScript文件。VS Code通过`files.exclude` [setting](/docs/customization/userandworkspace.md) (**File** > **Preferences** > **Workspace Settings**) 提供了文件过滤功能，您可以轻松创建表达式来隐藏这些派生文件。
+当使用TypeScript时，通常不希望在文件资源管理器和搜索结果中看到生成的JavaScript文件。VS Code通过`files.exclude` [setting](/md/定制化/用户和工作空间.md) (**File** > **Preferences** > **Workspace Settings**) 提供了文件过滤功能，您可以轻松创建表达式来隐藏这些派生文件。
 
 `"**/*.js": { "when": "$(basename).ts"}`
 
@@ -281,10 +281,10 @@ OK, read on to find out about:
 
 继续深入了解：
 
-* [JavaScript](/docs/languages/javascript.md) - we have several JavaScript specific features in VS Code
-* [Tasks](/docs/editor/tasks.md) - we used tasks to transpile your TS file. Read more to find out what else tasks can do
-* [Editing Evolved](/docs/editor/editingevolved.md) - dig into multi-cursor, snippets and more
-* [Debugging](/docs/editor/debugging.md) - we support debugging TypeScript Node.js apps
+* [JavaScript](/md/语言/javascript.md) - we have several JavaScript specific features in VS Code
+* [Tasks](/md/编辑器/任务.md) - we used tasks to transpile your TS file. Read more to find out what else tasks can do
+* [Editing Evolved](/md/编辑器/与时俱进的编辑体验.md) - dig into multi-cursor, snippets and more
+* [Debugging](/md/编辑器/调试.md) - we support debugging TypeScript Node.js apps
 
 ## Common Questions
 

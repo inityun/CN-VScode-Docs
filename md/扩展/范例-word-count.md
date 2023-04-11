@@ -10,7 +10,7 @@ MetaDescription: The Word Count extension (plug-in) example takes you deeper int
 
 # 示例 - 单词数统计  Example - Word Count
 
-这篇文章假定你已经读了之前讲述VS Code插件基本知识的文章[你的第一个插件](/docs/extensions/example-hello-world.md)。
+这篇文章假定你已经读了之前讲述VS Code插件基本知识的文章[你的第一个插件](/md/扩展/范例-hello-world.md)。
 
 单词数统计是一篇手把手教你怎样创建一个用来辅助编写Markdown的插件的的教程，在你了解这个插件所有的运行细节前，让我们先看一下这个插件的核心功能的效果演示。
 
@@ -22,7 +22,7 @@ MetaDescription: The Word Count extension (plug-in) example takes you deeper int
 
 
 
-This document assumes you have read [Your First Extension](/docs/extensions/example-hello-world.md) which covers the basics of VS Code extensibility.
+This document assumes you have read [Your First Extension](/md/扩展/范例-hello-world.md) which covers the basics of VS Code extensibility.
 
 Word Count is an end to end tutorial to show you how to create an extension to aid in Markdown authoring.  Before we get into how all of this works, let's have a quick demo of the core features you will be building so you know what to expect.
 
@@ -36,9 +36,9 @@ Whenever a `Markdown` file is edited, a status bar message is added.  The messag
 
 这个例子将分三节来告诉你一系列相关联的概念：
 
-1. [更新状态栏](/docs/extensions/example-word-count.md#update-the-status-bar) - 在VS Code的`状态栏`上显示自定义的文字
-2. [订阅事件通知](/docs/extensions/example-word-count.md#subscribing-to-events) - 基于编辑器的事件更新`状态栏`
-3. [销毁插件资源](/docs/extensions/example-word-count.md#disposing-extension-resources) - 释放时事件订阅以及界面元素句柄之类的资源
+1. [更新状态栏](/md/扩展/范例-world-count.md#update-the-status-bar) - 在VS Code的`状态栏`上显示自定义的文字
+2. [订阅事件通知](/md/扩展/范例-world-count.md#subscribing-to-events) - 基于编辑器的事件更新`状态栏`
+3. [销毁插件资源](/md/扩展/范例-world-count.md#disposing-extension-resources) - 释放时事件订阅以及界面元素句柄之类的资源
 
 首先确保你已经安装了最新的VS Code插件生成器并运行它：
 
@@ -62,9 +62,9 @@ code .
 
 This example has three sections which will take you through a set of related concepts:
 
-1. [Update the Status Bar](/docs/extensions/example-word-count.md#update-the-status-bar) - display custom text in the VS Code `Status Bar`
-2. [Subscribing to Events](/docs/extensions/example-word-count.md#subscribing-to-events) - updating the `Status Bar` based on editor events
-3. [Disposing Extension Resources](/docs/extensions/example-word-count.md#disposing-extension-resources) - release resources like event subscriptions or UI handles
+1. [Update the Status Bar](/md/扩展/范例-world-count.md#update-the-status-bar) - display custom text in the VS Code `Status Bar`
+2. [Subscribing to Events](/md/扩展/范例-world-count.md#subscribing-to-events) - updating the `Status Bar` based on editor events
+3. [Disposing Extension Resources](/md/扩展/范例-world-count.md#disposing-extension-resources) - release resources like event subscriptions or UI handles
 
 First make sure you have the latest VS Code extension generator installed then run it:
 
@@ -357,7 +357,7 @@ context.subscriptions.push(wordCounter);
     ]
 ```
 
-这种[`onLanguage:${language}`](/docs/extensionAPI/activation-events.md#activationeventsonlanguage)事件接受一个语言id，此处是“markdown”，这个事件将在这种语言的文件被打开时产生、、
+这种[`onLanguage:${language}`](/md/扩展API/激活事件.md#activationeventsonlanguage)事件接受一个语言id，此处是“markdown”，这个事件将在这种语言的文件被打开时产生、、
 
 通过`kbstyle(Ctrl+R)`或者`kb(workbench.action.debug.start)`重新加载窗口来运行插件然后开始编辑一个Markdown文件。你现在应该已经拥有了一个实时的单词数统计。
 
@@ -448,7 +448,7 @@ Now change your extension so that it is activated upon the opening of a *Markdow
     ]
 ```
 
-The  [`onLanguage:${language}`](/docs/extensionAPI/activation-events.md#activationeventsonlanguage) event takes the language id, in this case "markdown", and will be raised whenever a file of that language is opened.
+The  [`onLanguage:${language}`](/md/扩展API/激活事件.md#activationeventsonlanguage) event takes the language id, in this case "markdown", and will be raised whenever a file of that language is opened.
 
 Run the extension by either doing a window reload `kbstyle(Ctrl+R)` or with `kb(workbench.action.debug.start)` and then start editing a Markdown file.  You should now should have a live updating Word Count.
 
@@ -495,7 +495,7 @@ to display a [GitHub Octicon](https://octicons.github.com) `pencil` icon to the 
 
 ## 销毁插件资源  Disposing Extension Resources
 
-我们将在[销毁](/docs/extensions/patterns-and-principles.md#disposables)里更深入的而学习如何销毁插件。
+我们将在[销毁](/md/扩展/范式-原则.md#disposables)里更深入的而学习如何销毁插件。
 
 一个插件在激活的时候传入一个有Disposable集合类型的`subscriptions`的`ExtensionContext`对象。你的插件可以向这个集合中添加自己的可销毁对象，VS Code将在插件关闭时销毁这些对象。
 
@@ -515,7 +515,7 @@ Events are another example where `onDid*` event subscriber methods return a Disp
 
 
 
-Now we'll take a deeper look at how extensions should handle VS Code resources through [Disposables](/docs/extensions/patterns-and-principles.md#disposables).
+Now we'll take a deeper look at how extensions should handle VS Code resources through [Disposables](/md/扩展/范式-原则.md#disposables).
 
 When an extension is activated, it is passed an `ExtensionContext` object which has a `subscriptions` collection of Disposables. Extensions can add their Disposable objects to this collection and VS Code will dispose of those objects when the extension is deactivated.
 
@@ -535,37 +535,37 @@ Events are another example where `onDid*` event subscriber methods return a Disp
 
 ##本地安装你的插件  Installing your Extension Locally
 
-到目前为止，你写的插件运行在一个特殊的of VS Code实例-插件开发主机实例。为了让你的插件对于所有的VS Code实例都能使用，复制你的插件目录内容到一个[你的`.vscode/extensions`目录](/docs/extensions/install-extension.md#your-extensions-folder)下的新目录。
+到目前为止，你写的插件运行在一个特殊的of VS Code实例-插件开发主机实例。为了让你的插件对于所有的VS Code实例都能使用，复制你的插件目录内容到一个[你的`.vscode/extensions`目录](/md/扩展/安装-扩展.md#your-extensions-folder)下的新目录。
 
 
-So far, the extension you have written only runs in a special instance of VS Code, the Extension Development Host instance. To make your extension available to all VS Code instances, copy the extension folder contents to a new folder under [your `.vscode/extensions` folder](/docs/extensions/install-extension.md#your-extensions-folder).
+So far, the extension you have written only runs in a special instance of VS Code, the Extension Development Host instance. To make your extension available to all VS Code instances, copy the extension folder contents to a new folder under [your `.vscode/extensions` folder](/md/扩展/安装-扩展.md#your-extensions-folder).
 
 ## 发布你的插件  Publishing your Extension
 
-阅读怎样[共享一个插件](/docs/tools/vscecli.md)。
+阅读怎样[共享一个插件](/md/工具/vse命令行工具.md)。
 
 
-Read about how to [Share an Extension](/docs/tools/vscecli.md).
+Read about how to [Share an Extension](/md/工具/vse命令行工具.md).
 
 ## 下一步  Next Steps
 
 阅读下面这些文档:
 
-* [生成代码](/docs/tools/yocode.md) - 学习Yo Code里的其他选项
-* [插件API](/docs/extensionAPI/overview.md) - 查看插件API概述
-* [定制化](/docs/customization/overview.md) - 这题，设置和键盘绑定
-* [发布工具](/docs/tools/vscecli.md) - 学习怎样发布一个插件到公共市场里
-* [编辑器API](/docs/extensionAPI/vscode-api.md#window) - 学习更多的关于文本文档，文本编辑器，和编辑文本的知识
+* [生成代码](/md/工具/yocode扩展生成器.md) - 学习Yo Code里的其他选项
+* [插件API](/md/扩展API/概述.md) - 查看插件API概述
+* [定制化](/md/定制化/概述.md) - 这题，设置和键盘绑定
+* [发布工具](/md/工具/vse命令行工具.md) - 学习怎样发布一个插件到公共市场里
+* [编辑器API](/md/扩展API/vscode-api.md#window) - 学习更多的关于文本文档，文本编辑器，和编辑文本的知识
 
 
 
 Read on to find out about:
 
-* [Yo Code](/docs/tools/yocode.md) - learn about other options in Yo Code
-* [Extension API](/docs/extensionAPI/overview.md) - Get an overview of the Extension API
-* [Customization](/docs/customization/overview.md) - Themes, settings and keyboard bindings
-* [Publishing Tool](/docs/tools/vscecli.md) - Learn how to publish an extension to the public Marketplace
-* [Editor API](/docs/extensionAPI/vscode-api.md#window) - Learn more about Text Documents, Text Editors and editing text
+* [Yo Code](/md/工具/yocode扩展生成器.md) - learn about other options in Yo Code
+* [Extension API](/md/扩展API/概述.md) - Get an overview of the Extension API
+* [Customization](/md/定制化/概述.md) - Themes, settings and keyboard bindings
+* [Publishing Tool](/md/工具/vse命令行工具.md) - Learn how to publish an extension to the public Marketplace
+* [Editor API](/md/扩展API/vscode-api.md#window) - Learn more about Text Documents, Text Editors and editing text
 
 ## 常见问题  Common Questions
 

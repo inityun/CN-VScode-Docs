@@ -10,13 +10,13 @@ MetaDescription: Visual Studio Code can replace MonoDevelop as the editor for Un
 
 # Unity Development with VS Code
 
-Visual Studio Code can be a great companion to Unity for editing and debugging C# files.  All of the [C#](/docs/languages/csharp.md) features are supported and more.  In the screen below you can see code colorization, bracket matching, IntelliSense, CodeLens and that's just the start.
+Visual Studio Code can be a great companion to Unity for editing and debugging C# files.  All of the [C#](/md/语言/csharp.md) features are supported and more.  In the screen below you can see code colorization, bracket matching, IntelliSense, CodeLens and that's just the start.
 
 ![Unity Example](images/unity/wow.gif)
 
 Read on to find out how to configure Unity and your project to get the best possible experience.
 
->**Note:** VS Code uses a more recent version of Mono than that included with Unity.  If you get OmniSharp errors, you may need to update your Mono version.  See this [FAQ topic](/Docs/supporting/FAQ.md#vs-code-fails-to-start-omnisharp-on-os-x) for additional details.
+>**Note:** VS Code uses a more recent version of Mono than that included with Unity.  If you get OmniSharp errors, you may need to update your Mono version.  See this [FAQ topic](/md/技术支持/常见问题.md#vs-code-fails-to-start-omnisharp-on-os-x) for additional details.
 
 ## Connecting Unity and VS Code
 
@@ -75,7 +75,7 @@ With the solution file selected, you are now ready to start editing with VS Code
 * Go to symbol
 * Hover
 
-Two topics that will help you are [Editing Evolved](/docs/editor/editingevolved.md) and [C#](/docs/languages/csharp.md).  In the image below, you can see VS Code showing hover context, peeking references and more.
+Two topics that will help you are [Editing Evolved](/md/编辑器/与时俱进的编辑体验.md) and [C#](/md/语言/csharp.md).  In the image below, you can see VS Code showing hover context, peeking references and more.
 
 ![editing evolved example](images/unity/peekreferences.png)
 
@@ -90,9 +90,9 @@ The community is continually developing more and more valuable extensions for Un
 
 Read on to learn more about:
 
-* [Editing Evolved](/docs/editor/editingevolved.md) - find out more about the evolved editing features
-* [Debugging](/docs/editor/debugging.md) - how to use the debugger with your project
-* [C#](/docs/languages/csharp.md) - learn about the C# support in VS Code
+* [Editing Evolved](/md/编辑器/与时俱进的编辑体验.md) - find out more about the evolved editing features
+* [Debugging](/md/编辑器/调试.md) - how to use the debugger with your project
+* [C#](/md/语言/csharp.md) - learn about the C# support in VS Code
 
 ## Common Questions
 
@@ -128,7 +128,7 @@ To configure Unity to pass this data to VS Code, set the Editor Args to be `. -g
 
 **A:** Unity creates a number of additional files that can clutter your workspace in VS Code.  You can easily hide these so that you can focus on the files you actually want to edit.
 
-To do this, add the following JSON to your [workspace settings](/docs/customization/userandworkspace.md).
+To do this, add the following JSON to your [workspace settings](/md/定制化/用户和工作空间.md).
 
 ```json
     // Configure glob patterns for excluding files and folders.

@@ -12,11 +12,11 @@ MetaDescription: Find out how to get the best out of Visual Studio Code and C#.
 
 在VS Code中对C#的支持是针对.NET跨平台开发框架的（DNX）（见“用APS.NET Core和VS Code工作”这篇相关文章）。我们致力于将VS Code作为一个优秀的跨平台C#开发的编辑器。例如让很多Unity游戏开发的厂家乐于使用VS Code来代替MonoDevelop IDE。
 
-The C# support in VS Code is optimized for cross-platform .NET development (DNX) (see [working with ASP.NET Core and VS Code](/docs/runtimes/ASPnet5.md) for another relevant article).  Our focus with VS Code is to be a great editor for cross-platform C# development.  For instance, many Unity game developers enjoy using VS Code in place of the MonoDevelop IDE.
+The C# support in VS Code is optimized for cross-platform .NET development (DNX) (see [working with ASP.NET Core and VS Code](/md/运行时/ASPnet5.md) for another relevant article).  Our focus with VS Code is to be a great editor for cross-platform C# development.  For instance, many Unity game developers enjoy using VS Code in place of the MonoDevelop IDE.
 
-VS Code支持使用Mono进行C#应用跨平台开发调试的功能。(详见 [Mono Debugging](/Docs/editor/debugging.md#mono-debugging))。
+VS Code支持使用Mono进行C#应用跨平台开发调试的功能。(详见 [Mono Debugging](/md/编辑器/调试.md#mono-debugging))。
 
-We support debugging of C# apps cross-platform via Mono (see [Mono Debugging](/Docs/editor/debugging.md#mono-debugging)).
+We support debugging of C# apps cross-platform via Mono (see [Mono Debugging](/md/编辑器/调试.md#mono-debugging)).
 
 但是因此很多标准的C#工程不能被VS Code所识别。比如ASP.NET MVC应用就是无法识别的一种。在这种情况下如果你只是单纯的想用一个轻量级工具来编辑文件，那么VS Code够用了。如果你对这些项目想有尽可能好的体验，并且通常基于Windows系统开发，我们推荐你还是用[Visual Studio社区版（Community）](https://www.visualstudio.com/products/visual-studio-community-vs).
 
@@ -68,7 +68,7 @@ Once the project is loaded the enhanced experiences light up...
 
 你会有许多关于C#和编辑器的发现，例如代码格式，智能提示，代码重构等等。
 
-如果想知道全部对于VS Code在代码编辑时的特点，请戳[Editing Evolved](/docs/editor/editingevolved.md)这篇文章。
+如果想知道全部对于VS Code在代码编辑时的特点，请戳[Editing Evolved](/md/编辑器/与时俱进的编辑体验.md)这篇文章。
 
 接下来列出一些亮点...
 
@@ -76,7 +76,7 @@ There is a lot to discover with C# and the editor, such as format on type, Intel
 
 ![Right Click Menu](images/csharp/editingevolved.png)
 
-For a full description of our editing features go to the [Editing Evolved](/docs/editor/editingevolved.md) documentation.
+For a full description of our editing features go to the [Editing Evolved](/md/编辑器/与时俱进的编辑体验.md) documentation.
 
 Here are a few highlights...
 
@@ -92,13 +92,13 @@ IntelliSense just works hit `kb(editor.action.triggerSuggest)` at any time to ge
 
 在VS Code里内置了几种代码片段，在你输入或者按 `kb(editor.action.triggerSuggest)` （触发建议）并且VS Code会给你一个基于语镜的建议列表。
 
-**提示:** 你可以添加C#的自定义代码片段，详见 [自定义代码片段](/docs/customization/userdefinedsnippets.md) 。
+**提示:** 你可以添加C#的自定义代码片段，详见 [自定义代码片段](/md/定制化/用户定义代码段.md) 。
 
 We have several built-in snippets included in VS Code that will come up as you type or you can press `kb(editor.action.triggerSuggest)` (Trigger Suggest) and we will give you a context specific list of suggestions.
 
 ![Snippets](images/csharp/snippet.png)
 
->**Tip:** You can add in your own User Defined Snippets for C#.  Take a look at [User Defined Snippets](/docs/customization/userdefinedsnippets.md) to find out how.
+>**Tip:** You can add in your own User Defined Snippets for C#.  Take a look at [User Defined Snippets](/md/定制化/用户定义代码段.md) to find out how.
 
 ## 代码追踪 Search for Symbols
 
@@ -114,7 +114,7 @@ There are also features outside the editor. One is the ability to search for sym
 
 >**Note:** 由于性能原因，只有在对象中定义的方法才会被计入。例如 `equals` and `hashCode` 将不会得到引用信息。
 
-**提示:** 你可以通过 `editor.referenceInfos` 关闭引用次数提示，详见 [setting](/docs/customization/userandworkspace.md) 
+**提示:** 你可以通过 `editor.referenceInfos` 关闭引用次数提示，详见 [setting](/md/定制化/用户和工作空间.md) 
 
 Another cool feature is the ability to see the number of references to a method directly above the method. Click on the reference info to see the references in the Peek view.  This reference information updates as you type.
 
@@ -122,7 +122,7 @@ Another cool feature is the ability to see the number of references to a method 
 
 ![CodeLens](images/csharp/codelens.png)
 
->**Tip:** You can turn off references information with the `editor.referenceInfos` [setting](/docs/customization/userandworkspace.md).
+>**Tip:** You can turn off references information with the `editor.referenceInfos` [setting](/md/定制化/用户和工作空间.md).
 
 ## 查找引用/速览定义 Find References/Peek Definition
 
@@ -144,17 +144,17 @@ There are some basic quick fixes supported in VS Code.  You will see a lightbulb
 
 看看关于：
 
-* [ASP.NET Core开发](/docs/runtimes/ASPnet5.md) - 如何安排并采用跨平台框架.NET
-* [编辑特性（Editing Evolved）](/docs/editor/editingevolved.md) - 看看更多优秀的编辑特性。
-* [Tasks](/docs/editor/tasks.md) - use tasks to build your project and more
-* [调试相关（Debugging）](/docs/editor/debugging.md) - 看看如何在你的工程里使用调试功能。
+* [ASP.NET Core开发](/md/运行时/ASPnet5.md) - 如何安排并采用跨平台框架.NET
+* [编辑特性（Editing Evolved）](/md/编辑器/与时俱进的编辑体验.md) - 看看更多优秀的编辑特性。
+* [Tasks](/md/编辑器/任务.md) - use tasks to build your project and more
+* [调试相关（Debugging）](/md/编辑器/调试.md) - 看看如何在你的工程里使用调试功能。
 
 Read on to find out about:
 
-* [ASP.NET Core Development](/docs/runtimes/ASPnet5.md) - get up and running with cross-platform .NET
-* [Editing Evolved](/docs/editor/editingevolved.md) - find out more about advanced editing features
-* [Tasks](/docs/editor/tasks.md) - use tasks to build your project and more
-* [Debugging](/docs/editor/debugging.md) - find out how to use the debugger with your project
+* [ASP.NET Core Development](/md/运行时/ASPnet5.md) - get up and running with cross-platform .NET
+* [Editing Evolved](/md/编辑器/与时俱进的编辑体验.md) - find out more about advanced editing features
+* [Tasks](/md/编辑器/任务.md) - use tasks to build your project and more
+* [Debugging](/md/编辑器/调试.md) - find out how to use the debugger with your project
 
 ## 常见问题 Common Questions
 
@@ -168,7 +168,7 @@ Read on to find out about:
 
 **Q: 我该怎么建立/运行我的工程？**
 
-**A:** VS Code 支持任务的建立以及对于MSBuild，CSC,XBuild的理解。详情请查阅 [Tasks](/docs/editor/tasks.md) 文档.
+**A:** VS Code 支持任务的建立以及对于MSBuild，CSC,XBuild的理解。详情请查阅 [Tasks](/md/编辑器/任务.md) 文档.
 
 
 
@@ -182,5 +182,5 @@ Read on to find out about:
 
 **Q: How do I build/run my project?**
 
-**A:** VS Code supports tasks for build and natively understand the output of MSBuild, CSC, XBuild.  Find out more in the [Tasks](/docs/editor/tasks.md) documentation.
+**A:** VS Code supports tasks for build and natively understand the output of MSBuild, CSC, XBuild.  Find out more in the [Tasks](/md/编辑器/任务.md) documentation.
 

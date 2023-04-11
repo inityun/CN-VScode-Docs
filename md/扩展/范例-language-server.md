@@ -448,7 +448,7 @@ The `Extension Development Host` instance will then look like this:
 
 ## 一起调试客户端和服务  Debugging both Client and Server
 
-调试客户端代码就像调试普通插件一样简单。在包含客户端代码的VS Code实例中简单的设置断点然后按下`kb(workbench.action.debug.start)`调试插件。关于启动和调试插件的详细描述请看[运行和调试你的插件](/docs/extensions/debugging-extensions.md)。
+调试客户端代码就像调试普通插件一样简单。在包含客户端代码的VS Code实例中简单的设置断点然后按下`kb(workbench.action.debug.start)`调试插件。关于启动和调试插件的详细描述请看[运行和调试你的插件](/md/扩展/调试-扩展.md)。
 
 ![调试客户端](images/example-language-server/debugging-client.png)
 
@@ -457,7 +457,7 @@ The `Extension Development Host` instance will then look like this:
 ![调试服务](images/example-language-server/debugging-server.png)
 
 
-Debugging the client code is as easy as debugging a normal extension. Simply set a breakpoint in the VS Code instance that contains the client code and debug the extension by pressing `kb(workbench.action.debug.start)`. For a detailed description about launching and debugging an extension see [Running and Debugging Your Extension](/docs/extensions/debugging-extensions.md).
+Debugging the client code is as easy as debugging a normal extension. Simply set a breakpoint in the VS Code instance that contains the client code and debug the extension by pressing `kb(workbench.action.debug.start)`. For a detailed description about launching and debugging an extension see [Running and Debugging Your Extension](/md/扩展/调试-扩展.md).
 
 ![Debugging the client](images/example-language-server/debugging-client.png)
 
@@ -849,12 +849,12 @@ connection.onDidCloseTextDocument((params) => {
 
 向学习更多的VS COde插件模型，试试阅读这些文档：
 
-* [vscode API Reference](/docs/extensionAPI/vscode-api.md) - 学习VS Code语言服务和语言的深度整合。
+* [vscode API Reference](/md/扩展API/vscode-api.md) - 学习VS Code语言服务和语言的深度整合。
 
 
 To learn more about VS Code extensibility model, try these topic:
 
-* [vscode API Reference](/docs/extensionAPI/vscode-api.md) - Learn about deep language integration with VS Code language services.
+* [vscode API Reference](/md/扩展API/vscode-api.md) - Learn about deep language integration with VS Code language services.
 
 
 ## 常见问题    Common Questions

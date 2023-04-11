@@ -112,7 +112,7 @@ You should now see a `tasks.json` file in your workspace `.vscode` folder that l
 }
 ```
 
-For more information on tasks, see [Integrate with External Tools via Tasks](/docs/editor/tasks).
+For more information on tasks, see [Integrate with External Tools via Tasks](/md/编辑器/任务.md).
 
 **To enable debugging, you will need to generate a `launch.json` file:**
 
@@ -152,12 +152,12 @@ If you are debugging with GDB on Windows, see [Windows Debugging on Cygwin/MinGW
 
 The C/C++ extension for Visual Studio Code supports source code formatting using [clang-format](http://clang.llvm.org/docs/ClangFormat.html) which is included with the extension.
 
-You can format an entire file or just the current selection with the **Format Code** command (`kb(editor.action.format)`) in right-click context menu. You can also configure auto-formatting with the following [settings](/docs/customization/userandworkspace.md):
+You can format an entire file or just the current selection with the **Format Code** command (`kb(editor.action.format)`) in right-click context menu. You can also configure auto-formatting with the following [settings](/md/定制化/用户和工作空间.md):
 
 * `C_Cpp.clang_format_formatOnSave` - to format when you save your file.
 * `editor.formatOnType` - to format as you type (triggered on the `kbstyle(;)` character).
 
-By default, the clang-format style is set to "file" which means it looks for a `.clang-format` file inside your workspace. If the `.clang-format` file is found, formatting is applied according the settings specified in the file. If no `.clang-format` file is found in your workspace, formatting is applied according to a default style specified in the `C_Cpp.clang_format_fallbackStyle` [setting](/docs/customization/userandworkspace.md) instead. Currently, the default formatting style is "Visual Studio". Using "Visual Studio" formatting ensures that source code formatting will be compatible in both VS Code and Visual Studio Community.
+By default, the clang-format style is set to "file" which means it looks for a `.clang-format` file inside your workspace. If the `.clang-format` file is found, formatting is applied according the settings specified in the file. If no `.clang-format` file is found in your workspace, formatting is applied according to a default style specified in the `C_Cpp.clang_format_fallbackStyle` [setting](/md/定制化/用户和工作空间.md) instead. Currently, the default formatting style is "Visual Studio". Using "Visual Studio" formatting ensures that source code formatting will be compatible in both VS Code and Visual Studio Community.
 
 The "Visual Studio" clang-format style is not yet an official OOTB clang-format style but it implies the following clang-format settings:
 
@@ -170,7 +170,7 @@ IndentCaseLabels: false
 ColumnLimit: 0
 ```
 
-If you'd like to use a different version of clang-format than the one that ships with the extension, you can use the `C_Cpp.clang_format_path` [setting](/docs/customization/userandworkspace.md) and set its value to the path where the clang-format binary is installed.
+If you'd like to use a different version of clang-format than the one that ships with the extension, you can use the `C_Cpp.clang_format_path` [setting](/md/定制化/用户和工作空间.md) and set its value to the path where the clang-format binary is installed.
 
 For example on the Windows platform:
 
@@ -234,7 +234,7 @@ To go to a symbol's definition, place your cursor on the symbol anywhere its use
 
 ## Debugging
 
-After you have set up the basics of your debugging environment as specified in [Getting Started](/docs/languages/cpp.md#getting-started), you can learn more details about debugging C/C++ in this section.
+After you have set up the basics of your debugging environment as specified in [Getting Started](/md/语言/cpp.md#getting-started), you can learn more details about debugging C/C++ in this section.
 
 VS Code supports the following debuggers for C/C++ depending on the operating system you are using:
 
@@ -313,7 +313,7 @@ For the `C++ (GDB/LLDB)` debugging environment, you can execute GDB, LLDB and MI
 * Call stack
 * Stepping
 
- For more information on debugging with VS Code, see this introduction to [debugging in VS Code](/docs/editor/debugging.md).
+ For more information on debugging with VS Code, see this introduction to [debugging in VS Code](/md/编辑器/调试.md).
 
 ## Known Limitations
 
@@ -352,9 +352,9 @@ OS X:
 
 Read on to find out about:
 
-* [Editing Evolved](/docs/editor/editingevolved.md) - find out more about advanced editing features
-* [Tasks](/docs/editor/tasks.md) - use tasks to build your project and more
-* [Debugging](/docs/editor/debugging.md) - find out how to use the debugger with your project
+* [Editing Evolved](/md/编辑器/与时俱进的编辑体验.md) - find out more about advanced editing features
+* [Tasks](/md/编辑器/任务.md) - use tasks to build your project and more
+* [Debugging](/md/编辑器/调试.md) - find out how to use the debugger with your project
 
 ## Common Questions
 
@@ -368,7 +368,7 @@ Read on to find out about:
 
 **Q: How do I build/run my project?**
 
-**A:** VS Code supports tasks that you can configure to build your application, and natively understands the output of MSBuild, CSC, and XBuild. For more information, see the [Tasks](/docs/editor/tasks.md) documentation.
+**A:** VS Code supports tasks that you can configure to build your application, and natively understands the output of MSBuild, CSC, and XBuild. For more information, see the [Tasks](/md/编辑器/任务.md) documentation.
 
 **Q: Why is there a .browse.VC.db file in my workspace?**
 

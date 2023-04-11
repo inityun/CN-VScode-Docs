@@ -31,11 +31,11 @@ We also offer up suggestions for elements, tags, some values (as defined in HTML
 
 为了改进你的HTML代码的格式，可以按 `kb(editor.action.format)` 并选中区域来进行重新格式化。
 
->**小贴士:** 对于HTML格式化的设置详见 [用户与工作空间](/docs/customization/userandworkspace.md).
+>**小贴士:** 对于HTML格式化的设置详见 [用户与工作空间](/md/定制化/用户和工作空间.md).
 
 To improve the formatting of your HTML code press `kb(editor.action.format)` and the selected area will be reformatted.
 
->**Tip:** Configure the HTML formatter settings in the [User and Workspace Settings](/docs/customization/userandworkspace.md).
+>**Tip:** Configure the HTML formatter settings in the [User and Workspace Settings](/md/定制化/用户和工作空间.md).
 
 
 ## 支持Emmet Emmet snippets
@@ -46,7 +46,7 @@ To improve the formatting of your HTML code press `kb(editor.action.format)` and
 
 >**小贴士:**Emmet语法详见 [Emmet cheat sheet](http://docs.emmet.io/cheat-sheet) 
 
-我们同样支持 [用户定义代码段](/docs/customization/userdefinedsnippets.md).
+我们同样支持 [用户定义代码段](/md/定制化/用户定义代码段.md).
 
 We support Emmet snippet expansion, simply press `kb(editor.emmet.action.expandAbbreviation)`.
 
@@ -54,15 +54,15 @@ We support Emmet snippet expansion, simply press `kb(editor.emmet.action.expandA
 
 >**Tip:** See the HTML section of the [Emmet cheat sheet](http://docs.emmet.io/cheat-sheet) for valid abbreviations.
 
-We also support [User Defined Snippets](/docs/customization/userdefinedsnippets.md).
+We also support [User Defined Snippets](/md/定制化/用户定义代码段.md).
 
 ## 接下来 Next Steps
 看看关于
 
-* [CSS, Less 和 Sass](/docs/languages/css.md) - VS Code对CSS（包括Less和Sass）有着顶级的支持。
+* [CSS, Less 和 Sass](/md/语言/css.md) - VS Code对CSS（包括Less和Sass）有着顶级的支持。
 
 Read on to find out about:
 
-* [CSS, Less and Sass](/docs/languages/css.md) - VS Code has first class support for CSS including Less and Sass.
+* [CSS, Less and Sass](/md/语言/css.md) - VS Code has first class support for CSS including Less and Sass.
 
 

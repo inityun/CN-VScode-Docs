@@ -30,7 +30,7 @@ You need [node.js](https://nodejs.org/en/) installed and available in your `$PAT
 
 要想给你的VS Code添加功能，最简单的方法是添加一条命令。每条命令都会注册一个可以通过命令面板或者键盘快捷键调用的回调函数。
 
-我们编写了一个Yeoman生成器来帮助你开始第一步。安装Yeoman和[Yeoman VS Code插件生成器](/docs/tools/yocode.md)来生成一个新的插件开发框架。
+我们编写了一个Yeoman生成器来帮助你开始第一步。安装Yeoman和[Yeoman VS Code插件生成器](/md/工具/yocode扩展生成器.md)来生成一个新的插件开发框架。
 
 ```sh
 npm install -g yo generator-code
@@ -43,7 +43,7 @@ yo code
 
 The simplest way to add your own functionality to VS Code is through adding a command. A command registers a callback function which can be invoked from the Command Palette or with a key binding.
 
-We have written a Yeoman generator to help get you started. Install Yeoman and the [Yeoman VS Code Extension generator](/docs/tools/yocode.md) and scaffold a new extension:
+We have written a Yeoman generator to help get you started. Install Yeoman and the [Yeoman VS Code Extension generator](/md/工具/yocode扩展生成器.md) and scaffold a new extension:
 
 ```sh
 npm install -g yo generator-code
@@ -152,15 +152,15 @@ Let's go through the purpose of all these files and explain what they do:
 
 ### 插件清单：`package.json`  The extension manifest: `package.json`
 
-* 请阅读[`package.json`插件清单参考](/docs/extensionAPI/extension-manifest.md)
-* 更多的信息请看这篇文档[`package.json`扩展项](/docs/extensionAPI/extension-points.md)
+* 请阅读[`package.json`插件清单参考](/md/扩展API/扩展manifest文件.md)
+* 更多的信息请看这篇文档[`package.json`扩展项](/md/扩展API/扩展点.md)
 * 任何一个VS Code插件都必须有一个用来描述插件和插件功能的`package.json`文件。
 * VS Code在启动的时候读取这个文件，此时所有定义在`contributes`节的内容将会生效 。
 
 
 
-* Please read the [`package.json` extension manifest reference](/docs/extensionAPI/extension-manifest.md)
-* More information on [`package.json` contribution points](/docs/extensionAPI/extension-points.md)
+* Please read the [`package.json` extension manifest reference](/md/扩展API/扩展manifest文件.md)
+* More information on [`package.json` contribution points](/md/扩展API/扩展点.md)
 * Each VS Code extension must have a `package.json` file that describes it and its capabilities.
 * VS Code reads this file during start-up and reacts to each `contributes` section immediately.
 
@@ -206,7 +206,7 @@ Let's go through the purpose of all these files and explain what they do:
  * 请求VS Code在`"extension.sayHello"`命令被调用时加载(*activationEvents*)。
  * *主要*的JavaScript代码在`"./out/src/extension.js"`文件中。
 
-> **注意：**VS Code**不会**在启动的时候就加载插件的代码。一个插件必须在[`activationEvents`](/docs/extensionAPI/activation-events.md)属性中描述什么条件下应该被激活（加载）。
+> **注意：**VS Code**不会**在启动的时候就加载插件的代码。一个插件必须在[`activationEvents`](/md/扩展API/激活事件.md)属性中描述什么条件下应该被激活（加载）。
 
 
 
@@ -251,7 +251,7 @@ Let's go through the purpose of all these files and explain what they do:
  * requests to get loaded (*activationEvents*) when the command `"extension.sayHello"` is invoked.
  * has its *main* JavaScript code in a file called `"./out/src/extension.js"`.
 
-> **Note:** VS Code **does not** load the code of an extension eagerly at start-up. An extension must describe, through the [`activationEvents`](/docs/extensionAPI/activation-events.md) property under what conditions it should get activated (loaded).
+> **Note:** VS Code **does not** load the code of an extension eagerly at start-up. An extension must describe, through the [`activationEvents`](/md/扩展API/激活事件.md) property under what conditions it should get activated (loaded).
 
 ### 生成代码  Generated Code
 
@@ -335,18 +335,18 @@ export function activate(context: vscode.ExtensionContext) {
 * `.vscode/launch.json`定义了插件开发模式下去启动VS Code的行为。 他也通过`preLaunchTask`来指定定义在`.vscode/tasks.json`文件中的用来运行TypeScript编译器的任务。
 * `.vscode/settings.json`插件默认设置不包含`out`文件夹。你可以在其中设置你想隐藏的文件类型。
 * `.gitignore` - 告诉Git版本控制系统哪些类型文件可以忽略。
-* [`.vscodeignore`](/docs/tools/vscecli.md#advanced-usage) - 告诉打包工具档发布插件的时候哪些文件可以忽略。
+* [`.vscodeignore`](/md/工具/vse命令行工具.md#advanced-usage) - 告诉打包工具档发布插件的时候哪些文件可以忽略。
 * `README.md` - README文件向VS Code的用户描述了你的插件。
 * `vsc-extension-quickstart.md` - 一份快速入门文档。
-* `test/extension.test.ts` - 你可以将插件的单元测试写在这个文件里，并且运行测试用例(具体信息可以阅读这里[Testing Your Extension](/docs/extensions/testing-extensions.md))
+* `test/extension.test.ts` - 你可以将插件的单元测试写在这个文件里，并且运行测试用例(具体信息可以阅读这里[Testing Your Extension](/md/扩展/测试-扩展.md))
 
 * `.vscode/launch.json` defines launching VS Code in the Extension Development mode. It also points with `preLaunchTask` to a task defined in `.vscode/tasks.json` that runs the TypeScript compiler.
 * `.vscode/settings.json` by default excludes the `out` folder.  You can modify which file types you want to hide.
 * `.gitignore` - Tells Git version control which patterns to ignore.
-* [`.vscodeignore`](/docs/tools/vscecli.md#advanced-usage) - Tells the packaging tool which files to ignore when publishing the extension.
+* [`.vscodeignore`](/md/工具/vse命令行工具.md#advanced-usage) - Tells the packaging tool which files to ignore when publishing the extension.
 * `README.md` - README file describing your extension for VS Code users.
 * `vsc-extension-quickstart.md` - A Quick Start guide for you.
-* `test/extension.test.ts` - you can put your extension unit tests in here and run your tests against the VS Code API (see [Testing Your Extension](/docs/extensions/testing-extensions.md))
+* `test/extension.test.ts` - you can put your extension unit tests in here and run your tests against the VS Code API (see [Testing Your Extension](/md/扩展/测试-扩展.md))
 
 
 ## 插件激活  Extension Activation
@@ -394,7 +394,7 @@ Simply set a breakpoint, for example inside the registered command and run the `
 
 > **小贴士** 调试控制台将显示所有你向控制台输出的信息。
 
-想了解更详细的关于调试的信息请阅读这篇文档[开发环境](/docs/extensions/debugging-extensions.md).
+想了解更详细的关于调试的信息请阅读这篇文档[开发环境](/md/扩展/调试-扩展.md).
 
 
 
@@ -406,7 +406,7 @@ Simply set a breakpoint, for example inside the registered command and run the `
 
 > **Tip:** The Debug Console will show all the messages you log to the console.
 
-To learn more about the extension [development environment](/docs/extensions/debugging-extensions.md).
+To learn more about the extension [development environment](/md/扩展/调试-扩展.md).
 
 ## 简单的修改  A Simple Change
 
@@ -466,31 +466,31 @@ So far, the extension you have written only runs in a special instance of VS Cod
 
 ## 发布你的插件  ublishing your Extension
 
-阅读怎样[共享插件](/docs/tools/vscecli.md)。
+阅读怎样[共享插件](/md/工具/vse命令行工具.md)。
 
-Read about how to [Share an Extension](/docs/tools/vscecli.md).
+Read about how to [Share an Extension](/md/工具/vse命令行工具.md).
 
 ## 下一步  Next Steps
 
-在这篇教程中，我们学习了一个非常简单的插件。这里有个更复杂的示例[单词数统计示例](/docs/extensions/example-word-count.md)展示了如何针对某一种特定的语言（Markdown）以及监听编辑器的内容修改事件 。
+在这篇教程中，我们学习了一个非常简单的插件。这里有个更复杂的示例[单词数统计示例](/md/扩展/范例-world-count.md)展示了如何针对某一种特定的语言（Markdown）以及监听编辑器的内容修改事件 。
 
 如果你想了解更多的插件API的信息，可以试试阅读以下文档：
 
-* [插件API概述](/docs/extensionAPI/overview.md) - 学习全面的VS Code插件扩展设计。
-* [API模式和原理](/docs/extensions/patterns-and-principles.md) - VS Code的扩展性是基于一些规范和原理的。
-* [扩展项](/docs/extensionAPI/extension-points.md) - 详细的描述VS Code的各种扩展项。
-* [激活事件](/docs/extensionAPI/activation-events.md) - VS Code的激活事件参考说明。
+* [插件API概述](/md/扩展API/概述.md) - 学习全面的VS Code插件扩展设计。
+* [API模式和原理](/md/扩展/范式-原则.md) - VS Code的扩展性是基于一些规范和原理的。
+* [扩展项](/md/扩展API/扩展点.md) - 详细的描述VS Code的各种扩展项。
+* [激活事件](/md/扩展API/激活事件.md) - VS Code的激活事件参考说明。
 
 
 
-In this walkthrough, we've seen a very simple extension. For a more detailed example, see the [Word Count Example](/docs/extensions/example-word-count.md) which shows how to target a specific language (Markdown) and listen to the editor's document changed events.
+In this walkthrough, we've seen a very simple extension. For a more detailed example, see the [Word Count Example](/md/扩展/范例-world-count.md) which shows how to target a specific language (Markdown) and listen to the editor's document changed events.
 
 If you'd like to read more generally about the extension APIs, try these topics:
 
-* [Extension API Overview](/docs/extensionAPI/overview.md) - Learn about the full VS Code extensibility model.
-* [API Patterns and Principles](/docs/extensions/patterns-and-principles.md) - VS Code extensibility is based on several guiding patterns and principles.
-* [Contribution Points](/docs/extensionAPI/extension-points.md) - Details about the various VS Code contribution points.
-* [Activation Events](/docs/extensionAPI/activation-events.md) - VS Code activation events reference
+* [Extension API Overview](/md/扩展API/概述.md) - Learn about the full VS Code extensibility model.
+* [API Patterns and Principles](/md/扩展/范式-原则.md) - VS Code extensibility is based on several guiding patterns and principles.
+* [Contribution Points](/md/扩展API/扩展点.md) - Details about the various VS Code contribution points.
+* [Activation Events](/md/扩展API/激活事件.md) - VS Code activation events reference
 
 ## 常见问题  Common Questions
 

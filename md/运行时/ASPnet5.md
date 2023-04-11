@@ -31,6 +31,6 @@ If you don't have an existing ASP.NET DNX application, here's a nice tutorial to
 
 We hope this gets you started building ASP.NET Core applications.  Try these things next:
 
-* [Editing Evolved](/docs/editor/editingevolved.md) - Lint, IntelliSense, Lightbulbs, Peek and Go to Definition and more
-* [Working with C#](/docs/languages/csharp.md) - Learn about the great C# support you'll have when working on your ASP.NET application.
-* [Tasks](/docs/editor/tasks.md) - Running tasks with Gulp, Grunt and Jake.  Showing Errors and Warnings
+* [Editing Evolved](/md/编辑器/与时俱进的编辑体验.md) - Lint, IntelliSense, Lightbulbs, Peek and Go to Definition and more
+* [Working with C#](/md/语言/csharp.md) - Learn about the great C# support you'll have when working on your ASP.NET application.
+* [Tasks](/md/编辑器/任务.md) - Running tasks with Gulp, Grunt and Jake.  Showing Errors and Warnings

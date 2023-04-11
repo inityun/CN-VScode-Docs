@@ -11,8 +11,8 @@ MetaDescription: Find out how to publish an extension to the Visual Studio Code 
 # vsce - Publishing Tool Reference   
 # vsce - 发布工具推荐
 
-[vsce](https://github.com/Microsoft/vsce) is the command line tool you'll use to publish extensions to the [Extension Marketplace](/docs/editor/extension-gallery.md).  You can also load extensions locally and share them via email or a UNC drive.   
-[vsce](https://github.com/Microsoft/vsce)是你用于在[Extension Marketplace](/docs/editor/extension-gallery.md)发布扩展的命令行工具。你也可以在本地加载扩展并通过邮件或UNC drive分享它们。
+[vsce](https://github.com/Microsoft/vsce) is the command line tool you'll use to publish extensions to the [Extension Marketplace](/md/编辑器/扩展市场.md).  You can also load extensions locally and share them via email or a UNC drive.   
+[vsce](https://github.com/Microsoft/vsce)是你用于在[Extension Marketplace](/md/编辑器/扩展市场.md)发布扩展的命令行工具。你也可以在本地加载扩展并通过邮件或UNC drive分享它们。
 
 ## Installation  
 ## 安装
@@ -75,11 +75,11 @@ The next screen will display your newly created Personal Access Token. **Copy** 
 ### Create a Publisher    
 ### 创建一个Publisher
 
-A **publisher** is an identity who can publish extensions to the Visual Studio Code Marketplace. Every extension needs to include a `publisher` name in its [`package.json` file](/docs/extensionAPI/extension-manifest.md).    
-**publisher**用于验证是否能在Visual Studio Code Marketplace上发布扩展。每一个扩展需要在[`package.json` 文件](/docs/extensionAPI/extension-manifest.md)中包含`publisher`名称。
+A **publisher** is an identity who can publish extensions to the Visual Studio Code Marketplace. Every extension needs to include a `publisher` name in its [`package.json` file](/md/扩展API/扩展manifest文件.md).    
+**publisher**用于验证是否能在Visual Studio Code Marketplace上发布扩展。每一个扩展需要在[`package.json` 文件](/md/扩展API/扩展manifest文件.md)中包含`publisher`名称。
 
-Once you have a [Personal Access Token](/docs/tools/vscecli.md#get-a-personal-access-token), you can create a new publisher using `vsce`:    
-一旦你有了一个[Personal Access Token](/docs/tools/vscecli.md#get-a-personal-access-token),你就可以使用`vsce`创建一个新的publisher:
+Once you have a [Personal Access Token](/md/工具/vse命令行工具.md#get-a-personal-access-token), you can create a new publisher using `vsce`:    
+一旦你有了一个[Personal Access Token](/md/工具/vse命令行工具.md#get-a-personal-access-token),你就可以使用`vsce`创建一个新的publisher:
 
 ```bash
 vsce create-publisher (publisher name)
@@ -121,8 +121,8 @@ For example, if you want to update an extension's version from 1.0.0 to 1.1.0, y
 vsce publish minor
 ```
 
-This will modify the extension's `package.json` [version](/docs/extensionAPI/extension-manifest.md#fields) attribute before publishing the extension.    
-在发布扩展之前，这么做将会修改扩展的`package.json` [version](/docs/extensionAPI/extension-manifest.md#fields)的属性。
+This will modify the extension's `package.json` [version](/md/扩展API/扩展manifest文件.md#fields) attribute before publishing the extension.    
+在发布扩展之前，这么做将会修改扩展的`package.json` [version](/md/扩展API/扩展manifest文件.md#fields)的属性。
 
 You can also specify a complete SemVer compatible version on the command line:  
 你也可以在命令行中指定一个完整的deSemVer兼容版本。
@@ -141,8 +141,8 @@ You may want to simply package extensions without publishing them to the store. 
 vsce package
 ```
 
-This will package your extension into a `.vsix` file and place it in the current directory. It's possible to install `.vsix` files into Visual Studio Code. See [Installing Extensions](/docs/extensions/install-extension.md) for more details.   
-这条命令会将你的扩展打包到`.vsix`文件中并放到当前目录下。它可能会安装`.vsix`文件到Visual Studio Code. 查看[安装扩展](/docs/extensions/install-extension.md)获取更多细节。
+This will package your extension into a `.vsix` file and place it in the current directory. It's possible to install `.vsix` files into Visual Studio Code. See [Installing Extensions](/md/扩展/安装-扩展.md) for more details.   
+这条命令会将你的扩展打包到`.vsix`文件中并放到当前目录下。它可能会安装`.vsix`文件到Visual Studio Code. 查看[安装扩展](/md/扩展/安装-扩展.md)获取更多细节。
 
 ## Advanced Usage    
 ## 高级用法
@@ -169,8 +169,8 @@ Here are some tips for making your extension look great on the Marketplace:
 - You can set an icon by setting `icon` to a relative path to a squared `128px` PNG file included in your extension, in `package.json`.    
 - 你可以在`package.json`设置`icon`的值为一个在你的扩展目录中的边长`128px`的正方形PNG文件的相对路径来配置你的扩展图标。
 
-Also see [Marketplace Presentation Tips](/docs/extensionAPI/extension-manifest.md#marketplace-presentation-tips).   
-也可以看这个[商店演示提示](/docs/extensionAPI/extension-manifest.md#marketplace-presentation-tips).
+Also see [Marketplace Presentation Tips](/md/扩展API/扩展manifest文件.md#marketplace-presentation-tips).   
+也可以看这个[商店演示提示](/md/扩展API/扩展manifest文件.md#marketplace-presentation-tips).
 
 ### `.vscodeignore`
 
@@ -218,10 +218,10 @@ This will always invoke the [TypeScript](http://www.typescriptlang.org/) compile
 ## Next Steps   
 ## 接下来的步骤
 
-* [Extension Marketplace](/docs/editor/extension-gallery.md) - Learn more about VS Code's public extension Marketplace.    
-* [扩展商店](/docs/editor/extension-gallery.md) - 可以学习更多VSCode公共扩展相关内容的商店。
-* [Installing Extensions](/docs/extensions/install-extension.md) - Learn about other options for installing and sharing extensions.    
-* [安装扩展](/docs/extensions/install-extension.md) - 学习安装和分享扩展等其他操作。
+* [Extension Marketplace](/md/编辑器/扩展市场.md) - Learn more about VS Code's public extension Marketplace.    
+* [扩展商店](/md/编辑器/扩展市场.md) - 可以学习更多VSCode公共扩展相关内容的商店。
+* [Installing Extensions](/md/扩展/安装-扩展.md) - Learn about other options for installing and sharing extensions.    
+* [安装扩展](/md/扩展/安装-扩展.md) - 学习安装和分享扩展等其他操作。
 
 ## Common Questions   
 ## 常见问题

@@ -100,13 +100,13 @@ By default, VS Code auto-updates to new versions, and collects usage data and cr
 
 How do I disable auto update?
 
-[如何禁用自动更新？](https://code.visualstudio.com/Docs/supporting/faq#_how-do-i-opt-out-of-vs-code-autoupdates)
+[如何禁用自动更新？](/md/技术支持/常见问题.md#_how-do-i-opt-out-of-vs-code-autoupdates)
 
 How do I disable crash reporting?
 
-[如何禁用崩溃报告？](https://code.visualstudio.com/Docs/supporting/faq#_how-to-disable-crash-reporting)
+[如何禁用崩溃报告？](/md/技术支持/常见问题.md#_how-to-disable-crash-reporting)
 
 How do I disable usage reporting?
 
-[如何禁用使用情况报告？](https://code.visualstudio.com/Docs/supporting/faq#_how-to-disable-telemetry-reporting)
+[如何禁用使用情况报告？](/md/技术支持/常见问题.md#_how-to-disable-telemetry-reporting)
 

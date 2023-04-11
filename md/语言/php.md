@@ -12,7 +12,7 @@ MetaDescription: Learn about Visual Studio Code features (syntax highlighting, s
 
 对于PHP开发来说，Visual Studio Code是一个非常不错的编辑器。你可以体验到诸如语法高亮和括号匹配、代码提示以及snippet等特性。不仅如此，你还可以通过VS Code的社区获得更多功能性的扩展。
 
-Visual Studio Code is a great editor for PHP development. You get features like syntax highlighting and bracket matching, IntelliSense, and snippets out of the box and you can add more functionality through community created VS Code [extensions](/docs/editor/extension-gallery.md).
+Visual Studio Code is a great editor for PHP development. You get features like syntax highlighting and bracket matching, IntelliSense, and snippets out of the box and you can add more functionality through community created VS Code [extensions](/md/编辑器/扩展市场.md).
 
 ![show PHP IntelliSense](images/php/php-intellisense.png)
 
@@ -32,7 +32,7 @@ VS Code uses the official PHP linter (`php -l`) for PHP language diagnostics. Th
 
 这里提供了三条配置项来配置PHP linter:
 
-There are three [settings](/docs/customization/userandworkspace.md) to control the PHP linter:
+There are three [settings](/md/定制化/用户和工作空间.md) to control the PHP linter:
 
 * `php.validate.enable`: 用于配置是否启用PHP linting功能。默认是启用的（Enabled）。
 * `php.validate.enable`: controls whether to enable PHP linting at all. Enabled by default.
@@ -75,10 +75,10 @@ PHP debugging with **XDebug** is supported through a [PHP Debug extension](https
 
 Read on to find out about:
 
-* [扩展市场](/docs/editor/extension-gallery.md) - 浏览其他已分享的扩展
-* [Extension Marketplace](/docs/editor/extension-gallery.md) - Browse the extensions others have shared
+* [扩展市场](/md/编辑器/扩展市场.md) - 浏览其他已分享的扩展
+* [Extension Marketplace](/md/编辑器/扩展市场.md) - Browse the extensions others have shared
 
-* [调试](/docs/editor/debugging.md) - 学习更多VS Code调试相关内容
-* [Debugging](/docs/editor/debugging.md) - Learn more about VS Code debugging
+* [调试](/md/编辑器/调试.md) - 学习更多VS Code调试相关内容
+* [Debugging](/md/编辑器/调试.md) - Learn more about VS Code debugging
 
 

@@ -241,7 +241,7 @@ Option | Description
 
 ## JavaScript Formatting
 
-VS Code provides several formatting settings for JavaScript. They can all be found in the `javascript.format` [settings](/docs/customization/userandworkspace.md) name space.
+VS Code provides several formatting settings for JavaScript. They can all be found in the `javascript.format` [settings](/md/定制化/用户和工作空间.md) name space.
 
 ```typescript
 // Defines space handling after a comma delimiter
@@ -282,11 +282,11 @@ Selecting the snippet with `kbstyle(Tab)` results in:
 
 ![Try Result](images/javascript/tryresult.png)
 
->**Tip:** You can add in your own User Defined Snippets for JavaScript.  See [User Defined Snippets](/docs/customization/userdefinedsnippets.md) to find out how.
+>**Tip:** You can add in your own User Defined Snippets for JavaScript.  See [User Defined Snippets](/md/定制化/用户定义代码段.md) to find out how.
 
 ## Run Babel inside VS Code
 
-The [Babel](https://babeljs.io) transpiler turns ES6 files into readable ES5 JavaScript with Source Maps. You can easily integrate **Babel** into your workflow by adding this code to your `tasks.json` file (located under the workspace's `.vscode` folder). The `isBuildCommand` switch makes this task the `Task: Run Build Task` gesture.  `isWatching` tells VS Code not to wait for this task to finish. To learn more, go to [Tasks](/docs/editor/tasks.md).
+The [Babel](https://babeljs.io) transpiler turns ES6 files into readable ES5 JavaScript with Source Maps. You can easily integrate **Babel** into your workflow by adding this code to your `tasks.json` file (located under the workspace's `.vscode` folder). The `isBuildCommand` switch makes this task the `Task: Run Build Task` gesture.  `isWatching` tells VS Code not to wait for this task to finish. To learn more, go to [Tasks](/md/编辑器/任务.md).
 
 ```json
 {
@@ -317,11 +317,11 @@ To enable ES6 import statements for **React Native**, you need to set the `allow
 
 ## Disable Syntax Validation when using non ES6 constructs
 
-Some users want to use syntax constructs like the proposed Object Rest/Spread Properties. However, these are currently not supported by VS Code's JavaScript support and are flagged as errors. For users who still want to use these future features, we provide the `javascript.validate.enable` [setting](/docs/customization/userandworkspace.md). With `javascript.validate.enable: false` you disable all built-in syntax checking. If you do this, we recommend that you use a linter like [ESLint](http://eslint.org) to validate your code. Since the JavaScript support doesn't understand ES7 constructs, features like IntelliSense might not be fully accurate.
+Some users want to use syntax constructs like the proposed Object Rest/Spread Properties. However, these are currently not supported by VS Code's JavaScript support and are flagged as errors. For users who still want to use these future features, we provide the `javascript.validate.enable` [setting](/md/定制化/用户和工作空间.md). With `javascript.validate.enable: false` you disable all built-in syntax checking. If you do this, we recommend that you use a linter like [ESLint](http://eslint.org) to validate your code. Since the JavaScript support doesn't understand ES7 constructs, features like IntelliSense might not be fully accurate.
 
 ## JavaScript Linters (ESLint, JSHint)
 
-VS Code provides support for [ESLint](http://eslint.org/) and [JSHint](http://jshint.com/) via [extensions](/docs/editor/extension-gallery.md). If enabled, the JavaScript code is validated as you type and reported problems can be navigated to and fixed inside VS Code.
+VS Code provides support for [ESLint](http://eslint.org/) and [JSHint](http://jshint.com/) via [extensions](/md/编辑器/扩展市场.md). If enabled, the JavaScript code is validated as you type and reported problems can be navigated to and fixed inside VS Code.
 
 To enable one of the linters, do the following:
 

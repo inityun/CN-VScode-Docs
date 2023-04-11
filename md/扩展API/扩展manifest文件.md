@@ -19,7 +19,7 @@ MetaDescription: At the core of Visual Studio Code's extensibility model is an e
 ---- |:--------:| ---- | -------
 `name` | 是 | `string` | 扩展的名称，该名称必须为小写且不能有空格。
 `version` | 是 | `string` | [SemVer](http://semver.org/) 兼容版本.
-`publisher` | 是 | `string` | [发布人名字](/docs/tools/vscecli.md#publishers-and-personal-access-tokens)
+`publisher` | 是 | `string` | [发布人名字](/md/工具/vse命令行工具.md#publishers-and-personal-access-tokens)
 `engines` | 是 | `object` | 一个至少包含`vscode`键值对的对象，该键表示的是本扩展可兼容的VS Code的版本，其值不能为`*`。比如 `^0.10.5` 表示扩展兼容VS Code的最低版本是`0.10.5`。
 `license` | 否 | `string` | 参考 [npm's 文档](https://docs.npmjs.com/files/package.json#license). 如果你确实需要在扩展根目录下有一个授权文档，那么应该把`license`值设为`"SEE LICENSE IN <filename>"`。
 `displayName` | 否 | `string`| 用于在扩展市场中本扩展显示的名字。
@@ -29,12 +29,12 @@ MetaDescription: At the core of Visual Studio Code's extensibility model is an e
 `galleryBanner` | 否 | `object` | 帮助格式化市场标题以匹配你的图标，详情如下。
 `preview` | 否 | `boolean` | 在市场中把本扩展标记为预览版本。
 `main` | 否 | `string` | 扩展的入口点。
-[`contributes`](/docs/extensionAPI/extension-points.md) | 否 | `object` | 一个描述扩展 [贡献点](/docs/extensionAPI/extension-points.md)的对象。
-[`activationEvents`](/docs/extensionAPI/activation-events.md) | 否 | `array` | 一组用于本扩展的 [激活事件](/docs/extensionAPI/activation-events.md)。
+[`contributes`](/md/扩展API/扩展点.md) | 否 | `object` | 一个描述扩展 [贡献点](/md/扩展API/扩展点.md)的对象。
+[`activationEvents`](/md/扩展API/激活事件.md) | 否 | `array` | 一组用于本扩展的 [激活事件](/md/扩展API/激活事件.md)。
 `dependencies` | 否 | `object` | 你的扩展所需的任何运行时的Node.js依赖项，和 [npm's `dependencies`](https://docs.npmjs.com/files/package.json#dependencies)一样。
 `devDependencies` | 否 | `object` | 你的扩展所需的任何开发的Node.js依赖项. 和 [npm's `devDependencies`](https://docs.npmjs.com/files/package.json#devdependencies)一样。
 `extensionDependencies` | 否 | `array` | 一组本扩展所需的其他扩展的ID值。扩展的ID值始终是 `${publisher}.${name}`。比如：`vscode.csharp`。
-`scripts` | 否 | `object` | 和 [npm's `scripts`](https://docs.npmjs.com/misc/scripts)一样，但还有一些[额外VS Code特定字段](/docs/tools/vscecli.md#pre-publish-step).
+`scripts` | 否 | `object` | 和 [npm's `scripts`](https://docs.npmjs.com/misc/scripts)一样，但还有一些[额外VS Code特定字段](/md/工具/vse命令行工具.md#pre-publish-step).
 `icon` | 否 | `string` | 一个128x128像素图标的路径。
 
 也可以查看[npm's `package.json`参考文档](https://docs.npmjs.com/files/package.json).
@@ -210,9 +210,9 @@ MetaDescription: At the core of Visual Studio Code's extensibility model is an e
 ## 下一步
 要想了解更多关于VS Code可扩展性模型， 可以查看这些主题：
 
-* [贡献点](/docs/extensionAPI/extension-points.md) - VS Code 贡献点参考文档
-* [激活事件](/docs/extensionAPI/activation-events.md) - VS Code 激活事件文档
-* [扩展市场](/docs/editor/extension-gallery.md) - 了解更多的VS Code扩展市场
+* [贡献点](/md/扩展API/扩展点.md) - VS Code 贡献点参考文档
+* [激活事件](/md/扩展API/激活事件.md) - VS Code 激活事件文档
+* [扩展市场](/md/编辑器/扩展市场.md) - 了解更多的VS Code扩展市场
 
 ## 常见问题
 

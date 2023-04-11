@@ -67,9 +67,9 @@ Servers like [JSON Schema Store](http://schemastore.org) provide schemas for mos
 
 像 [JSON模式存储](http://schemastore.org) 服务，提供最常见的基于配置文件的JSON模式。尽管如此，模式也可以在VSCode工作区的文件，以及在VS Code设置文件中被定义。
 
-The association of a JSON file to a schema can be done either in the JSON file itself using the `$schema` attribute, or in the User or Workspace [Settings](/docs/customization/userandworkspace.md) (**File** > **Preferences** > **User Settings** or **Workspace Settings**) under the property `json.schemas`.
+The association of a JSON file to a schema can be done either in the JSON file itself using the `$schema` attribute, or in the User or Workspace [Settings](/md/定制化/用户和工作空间.md) (**File** > **Preferences** > **User Settings** or **Workspace Settings**) under the property `json.schemas`.
 
-一个JSON文件可以关联到一个模式。通过该JSON文件本身使用相应`$schema`属性，或者通过用户或工作区 [设置](/docs/customization/userandworkspace.md)(**文件** > **首选项** > **用户设置** 或 **工作区设置**)下的属性`json.schemas`。
+一个JSON文件可以关联到一个模式。通过该JSON文件本身使用相应`$schema`属性，或者通过用户或工作区 [设置](/md/定制化/用户和工作空间.md)(**文件** > **首选项** > **用户设置** 或 **工作区设置**)下的属性`json.schemas`。
 
 VS Code extensions can also define schemas and schema mapping. That's why VS Code already knows about the schema of some well known JSON files such as `package.json`, `bower.json` and `tsconfig.json`.
 
@@ -108,9 +108,9 @@ The following excerpt from the User Settings shows how `.babelrc` files are mapp
 
 >**小贴士:** 此外，以定义一个模式`.babelrc`，也要确保`.babelrc`关联到JSON语言。这也可以使用`files.associative`数组设置的设置来完成。
 
->**Tip:** For an overview on settings, see [User and Workspace Settings](/docs/customization/userandworkspace.md).
+>**Tip:** For an overview on settings, see [User and Workspace Settings](/md/定制化/用户和工作空间.md).
 
->**小贴士:** 有关设置的概述，参考[用户和工作区设置](/docs/customization/userandworkspace.md)。
+>**小贴士:** 有关设置的概述，参考[用户和工作区设置](/md/定制化/用户和工作空间.md)。
 
 ### 在工作区中映射到模式  Mapping to a Schema in the Workspace
 
@@ -155,16 +155,16 @@ To map a schema that is defined in the User or Workspace Settings, use the `sche
 
 ### 在扩展中映射一个模式 Mapping a Schema in an Extension
 
-Schemas and schema associations can also be defined by an extension. Check out the [jsonValidation contribution point](/docs/extensionAPI/extension-points.md#contributesjsonvalidation).
+Schemas and schema associations can also be defined by an extension. Check out the [jsonValidation contribution point](/md/扩展API/扩展点.md#contributesjsonvalidation).
 
-模式和模式关联也可以通过一个扩展来定义，查看[jsonValidation contribution point](/docs/extensionAPI/extension-points.md#contributesjsonvalidation).
+模式和模式关联也可以通过一个扩展来定义，查看[jsonValidation contribution point](/md/扩展API/扩展点.md#contributesjsonvalidation).
 
 ## 下一步  Next Steps
 
 Read on to find out about:
 
-* [Customization](/docs/customization/overview.md) - Customize VS Code to work the way you want
+* [Customization](/md/定制化/概述.md) - Customize VS Code to work the way you want
 
 请仔细阅读，了解：
 
-* [定制](/docs/customization/overview.md) - 根据你所希望的工作方式，自定义 VS Code 
+* [定制](/md/定制化/概述.md) - 根据你所希望的工作方式，自定义 VS Code 
