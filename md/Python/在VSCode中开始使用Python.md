@@ -10,7 +10,7 @@
 如果你有任何疑问，尽管在 [VS Code documentation respository](https://github.com/Microsoft/vscode-docs/issues) 提问。
 >**注意：** 你可以在 VS Code 中使用 Python 2 学习这个教程，但是你需要对代码做一些调整，这个教程中没有涵盖这些内容。
 
-### 前置条件
+## 前置条件
 为了顺利地学习这个教程，需要先满足以下条件：
 
 1. 安装 [VS Code 的 Python 扩展](https://marketplace.visualstudio.com/items?itemName=ms-python.python)。对于安装扩展的细节请查看 [扩展市场](https://code.visualstudio.com/docs/editor/extension-gallery)。所需 Python 扩展名字就叫 **Python**，由微软发布。
@@ -23,7 +23,7 @@
 3. 在 Windows 系统上，确保你的 Python 解释器位置（也就是安装在什么路径，比如 `c:\python32`）包含在 PATH 环境变量中。你可以通过在命令行运行 `path` 指令检查安装位置。如果没有包含 Python 解释器所在目录，打开 Windows 设置，检索“environment”，选择**为你的账户编辑环境变量**，然后编辑**Path**变量使包含Python所在目录。
 4. 在 MacOS 系统上，确保 PATH 环境变量中包含了 VS Code 安装所在目录。查看 [配置说明](https://code.visualstudio.com/docs/setup/mac#_launching-from-the-command-line) 获取更多信息。
 
-### 在一个项目（工作台）目录中启动 VS Code
+## 在一个项目（工作台）目录中启动 VS Code
 
 在命令行或者终端中输入以下命令，创建一个名为“hello”的空目录，进入此目录，并在该目录（ `.`）中打开 VS Code（ `code`）：
 > mkdir hello
@@ -33,7 +33,7 @@
 在一个目录中启动 VS Code，这个目录就会变成你的“工作台”。VS Code 将针对这个工作台的设置存储在 `.vscode/settings.json`，与全局存储的用户设置是隔离开的。
 同样，你可以通过操作系统UI启动 VS Code，然后使用 **文件 > 打开目录** 来打开项目目录。
 
-### 选择一个 Python 解释器
+## 选择一个 Python 解释器
 Python 是一种解释型语言，为了运行 Python 代码及获得智能提示，你必须告诉 VS Code 使用哪个解释器。
 在 VS Code 内，通过打开 **命令面板**（⇧⌘P），输入 **Python: 选择解释器** 来检索，然后选择对应命令。如果可用的话，你也可以使用状态栏上的 **选择Python环境** 选项，（也可能状态栏已经显示了一个已选的解释器）：
 
@@ -44,7 +44,7 @@ Python 是一种解释型语言，为了运行 Python 代码及获得智能提�
 选择一个解释器会将你的工作台中的 `python.pythonPath`值设置为该解释器路径。想要查看设置，选择 **文件 > 首选项 > 设置**(在 macOS 系统上为**Code > 首选项 > 设置**)，然后选择 **工作台** 页签。
 > **注意：** 如果你在没有打开任何工作台的情况下选择了一个解释器，VS Code 会转而设置你的用户设置中的 `python.pthonPath`值，这样会全局设置 VS Code 默认解释器。这里的用户设置可以确保你总是有一个默认的 Python 项目解释器。工作台设置可以让你覆盖用户设置。
 
-### 创建一个 Python Hello World 源代码文件
+## 创建一个 Python Hello World 源代码文件
 在文件浏览工具栏中，点击 `hello`目录上的 新建文件按钮：
 
 ![new-file](images/python-tutorial/new-file.png)
@@ -72,7 +72,7 @@ print(msg)
 
 想要完整的了解关于编辑、格式化、以及重构，请查看 [代码编辑](https://code.visualstudio.com/docs/python/editing) 章节。Python 扩展同样全面支持 [代码分析 Linting](https://code.visualstudio.com/docs/python/linting)。
 
-### 运行 Hello World
+## 运行 Hello World
 
 
 使用 Python 运行 `hello.py`很简单。在编辑器中单击右键然后选择 **在终端中运行Python文件**（也会自动保存文件）：
@@ -88,7 +88,7 @@ print(msg)
 * 选中一行或多行，然后按 `Shift+Enter` 组合键或者点击右键并选择 **在Python终端中运行选中内容/行**。这个命令对于测试文件的一部分很方便。
 * 使用 **Python: Start REPL**（REPL 即：Read, Eval, Print, Loop, 参考[Python 交互窗口](https://docs.microsoft.com/zh-cn/visualstudio/python/python-interactive-repl-in-visual-studio?view=vs-2019)） 命令为当前选中的 Python 解释器打开一个 REPL 终端，然后你就可以一次输入并运行几行代码。
 
-### 配置及运行调试器
+## 配置及运行调试器
 让我们现在尝试一下调试简单的 Hello World 程序。
 首先，通过将光标放在 `print`调用处并按下 F9 在 `hello.py`中第2行设置一个断点。或者就点击一下编辑器中的左边槽，在行号旁边。当你设置了断点后，边槽中会出现一个红色圆圈。
 
@@ -160,7 +160,7 @@ msg.split()
 查看[调试配置项](https://code.visualstudio.com/docs/python/debugging)以了解完整详情信息，其中包含了关于使用指定 Python解释器 来调试的说明。
 > **提示：使用日志点替代 print 表达式：** 开发者经常使用 `print`表达式快速检查变量，而不必在调试器中逐行检查代码。在 VS Code 中，你可以转而使用 **日志点**。一个日志点就像一个断点，它打印信息到控制台中而不暂停程序。了解更多信息，查看 VS Code 调试文章中的[日志点](https://code.visualstudio.com/docs/editor/debugging#_logpoints)。
 
-### Troubleshooting
+## Troubleshooting
 如果出于某些原因 VS Code 没有为你生成 `launch.json`，你可以在项目目录中创建 `.vscode/launch.json`文件（如果需要的话，创建 `.vscode`目录），然后将以下内容粘贴到 `launch.json`：
 ``` json
 {
@@ -195,7 +195,7 @@ SyntaxError: invalid syntax
 
 如果你看到这个消息 - “未找到Python解释器，由于 python.exe 不在工作区目录下，” 或者 “你需要在开始调试前安装一个 Python 解释器，” 那么可能是你的 `launch.json`文件中有 `pythonPython: ${workspaceFolder}`但实际上你的 Python 解释器在另一个路径下。检查一下值，或者完全移除 `pythonPath`属性。
 
-### 安装及使用软件包
+## 安装及使用软件包
 现在我们来运行一个有点意思的例子。在 Python 中，软件包是你获得任意有用代码库的方式，通常是从 [PyPI](https://pypi.org/) 获取。举个例子，你使用 `matplotlib`及 `numpy`软件包来创建图形绘制，通用用于数据科学。（注意，由于缺乏必须的UI支持，当运行在 [Windows Subsystem for Linux](https://docs.microsoft.com/windows/wsl/about) 中时 `maptplotlib`不能展示图形。）
 
 回到**浏览**视图（左侧最顶部的图标，用于展示文件），创建一个名为 `standardplot.py`的新文件，粘贴以下源代码：
@@ -232,13 +232,13 @@ python3 -m pip install matplotlib
 
 ![plot](images/python-tutorial/plot.png)
 
-### 使用虚拟环境
+## 使用虚拟环境
 
 Python 开发者最佳实践是避免将软件包安装到全局解释器环境中，就像我们上一节所做的。你应该使用一个包含全局解释器副本的特定项目的虚拟环境。激活该环境后，你之后安装的任何软件包都与其他环境隔离。这种隔离可以减少很多由软件包版本冲突带来的问题。
 
 对于创建及激活虚拟环境、安装软件包的示例，请查看 [Django 教程](https://code.visualstudio.com/docs/python/tutorial-django) 和[Flask 教程](https://code.visualstudio.com/docs/python/tutorial-flask)。
 
-### 下一步
+## 下一步
 
 你可以配置 VS Code 以使用已安装的任意 Python 环境，包括虚拟环境和 [conda](https://en.wikipedia.org/wiki/Conda_(package_manager)) 环境。你同样可以使用一个单独的环境来调试。更多详情请查看 [Environments](https://code.visualstudio.com/docs/python/environments)。
 

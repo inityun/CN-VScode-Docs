@@ -1,0 +1,5 @@
+日期:2023-04-17
+1. 添加了gitbook新的插件 node_modules/gitbook-plugin-flexible-alerts
+2. 添加了 CHANGELOG 文件
+3. 添加了 Updates/January_2022 更新内容文档, 主要是包含了右侧导航目录的添加 outline
+4. 修改了 summary 文件中的目录结构
