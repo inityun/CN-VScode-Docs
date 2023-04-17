@@ -57,17 +57,17 @@ For the hello world extension, you can either create a **TypeScript** extension 
 ## 运行你的插件  Running your Extension
 
 * 运行VS Code，选择 `文件` > `打开…` 然后选择你刚才生成的文件夹。
-* 按下 `kb(workbench.action.debug.start)` 或者点击 `调试` 图标然后点击 `开始`。
+* 按下 `F5` 或者点击 `调试` 图标然后点击 `开始`。
 * 一个新的VS Code实例将以一种特殊的模式(`Extension Development Host`)启动，**这个新的实例是可以使用你的插件的**。
-* 按下 `kb(workbench.action.showCommands)` 然后运行名为`Hello World`的命令。
+* 按下 `Ctrl+Shift+P or F1` 然后运行名为`Hello World`的命令。
 * 恭喜！至此你已经创建并且执行了你的第一个VS Code命令！
 
 ![带着插件运行VS Code](images/example-hello-world/running.png)
 
 * Launch VS Code, choose `File` > `Open Folder` and pick the folder that you generated.
-* Press `kb(workbench.action.debug.start)` or click on the `Debug` icon and click `Start`.
+* Press `F5` or click on the `Debug` icon and click `Start`.
 * A new instance of VS Code will start in a special mode (`Extension Development Host`) and **this new instance is now aware of your extension**.
-* Press `kb(workbench.action.showCommands)` and run the command named `Hello World`.
+* Press `Ctrl+Shift+P or F1` and run the command named `Hello World`.
 * Congratulations! You've just created and executed your first VS Code command!
 
 ![Running VS Code with an extension](images/example-hello-world/running.png)
@@ -247,7 +247,7 @@ Let's go through the purpose of all these files and explain what they do:
 > **Note:** A JavaScript extension doesn't require the `scripts` field as no compilation is needed.
 
 * This specific package.json describes an extension that:
- * *contributes* an entry to the Command Palette (`kb(workbench.action.showCommands)`) with the label `"Hello world"` that will invoke a command `"extension.sayHello"`.
+ * *contributes* an entry to the Command Palette (`Ctrl+Shift+P or F1`) with the label `"Hello world"` that will invoke a command `"extension.sayHello"`.
  * requests to get loaded (*activationEvents*) when the command `"extension.sayHello"` is invoked.
  * has its *main* JavaScript code in a file called `"./out/src/extension.js"`.
 
@@ -354,7 +354,7 @@ export function activate(context: vscode.ExtensionContext) {
 现在已经将插件中各个文件的作用讲清楚了，接下来讲一下插件激活的过程：
 
 * VS Code插件开发实例发现插件然后读取插件的`package.json`文件。
-* 然后当你按下`kb(workbench.action.showCommands)`时：
+* 然后当你按下`Ctrl+Shift+P or F1`时：
  * 注册的命令被现实在命令面板里。
  * 在出现的命令列表中有一个我们在`package.json`文件中定义的`"Hello world"`条目。
 * 当我们选择了`"Hello world"`条目时:
@@ -371,7 +371,7 @@ export function activate(context: vscode.ExtensionContext) {
 Now that the roles of the files included in the extension are clarified, here is how your extension gets activated:
 
 * The extension development instance discovers the extension and reads its `package.json` file.
-* Later when you press `kb(workbench.action.showCommands)`:
+* Later when you press `Ctrl+Shift+P or F1`:
  * The registered commands are displayed in the Command Palette.
  * In this list there is now an entry `"Hello world"` that is defined in the `package.json`.
 * When selecting the `"Hello world"` command:

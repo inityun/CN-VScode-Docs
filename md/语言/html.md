@@ -22,9 +22,9 @@ As you type in HTML, we offer suggestions via HTML IntelliSense.  In the image b
 
 ![HTML IntelliSense](images/html/htmlintellisense.png)
 
-VS Code同样提供对于元素，标签，一些值（在HTML5中定义的），lonic和AngularJS中标签的支持。在任何时候只要按下 `kb(editor.action.triggerSuggest)`就可以了。
+VS Code同样提供对于元素，标签，一些值（在HTML5中定义的），lonic和AngularJS中标签的支持。在任何时候只要按下 `Ctrl+Space`就可以了。
 
-We also offer up suggestions for elements, tags, some values (as defined in HTML 5), Ionic and AngularJS tags. You can trigger suggestions at any time by pressing `kb(editor.action.triggerSuggest)`.
+We also offer up suggestions for elements, tags, some values (as defined in HTML 5), Ionic and AngularJS tags. You can trigger suggestions at any time by pressing `Ctrl+Space`.
 
 
 ## HTML格式化 Format HTML

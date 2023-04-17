@@ -14,7 +14,7 @@ MetaDescription: Find out how to get the best out of Visual Studio Code and Dock
 
 ## 安装Docker扩展插件
 
-VS Code通过插件的方式支持Docker的使用。安装这一扩展插件，只需要按下`kb(workbench.action.showCommands)`，然后输入"ext install"并且运行**Extensions: Install Extension**命令来获得目前支持的插件列表。现在输入docker搜索所需插件然后选择[Dockerfile and Docker Compose File (yml) Support](https://marketplace.visualstudio.com/items?itemName=PeterJausovec.vscode-docker)插件。
+VS Code通过插件的方式支持Docker的使用。安装这一扩展插件，只需要按下`Ctrl+Shift+P or F1`，然后输入"ext install"并且运行**Extensions: Install Extension**命令来获得目前支持的插件列表。现在输入docker搜索所需插件然后选择[Dockerfile and Docker Compose File (yml) Support](https://marketplace.visualstudio.com/items?itemName=PeterJausovec.vscode-docker)插件。
 
 ![Select Docker extension](images/docker/installdockerextension.png)
 
@@ -25,7 +25,7 @@ VS Code通过插件的方式支持Docker的使用。安装这一扩展插件，�
 VS Code 很清楚Dockerfiles的结构以及可以使用的指令集，这意味着当你使用VS Code编辑这些文件时它可以给予你很多的经验指导。
 
 1. 在你的工作目录中创建一个新的文件命名为`Dockerfile`
-2. 按下`kb(editor.action.triggerSuggest)`来获得`Dockerfile`中命令的补全
+2. 按下`Ctrl+Space`来获得`Dockerfile`中命令的补全
 
  ![Dockerfile snippets](images/docker/dockerfileintellisense.png)
 
@@ -48,12 +48,12 @@ https://docs.docker.com/articles/dockerfile_best-practices/)
 
 1. 在你的工作目录中创建一个名为`docker-compose.yml`的新文件
 2. 定义一个新的服务成为`web:`
-3. 在第二行，通过`kb(editor.action.triggerSuggest)`引入IntelliSense来查看所有合法的指令列表
+3. 在第二行，通过`Ctrl+Space`引入IntelliSense来查看所有合法的指令列表
 
  ![Docker Compose IntelliSense](images/docker/dockercomposeintellisense.png)
 
 
-4. 对于`image`指令，你可以再次输入`kb(editor.action.triggerSuggest)`来完成，而且VS Code会帮你在Docker Hub上查询公开的镜像。
+4. 对于`image`指令，你可以再次输入`Ctrl+Space`来完成，而且VS Code会帮你在Docker Hub上查询公开的镜像。
 
  ![Docker Compose image suggestions](images/docker/dockercomposeimageintellisense.png)
 

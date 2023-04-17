@@ -18,9 +18,9 @@ Visual Studio Code is a great editor for PHP development. You get features like 
 
 ## 代码片段 Snippets
 
-Visual Studio Code为PHP提供了一套通用的snippet集合。你只需要输入 `kb(editor.action.triggerSuggest)` 就可以得到与之上下文环境匹配的列表。
+Visual Studio Code为PHP提供了一套通用的snippet集合。你只需要输入 `Ctrl+Space` 就可以得到与之上下文环境匹配的列表。
 
-Visual Studio Code includes a set of common snippets for PHP.  To access these, hit `kb(editor.action.triggerSuggest)` to get a context specific list.
+Visual Studio Code includes a set of common snippets for PHP.  To access these, hit `Ctrl+Space` to get a context specific list.
 
 ![PHP Snippets](images/php/php-snippets.png)
 
@@ -57,9 +57,9 @@ To set the PHP executable path, open your **User or Workspace Settings** and add
 
 ## 扩展 Extensions
 
-在[VS Code市场](https://marketplace.visualstudio.com/VSCode)上你可以找到许多PHP相关的可用扩展，并且还有更多扩展正在陆续地再开发当中。你可以通过在VS Code中执行**Extensions: Install Extension**命令 (`kb(workbench.action.showCommands)` 输入 `ext install`)来得到所有的可用扩展列表，再输入“PHP”即可显示与PHP相关的扩展列表
+在[VS Code市场](https://marketplace.visualstudio.com/VSCode)上你可以找到许多PHP相关的可用扩展，并且还有更多扩展正在陆续地再开发当中。你可以通过在VS Code中执行**Extensions: Install Extension**命令 (`Ctrl+Shift+P or F1` 输入 `ext install`)来得到所有的可用扩展列表，再输入“PHP”即可显示与PHP相关的扩展列表
 
-There are many PHP language extensions available on the [VS Code Marketplace](https://marketplace.visualstudio.com/VSCode) and more are being created.  You can search for PHP extensions from within VS Code by running the **Extensions: Install Extension** command (`kb(workbench.action.showCommands)` and type `ext install`) then filter the extensions drop down list by typing `php`.
+There are many PHP language extensions available on the [VS Code Marketplace](https://marketplace.visualstudio.com/VSCode) and more are being created.  You can search for PHP extensions from within VS Code by running the **Extensions: Install Extension** command (`Ctrl+Shift+P or F1` and type `ext install`) then filter the extensions drop down list by typing `php`.
 
 ![show PHP extensions](images/php/php-extensions.png)
 

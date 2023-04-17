@@ -16,9 +16,9 @@ Visual Studio Code has built-in support for editing style sheets in CSS `.css`, 
 
 ##智能感知 IntelliSense
 
-我们提供对选择器，属性以及值的支持。按 `kb(editor.action.triggerSuggest)` 会得到一个具体列表。
+我们提供对选择器，属性以及值的支持。按 `Ctrl+Space` 会得到一个具体列表。
 
-We have support for selectors, properties and values. Use `kb(editor.action.triggerSuggest)` to get a list of context specific options.
+We have support for selectors, properties and values. Use `Ctrl+Space` to get a list of context specific options.
 
 ![IntelliSense in CSS](images/css/intellisense.png)
 
@@ -66,9 +66,9 @@ We support CSS version <= 2.1, Sass version <= 3.2 and Less version <= 1.7.
 
 ## 转到文件的符号信息 Goto symbol in file
 
-按 `kb(workbench.action.gotoSymbol)`即可。
+按 `Ctrl+Shift+O`即可。
 
-Simply press `kb(workbench.action.gotoSymbol)`.
+Simply press `Ctrl+Shift+O`.
 
 ## Hovers
 
@@ -168,7 +168,7 @@ For the Less version of the above file, just change `$padding` to `@padding`.
 
 ###第三步：创建Create tasks.json Step 3: Create tasks.json
 
-下一步是进行任务配置。按 `kb(workbench.action.showCommands)` 打开**命令面板**。按Enter选择“任务：配置任务运行程序”，在选择对话框中，选择“其他(Others)”。
+下一步是进行任务配置。按 `Ctrl+Shift+P or F1` 打开**命令面板**。按Enter选择“任务：配置任务运行程序”，在选择对话框中，选择“其他(Others)”。
 
 这将会在工作空间的`.vscode` 文件夹创建一个`tasks.json`示例文件。这个文件包含了一个可以执行任意命令的样例。我们可以简单修改下编译配置。
 
@@ -194,7 +194,7 @@ For the Less version of the above file, just change `$padding` to `@padding`.
 
 VS Code将`node-sass` or `lessc`当作一个外部任务处理器：将Sass/Less files编译为CSS文件。我们需要的执行命令就是 `node-sass styles.scss styles.css` 或者 `lessc styles.less styles.css`.
 
-The next step is to set up the task configuration.  To do this open the **Command Palette** with `kb(workbench.action.showCommands)` and type in **Configure Task Runner**, press `Enter` to select it. In the selection dialog that shows up, select `Others`.
+The next step is to set up the task configuration.  To do this open the **Command Palette** with `Ctrl+Shift+P or F1` and type in **Configure Task Runner**, press `Enter` to select it. In the selection dialog that shows up, select `Others`.
 
 This will create a sample `tasks.json` file in the workspace `.vscode` folder.  The initial version of file has an example to run an arbitrary command. We will simply modify that configuration for transpiling Less/Sass instead:
 
@@ -376,7 +376,7 @@ Again, as this is the only task in the file you can execute it by simply pressin
 
 At this point, if you create and/or modify other Less/Sass files, you will see the respective CSS files generated and/or changes reflected on save.  You can also enable [Auto Save](/md/编辑器/基础.md#saveauto-save) to make things even more streamlined.
 
-If you want to stop the watch, you can press `kb(workbench.action.tasks.build)` again and click **Terminate Running Task** in the message box. Or you can use the **Command Palette** with `kb(workbench.action.showCommands)` and find the terminate command there.
+If you want to stop the watch, you can press `kb(workbench.action.tasks.build)` again and click **Terminate Running Task** in the message box. Or you can use the **Command Palette** with `Ctrl+Shift+P or F1` and find the terminate command there.
 
 ## Customizing CSS, Sass and Less Settings
 

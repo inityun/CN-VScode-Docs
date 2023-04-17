@@ -89,9 +89,9 @@ Startup.main();
 ### Step 2: Create tasks.json
 ### 第二步：创建task.json文件
 
-The next step is to set up the task configuration.  To do this open the **Command Palette** with `kb(workbench.action.showCommands)` and type in **Configure Task Runner**, press `Enter` to select it. This shows a selection box with templates you can choose from:
+The next step is to set up the task configuration.  To do this open the **Command Palette** with `Ctrl+Shift+P or F1` and type in **Configure Task Runner**, press `Enter` to select it. This shows a selection box with templates you can choose from:
 
-下一步就是设置任务配置文件。首先要用`kb(workbench.action.showCommands)`打开**控制台**写入**Configure Task Runner**，按下`Enter`选择。然后会显示模版选择框，里面包含你可以选择的模板。
+下一步就是设置任务配置文件。首先要用`Ctrl+Shift+P or F1`打开**控制台**写入**Configure Task Runner**，按下`Enter`选择。然后会显示模版选择框，里面包含你可以选择的模板。
 
 
 
@@ -118,9 +118,9 @@ task.json文件的内容像这样：
 }
 ```
 
-> **Tip:** While the template is there to help with common configuration settings, IntelliSense is available for the `tasks.json` file as well to help you along.  Use `kb(editor.action.triggerSuggest)` to see the available settings.
+> **Tip:** While the template is there to help with common configuration settings, IntelliSense is available for the `tasks.json` file as well to help you along.  Use `Ctrl+Space` to see the available settings.
 
-> **提示：**该模板可以帮助您配置常见的设置，task.json内的智能提示将会一直生效，使用`kb(editor.action.triggerSuggest)`去查看可用配置。
+> **提示：**该模板可以帮助您配置常见的设置，task.json内的智能提示将会一直生效，使用`Ctrl+Space`去查看可用配置。
 
 
 Under the covers we interpret `tsc` as an external task runner exposing exactly one task: the compiling of TypeScript files into JavaScript files. The command we run is: `tsc -p .`
@@ -165,9 +165,9 @@ Unfortunately, most builds don't go that smoothly and the result is often some a
 
     HelloWorld.ts(3,17): error TS2339: Property 'logg' does not exist on type 'Console'.
 
-This would show up in the output window (which can be opened using `kb(workbench.action.output.toggleOutput)`) and selecting Tasks in the output view dropdown.  We parse this output for you and highlight detected problems in the Status Bar.
+This would show up in the output window (which can be opened using `Ctrl+Shift+U`) and selecting Tasks in the output view dropdown.  We parse this output for you and highlight detected problems in the Status Bar.
 
-信息将会在输出窗口显示出来(它可以用`kb(workbench.action.output.toggleOutput)`打开)还可以在输出视图的下拉列表内选择任务，我们将会为您解析输出信息并在状态栏内将检测出的问题高亮显示。
+信息将会在输出窗口显示出来(它可以用`Ctrl+Shift+U`打开)还可以在输出视图的下拉列表内选择任务，我们将会为您解析输出信息并在状态栏内将检测出的问题高亮显示。
 
 ![Problems in Status Bar](images/typescript/problemstatusbar.png)
 
@@ -188,13 +188,13 @@ You can also use the keyboard to open the list `kb(workbench.action.showErrorsWa
 ## Goto Symbol & Show All Symbols
 ## 跳转到符号 & 显示所有符号
 
-`kb(workbench.action.gotoSymbol)`: lists all defined symbols of the current open TypeScript and lets you navigate in it.
+`Ctrl+Shift+O`: lists all defined symbols of the current open TypeScript and lets you navigate in it.
 
-`kb(workbench.action.gotoSymbol)`: 列出当前打开的TypeScript下所有已定义符号，并允许您在其中导航。
+`Ctrl+Shift+O`: 列出当前打开的TypeScript下所有已定义符号，并允许您在其中导航。
 
-`kb(workbench.action.showAllSymbols)`: lets you search all symbols defined in the current project or file scope. You need to have a TypeScript file open in the active editor.
+`Ctrl+T`: lets you search all symbols defined in the current project or file scope. You need to have a TypeScript file open in the active editor.
 
-`kb(workbench.action.showAllSymbols)`: 允许您搜索当前项目或文件范围中定义的所有符号。您需要在活动编辑器中有一个打开的TypeScript文件。
+`Ctrl+T`: 允许您搜索当前项目或文件范围中定义的所有符号。您需要在活动编辑器中有一个打开的TypeScript文件。
 
 ## Format Code
 

@@ -22,9 +22,9 @@ JSON中的JSON是一种JSON规范的扩展，是被VS Code支持的。在使用J
 
 ## 智能感知和验证 IntelliSense & Validation
 
-For properties and values (`kb(editor.action.triggerSuggest)`), both for JSON data with and without schema, we offer up suggestions as you type with IntelliSense.   We also perform structural and value verification based on an associated JSON schema giving you red squigglies.
+For properties and values (`Ctrl+Space`), both for JSON data with and without schema, we offer up suggestions as you type with IntelliSense.   We also perform structural and value verification based on an associated JSON schema giving you red squigglies.
 
-对于属性和值(`kb(editor.action.triggerSuggest)`)，无论JSON数据是否是使用模式(schema)的JSON数据，智能感知在你输入时，都提供建议。基于关联的JSON模式，还进行了结构和值验证并显示红色标记。
+对于属性和值(`Ctrl+Space`)，无论JSON数据是否是使用模式(schema)的JSON数据，智能感知在你输入时，都提供建议。基于关联的JSON模式，还进行了结构和值验证并显示红色标记。
 
 ![IntelliSense](images/json/intellisense.png)
 
@@ -36,9 +36,9 @@ We also offer IntelliSense for specific value sets such as package and project d
 
 ## 快速导航 Quick Navigation
 
-JSON files can get pretty large and we support quick navigation to properties `kb(workbench.action.gotoSymbol)` (**Go to Symbol**) with the Command Palette.
+JSON files can get pretty large and we support quick navigation to properties `Ctrl+Shift+O` (**Go to Symbol**) with the Command Palette.
 
-JSON文件可以相当大。通过命令面板的(**Go to Symbol**)，我们支持快速导航到属性`kb(workbench.action.gotoSymbol)` 
+JSON文件可以相当大。通过命令面板的(**Go to Symbol**)，我们支持快速导航到属性`Ctrl+Shift+O` 
 
 ![Goto Symbol](images/json/gotosymbol.png)
 

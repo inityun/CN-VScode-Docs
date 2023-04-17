@@ -27,7 +27,7 @@ Due to this focus many standard C# project types are not recognized by VS Code. 
 
 C#的支持是可选的[（点此从Marketplace安装）](https://marketplace.visualstudio.com/items?itemName=ms-vscode.csharp)。也可通过VS Code里的命令面板输入 **（拓展：安装拓展）Extensions: Install Extension**来搜索“C#”（或者按F1并输入‘ext install’）并在下拉菜单里选择。如果你已经有了一个C#的项目，VS Code也会在你打开一个C#文件不久后提示你安装拓展。
 
-C# language support is an optional [install from the Marketplace](https://marketplace.visualstudio.com/items?itemName=ms-vscode.csharp). You can install it from within VS Code by searching for 'C#' in the **Extensions: Install Extension** dropdown (`kb(workbench.action.showCommands)` and type `ext install`) or if you already have a project with C# files, VS Code will prompt you to install the extension as soon as you open a C# file.
+C# language support is an optional [install from the Marketplace](https://marketplace.visualstudio.com/items?itemName=ms-vscode.csharp). You can install it from within VS Code by searching for 'C#' in the **Extensions: Install Extension** dropdown (`Ctrl+Shift+P or F1` and type `ext install`) or if you already have a project with C# files, VS Code will prompt you to install the extension as soon as you open a C# file.
 
 ## Roslyn and OmniSharp（前者是C&#35;的编译器，后者是对C&#35;的自动补全及智能提示。）
 
@@ -82,19 +82,19 @@ Here are a few highlights...
 
 ## 智能感知IntelliSense
 
-只有在你按下 `kb(editor.action.triggerSuggest)` 的时候才会得到语境下的具体建议。
+只有在你按下 `Ctrl+Space` 的时候才会得到语境下的具体建议。
 
-IntelliSense just works hit `kb(editor.action.triggerSuggest)` at any time to get context specific suggestions.
+IntelliSense just works hit `Ctrl+Space` at any time to get context specific suggestions.
 
 ![IntelliSense](images/csharp/intellisense.png)
 
 ## C#的代码片段Snippets for C&#35;
 
-在VS Code里内置了几种代码片段，在你输入或者按 `kb(editor.action.triggerSuggest)` （触发建议）并且VS Code会给你一个基于语镜的建议列表。
+在VS Code里内置了几种代码片段，在你输入或者按 `Ctrl+Space` （触发建议）并且VS Code会给你一个基于语镜的建议列表。
 
 **提示:** 你可以添加C#的自定义代码片段，详见 [自定义代码片段](/md/定制化/用户定义代码段.md) 。
 
-We have several built-in snippets included in VS Code that will come up as you type or you can press `kb(editor.action.triggerSuggest)` (Trigger Suggest) and we will give you a context specific list of suggestions.
+We have several built-in snippets included in VS Code that will come up as you type or you can press `Ctrl+Space` (Trigger Suggest) and we will give you a context specific list of suggestions.
 
 ![Snippets](images/csharp/snippet.png)
 
@@ -102,9 +102,9 @@ We have several built-in snippets included in VS Code that will come up as you t
 
 ## 代码追踪 Search for Symbols
 
-VS Code同样有一些超出编辑器的特点。其中一个能力就是代码追踪。按 `kb(workbench.action.showAllSymbols)` 并开始输入，你将会看到一个相关列表。选择你想要的一项，你就会被带到它的具体位置。
+VS Code同样有一些超出编辑器的特点。其中一个能力就是代码追踪。按 `Ctrl+T` 并开始输入，你将会看到一个相关列表。选择你想要的一项，你就会被带到它的具体位置。
 
-There are also features outside the editor. One is the ability to search for symbols from wherever you are. Hit `kb(workbench.action.showAllSymbols)`, start typing, and see a list of matching C# symbols. Select one and you’ll be taken straight to its code location.
+There are also features outside the editor. One is the ability to search for symbols from wherever you are. Hit `Ctrl+T`, start typing, and see a list of matching C# symbols. Select one and you’ll be taken straight to its code location.
 
 ![Symbols](images/csharp/symbols.png)
 
@@ -134,9 +134,9 @@ You can click on the references of an object to find the locations of its use in
 
 ## 快速修复/建议 Quick Fixes / Suggestions
 
-在VS Code里提供一些基础的快速修复功能。你会看到一个小灯泡然后点击它，或者按 `kb(editor.action.quickFix)` 提供一个简单列表提供修复或者修复意见。
+在VS Code里提供一些基础的快速修复功能。你会看到一个小灯泡然后点击它，或者按 `Ctrl+.` 提供一个简单列表提供修复或者修复意见。
 
-There are some basic quick fixes supported in VS Code.  You will see a lightbulb and clicking on it, or pressing `kb(editor.action.quickFix)` provides you with a simple list of fixes/suggestions.
+There are some basic quick fixes supported in VS Code.  You will see a lightbulb and clicking on it, or pressing `Ctrl+.` provides you with a simple list of fixes/suggestions.
 
 ![Quick fix](images/csharp/lightbulb.png)
 

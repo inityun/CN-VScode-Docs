@@ -67,16 +67,16 @@ This will generate a `c_cpp_properties.json` file that allows you to add additio
 
 这样会生成一个允许你添加include paths以正确启用代码导航和自动补齐功能的`c_cpp_properties.json`文件
 
->**Note:** You can also generate or edit a `c_cpp_properties.json` file with the **C/Cpp: Edit Configurations** command from the __Command Palette__ (`kb(workbench.action.showCommands)`).
+>**Note:** You can also generate or edit a `c_cpp_properties.json` file with the **C/Cpp: Edit Configurations** command from the __Command Palette__ (`Ctrl+Shift+P or F1`).
 
->**备注：**你也可以从 __命令面板__ (`kb(workbench.action.showCommands)`)中通过**C/Cpp: Edit Configurations**命令来生成或编辑`c_cpp_properties.json`文件
+>**备注：**你也可以从 __命令面板__ (`Ctrl+Shift+P or F1`)中通过**C/Cpp: Edit Configurations**命令来生成或编辑`c_cpp_properties.json`文件
 
 **If you want to build your application from VS Code, you will need to generate a `tasks.json` file:**
 
 **如果你想从VS code中构建你的应用，你需要生成一个`tasks.json` 文件：**
 
-* Open the **Command Palette** (`kb(workbench.action.showCommands)`).
-* 打开**命令面板**(`kb(workbench.action.showCommands)`).
+* Open the **Command Palette** (`Ctrl+Shift+P or F1`).
+* 打开**命令面板**(`Ctrl+Shift+P or F1`).
 
 
 * Select the **Tasks: Configure Task Runner** command and you will see a list of task runner templates.
@@ -204,15 +204,15 @@ To specify additional include directories to be searched, place your cursor over
 
 You can search for symbols in the current file or workspace to navigate your code more quickly.
 
-To search for a symbol in the current file, press `kb(workbench.action.gotoSymbol)`, then enter the name of the symbol you're looking for. A list of potential matches will appear and be filtered as you type. Choose from the list of matches to navigate to its location.
+To search for a symbol in the current file, press `Ctrl+Shift+O`, then enter the name of the symbol you're looking for. A list of potential matches will appear and be filtered as you type. Choose from the list of matches to navigate to its location.
 
 ![Searching the current file](images/cpp/filesearch.png)
 
-To search for a symbol in the current workspace, start by pressing `kb(workbench.action.showAllSymbols)` instead, then enter the name of the symbol. A list of potential matches will appear as before. If you choose a match that was found in a file that's not already open, the file will be opened before navigating to the match's location.
+To search for a symbol in the current workspace, start by pressing `Ctrl+T` instead, then enter the name of the symbol. A list of potential matches will appear as before. If you choose a match that was found in a file that's not already open, the file will be opened before navigating to the match's location.
 
 ![Searching in your workspace](images/cpp/workspacesearch.png)
 
-Alternatively, you can search for symbols by accessing these commands through the __Command Palette__ if you prefer. Use __Quick Open__ (`kb(workbench.action.quickOpen)`) then enter the '@' command to search the current file, or the '#' command to search the current workspace. `kb(workbench.action.gotoSymbol)` and `kb(workbench.action.showAllSymbols)` are just shortcuts for the '@' and '#' commands, respectively, so everything works the same.
+Alternatively, you can search for symbols by accessing these commands through the __Command Palette__ if you prefer. Use __Quick Open__ (`kb(workbench.action.quickOpen)`) then enter the '@' command to search the current file, or the '#' command to search the current workspace. `Ctrl+Shift+O` and `kb(workbench.action.showAllSymbols)` are just shortcuts for the '@' and '#' commands, respectively, so everything works the same.
 
 ### Peek Definition
 

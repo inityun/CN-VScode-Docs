@@ -67,7 +67,7 @@ Use **File** > **Preferences** > **Workspace Settings** to bring up the workspac
 
 ## Snippets for Markdown
 
-There are several built-in Markdown snippets included in VS Code - simply press `kb(editor.action.triggerSuggest)` (Trigger Suggest) and we will give you a context specific list of suggestions.
+There are several built-in Markdown snippets included in VS Code - simply press `Ctrl+Space` (Trigger Suggest) and we will give you a context specific list of suggestions.
 
 >**Tip:** You can add in your own User Defined Snippets for Markdown.  Take a look at [User Defined Snippets](/md/定制化/用户定义代码段.md) to find out how.
 
@@ -112,7 +112,7 @@ Things you'll need:
 
 ### Step 3: Create tasks.json
 
-The next step is to set up the task configuration file `tasks.json`.  To do this, open the **Command Palette** with `kb(workbench.action.showCommands)` and type in **Configure Task Runner**, press `Enter` to select it.
+The next step is to set up the task configuration file `tasks.json`.  To do this, open the **Command Palette** with `Ctrl+Shift+P or F1` and type in **Configure Task Runner**, press `Enter` to select it.
 
 It will present a list of possible `tasks.json` templates to choose from. Select `Others` since we want to run an external command.
 
@@ -144,7 +144,7 @@ Since we want to use **marked** to compile the Markdown file, we change the cont
 }
 ```
 
-> **Tip:** While the sample is there to help with common configuration settings, IntelliSense is available for the `tasks.json` file as well to help you along.  Use `kb(editor.action.triggerSuggest)` to see the available settings.
+> **Tip:** While the sample is there to help with common configuration settings, IntelliSense is available for the `tasks.json` file as well to help you along.  Use `Ctrl+Space` to see the available settings.
 
 Under the covers, we interpret **marked** as an external task runner exposing exactly one task: the compiling of Markdown files into HTML files. The command we run is `marked sample.md -o sample.html`.
 
@@ -227,7 +227,7 @@ Again, as this is the only task in the file you can execute it by simply pressin
 
 At this point, if you create and/or modify other Markdown files, you will see the respective HTML files generated and/or changes reflected on save.  You can also enable [Auto Save](/md/编辑器/基础.md#saveauto-save) to make things even more streamlined.
 
-If you want to stop the watch, you can press `kb(workbench.action.tasks.build)` again and click **Terminate Running Task** in the message box. Or you can use the **Command Palette** with `kb(workbench.action.showCommands)` and find the terminate command there.
+If you want to stop the watch, you can press `kb(workbench.action.tasks.build)` again and click **Terminate Running Task** in the message box. Or you can use the **Command Palette** with `Ctrl+Shift+P or F1` and find the terminate command there.
 
 ## Next Steps
 

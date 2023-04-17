@@ -412,7 +412,7 @@ documents.onDidChangeContent((change) => {
 向下面这样测试语言服务：
 
 * 到包含服务代码（见上文）的VS Code的实例中并且按下`kb(workbench.action.tasks.build)`启动构建任务。任务将编译服务代码并且安装服务到插件目录。
-* 现在会带有客户端插件的VS Code实例中并且按下`kb(workbench.action.debug.start)`启动`扩展开发主机`VS Code实例执行插件代码。
+* 现在会带有客户端插件的VS Code实例中并且按下`F5`启动`扩展开发主机`VS Code实例执行插件代码。
 * 在根目录创建一个test.txt文件并且粘贴如下内容：
 
 ```plaintext
@@ -433,7 +433,7 @@ Any browser. Any host. Any OS. Open Source.
 To test the language server do the following:
 
 * Go to the VS Code instance containing the server code (see above) and press `kb(workbench.action.tasks.build)` to start the build task. The task compiles the server code and installs (e.g. copies) it into the extension folder.
-* Now go back to the VS Code instance with the extension (client) and press `kb(workbench.action.debug.start)` to launch an additional `Extension Development Host` instance of VS Code that executes the extension code.
+* Now go back to the VS Code instance with the extension (client) and press `F5` to launch an additional `Extension Development Host` instance of VS Code that executes the extension code.
 * Create a test.txt file in the root folder and paste the following content:
 
 ```plaintext
@@ -448,20 +448,20 @@ The `Extension Development Host` instance will then look like this:
 
 ## 一起调试客户端和服务  Debugging both Client and Server
 
-调试客户端代码就像调试普通插件一样简单。在包含客户端代码的VS Code实例中简单的设置断点然后按下`kb(workbench.action.debug.start)`调试插件。关于启动和调试插件的详细描述请看[运行和调试你的插件](/md/扩展/调试-扩展.md)。
+调试客户端代码就像调试普通插件一样简单。在包含客户端代码的VS Code实例中简单的设置断点然后按下`F5`调试插件。关于启动和调试插件的详细描述请看[运行和调试你的插件](/md/扩展/调试-扩展.md)。
 
 ![调试客户端](images/example-language-server/debugging-client.png)
 
-因为服务是被在客户端中运行`LanguageClient`启动的。我们需要附加到运行中的服务去调试。要完成这一切，切换到服务代码的VS Code实例中并且按下`kb(workbench.action.debug.start)`。这将附加一个调试器到服务中。然后使用正常的调试视图调试即可。
+因为服务是被在客户端中运行`LanguageClient`启动的。我们需要附加到运行中的服务去调试。要完成这一切，切换到服务代码的VS Code实例中并且按下`F5`。这将附加一个调试器到服务中。然后使用正常的调试视图调试即可。
 
 ![调试服务](images/example-language-server/debugging-server.png)
 
 
-Debugging the client code is as easy as debugging a normal extension. Simply set a breakpoint in the VS Code instance that contains the client code and debug the extension by pressing `kb(workbench.action.debug.start)`. For a detailed description about launching and debugging an extension see [Running and Debugging Your Extension](/md/扩展/调试-扩展.md).
+Debugging the client code is as easy as debugging a normal extension. Simply set a breakpoint in the VS Code instance that contains the client code and debug the extension by pressing `F5`. For a detailed description about launching and debugging an extension see [Running and Debugging Your Extension](/md/扩展/调试-扩展.md).
 
 ![Debugging the client](images/example-language-server/debugging-client.png)
 
-Since the server is started by the `LanguageClient` running in the extension (client), we need to attach a debugger to the running server. To do so, switch to the VS Code instance containing the server code and press `kb(workbench.action.debug.start)`. This will attach the debugger to the server. Use the normal Debug View to interact with the running server.
+Since the server is started by the `LanguageClient` running in the extension (client), we need to attach a debugger to the running server. To do so, switch to the VS Code instance containing the server code and press `F5`. This will attach the debugger to the server. Use the normal Debug View to interact with the running server.
 
 ![Debugging the server](images/example-language-server/debugging-server.png)
 

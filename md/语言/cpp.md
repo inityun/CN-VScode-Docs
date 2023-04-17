@@ -24,9 +24,9 @@ Because we're still shaping the C++ experience in VS Code, now is a great time t
 
 ## Installing C++ 安装C++   Installing C++ support安装C++支持
 
-C++ language support is an optional [install from the Marketplace](https://marketplace.visualstudio.com/items?itemName=ms-vscode.cpptools). Or, just install it from VS Code by launching the __Quick Open__ (`kb(workbench.action.quickOpen)`) and then entering the command **ext install cpptools**.
+C++ language support is an optional [install from the Marketplace](https://marketplace.visualstudio.com/items?itemName=ms-vscode.cpptools). Or, just install it from VS Code by launching the __Quick Open__ (`Ctrl+P`) and then entering the command **ext install cpptools**.
 
-C++ 语言支持是一个可选安装，[从Marketplace](https://marketplace.visualstudio.com/items?itemName=ms-vscode.cpptools)。或者，仅需要从VS Code启动__Quick Open__ (`kb(workbench.action.quickOpen)`)然后输入名令**ext install cpptools**来安装它。
+C++ 语言支持是一个可选安装，[从Marketplace](https://marketplace.visualstudio.com/items?itemName=ms-vscode.cpptools)。或者，仅需要从VS Code启动__Quick Open__ (`Ctrl+P`)然后输入名令**ext install cpptools**来安装它。
 
 On Linux, there's an additional step that installs dependencies necessary for debugging support. When VS Code restarts after installing the extension, a script installs the [dotnet cli](http://dotnet.github.io/) dependency. Because elevated permissions are needed to install this package, you'll be prompted for your password in the terminal where the script is running. If you'd rather perform these last steps yourself, you can close the terminal now, then enter the commands yourself (these steps must be completed to enable debugging support.) For more information on these commands, see _Manual Installation for the C++ Debugger extension_ in the [README](https://marketplace.visualstudio.com/items?itemName=ms-vscode.cpptools).
 
@@ -47,21 +47,21 @@ You can search for symbols in the current file or workspace to navigate your cod
 
 您可以在当前文件或工作区中搜索符号，以更快地浏览代码。
 
-To search for a symbol in the current file, press `kb(workbench.action.gotoSymbol)`, then enter the name of the symbol you're looking for. A list of potential matches will appear and be filtered as you type. Choose from the list of matches to navigate to its location.
+To search for a symbol in the current file, press `Ctrl+Shift+O`, then enter the name of the symbol you're looking for. A list of potential matches will appear and be filtered as you type. Choose from the list of matches to navigate to its location.
 
-按`kb(workbench.action.gotoSymbol)`，在当前文件中搜索符号，然后输入您要查找的符号的名称。出现潜在匹配项的列表，并在您键入时对其进行过滤。 从匹配项列表中选择以导航至其位置。
+按`Ctrl+Shift+O`，在当前文件中搜索符号，然后输入您要查找的符号的名称。出现潜在匹配项的列表，并在您键入时对其进行过滤。 从匹配项列表中选择以导航至其位置。
 
 ![Searching the current file](images/cpp/filesearch.png)
 
-To search for a symbol in the current workspace, start by pressing `kb(workbench.action.showAllSymbols)` instead, then enter the name of the symbol. A list of potential matches will appear as before. If you choose a match that was found in a file that's not already open, the file will be opened before navigating to the match's location.
+To search for a symbol in the current workspace, start by pressing `Ctrl+T` instead, then enter the name of the symbol. A list of potential matches will appear as before. If you choose a match that was found in a file that's not already open, the file will be opened before navigating to the match's location.
 
-要在当前工作空间中搜索符号，首先按 `kb(workbench.action.showAllSymbols)` ，然后输入您要查找的符号的名称。可能的匹配项列表将像以前一样显示。 如果选择在尚未打开的文件中找到的匹配项，则将在导航到该匹配项的位置之前打开该文件。
+要在当前工作空间中搜索符号，首先按 `Ctrl+T` ，然后输入您要查找的符号的名称。可能的匹配项列表将像以前一样显示。 如果选择在尚未打开的文件中找到的匹配项，则将在导航到该匹配项的位置之前打开该文件。
 
 ![Searching in your workspace](images/cpp/workspacesearch.png)
 
-Alternatively, you can search for symbols by accessing these commands through the __Command Palette__ if you prefer. Use __Quick Open__ (`kb(workbench.action.quickOpen)`) then enter the '@' command to search the current file, or the '#' command to search the current workspace. `kb(workbench.action.gotoSymbol)` and `kb(workbench.action.showAllSymbols)` are just shortcuts for the '@' and '#' commands, respectively, so everything works the same.
+Alternatively, you can search for symbols by accessing these commands through the __Command Palette__ if you prefer. Use __Quick Open__ (`kb(workbench.action.quickOpen)`) then enter the '@' command to search the current file, or the '#' command to search the current workspace. `Ctrl+Shift+O` and `kb(workbench.action.showAllSymbols)` are just shortcuts for the '@' and '#' commands, respectively, so everything works the same.
 
-另外，您也可以根据需要通过__Command Palette__访问这些命令来搜索符号。使用 __Quick Open__ (`kb(workbench.action.quickOpen)`)然后输入“ @”命令搜索当前文件，或输入“＃”命令搜索当前工作空间。'kb(workbench.action.gotoSymbol)'和'kb(workbench.action.showAllSymbols)'分别只是“ @”和“＃”命令的快捷方式，因此所有工作均相同。
+另外，您也可以根据需要通过__Command Palette__访问这些命令来搜索符号。使用 __Quick Open__ (`kb(workbench.action.quickOpen)`)然后输入“ @”命令搜索当前文件，或输入“＃”命令搜索当前工作空间。'Ctrl+Shift+O'和'kb(workbench.action.showAllSymbols)'分别只是“ @”和“＃”命令的快捷方式，因此所有工作均相同。
 
 ### Peek Definition
 ### 查看定义

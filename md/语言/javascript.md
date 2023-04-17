@@ -274,7 +274,7 @@ VS Code provides several formatting settings for JavaScript. They can all be fou
 
 ## Snippets for JavaScript
 
-VS Code has several built-in snippets that will come up as you type or you can press `kb(editor.action.triggerSuggest)` (**Trigger Suggest**) and you will see a context specific list of suggestions.
+VS Code has several built-in snippets that will come up as you type or you can press `Ctrl+Space` (**Trigger Suggest**) and you will see a context specific list of suggestions.
 
 ![Try Suggestions](images/javascript/trysnippet.png)
 

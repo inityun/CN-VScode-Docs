@@ -22,7 +22,7 @@ VS Code 通过[扩展](/md/编辑器/扩展市场.md)对 Python 充分支持。[
 VS Code 是一个只包含基本特性的轻量编辑器。通过安装其中一个流行的Python扩展插件，即可让 VS Code 添加对 Python 的语言支持。
 
 1. 选择一个扩展。
-2. 在命令面板 `kb(workbench.action.showCommands)` 输入 `ext install` 安装插件。
+2. 在命令面板 `Ctrl+Shift+P or F1` 输入 `ext install` 安装插件。
 
 <div class="marketplace-extensions-python"></div>
 
@@ -38,7 +38,7 @@ Python 扩展支持代码补全和智能提示。[智能提示](/md/编辑器/in
 
 <video id="python-code-completion-video" src="https://az754404.vo.msecnd.net/public/python-intellisense.mp4" poster="/images/python_python-intellisense-placeholder.png" autoplay loop controls muted></video>
 
-> 小贴士：按下快捷键 `kb(editor.action.triggerSuggest)` 触发代码补全。
+> 小贴士：按下快捷键 `Ctrl+Space` 触发代码补全。
 
 ## Linting
 
@@ -64,7 +64,7 @@ Linting 用于分析 Python 代码的潜在错误。使用 VS Code 可以快速�
 
 <video id="python-snippets-video" src="https://az754404.vo.msecnd.net/public/python-snippets.mp4" poster="/images/python_python-snippets-placeholder.png" autoplay loop controls muted></video>
 
-> 小贴士：使用快捷键`kb(editor.action.triggerSuggest)`，代码片段将和代码补全出现在相同的地方。
+> 小贴士：使用快捷键`Ctrl+Space`，代码片段将和代码补全出现在相同的地方。
 
 ## 配置
 
