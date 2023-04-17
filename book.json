@@ -6,7 +6,8 @@
       "-lunr",
       "-search",
       "search-pro",
-      "intopic-toc"
+      "intopic-toc",
+      "flexible-alerts"
     ],
     "pluginsConfig": {
       "intopic-toc": {
