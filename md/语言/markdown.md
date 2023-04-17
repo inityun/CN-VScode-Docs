@@ -112,7 +112,7 @@ Things you'll need:
 
 ### Step 3: Create tasks.json
 
-The next step is to set up the task configuration file `tasks.json`.  To do this, open the **Command Palette** with `kb(workbench.action.showCommands)` and type in **Configure Task Runner**, press `kbstyle(Enter)` to select it.
+The next step is to set up the task configuration file `tasks.json`.  To do this, open the **Command Palette** with `kb(workbench.action.showCommands)` and type in **Configure Task Runner**, press `Enter` to select it.
 
 It will present a list of possible `tasks.json` templates to choose from. Select `Others` since we want to run an external command.
 

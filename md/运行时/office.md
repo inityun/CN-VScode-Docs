@@ -100,7 +100,7 @@ gulp serve-static
 
 This will start a HTTPS server at **https://localhost:8443**.
 
->**Tip:** You can also run the task from within VS Code by pressing `kb(workbench.action.showCommands)` and then typing `Run Task` followed by `kbstyle(Enter)` which will list all available tasks. Selecting `serve-static` and pressing `kbstyle(Enter)` will execute the task.
+>**Tip:** You can also run the task from within VS Code by pressing `kb(workbench.action.showCommands)` and then typing `Run Task` followed by `Enter` which will list all available tasks. Selecting `serve-static` and pressing `Enter` will execute the task.
 
 
 ### Running the Add-in

@@ -29,7 +29,7 @@ VS Code 很清楚Dockerfiles的结构以及可以使用的指令集，这意味�
 
  ![Dockerfile snippets](images/docker/dockerfileintellisense.png)
 
-3. 按下`kbstyle(Tab)`在段落中不同的区域移动。比如说，在`COPY`部分你可以输入`source`，接着按下`kbstyle(Tab)`移动到`dest`部分。
+3. 按下`Tab`在段落中不同的区域移动。比如说，在`COPY`部分你可以输入`source`，接着按下`Tab`移动到`dest`部分。
 
  ![Dockerfile snippet navigation](images/docker/dockerfiletemplate.png)
 

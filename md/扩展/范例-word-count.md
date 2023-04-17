@@ -88,12 +88,12 @@ code .
 
 在我们继续下一步之前，我们可以先按下`kb(workbench.action.debug.start)`运行一下插件以确保到目前为止一切正常。如同你在之前"Hello World"教程中看到的那样，VS Code加载插件后打开另一个窗口（**[扩展开发主机]**窗口）。你应该在命令面板找到"Hello World"命令（按下`kb(workbench.action.showCommands)`）并选择它，你将会在看到窗口顶部看到一个显示"Hello World"的消息提示框。
 
-现在你已经确定了插件可以正常的运行，如果你喜欢你可以让插件开发窗口保持打开 。接下来你可以在开发窗口中再次按下`kb(workbench.action.debug.continue)`或者按下`kbstyle(Ctrl+R)` (Mac: `kbstyle(Cmd+R)`)来重新加载插件开发窗口以确定你对插件的修改生效了。
+现在你已经确定了插件可以正常的运行，如果你喜欢你可以让插件开发窗口保持打开 。接下来你可以在开发窗口中再次按下`kb(workbench.action.debug.continue)`或者按下`Ctrl+R` (Mac: `Cmd+R`)来重新加载插件开发窗口以确定你对插件的修改生效了。
 
 
 Before we go on, we can run the extension to make sure everything works as expected by pressing `kb(workbench.action.debug.start)`. As you saw in the previous "Hello World" walkthrough, VS Code opens another window (the **[Extension Development Host]** window) in which your extension will be loaded. You should find the "Hello World" command in the Command Palette (press `kb(workbench.action.showCommands)`) and when you select it, you will see an information box at the top of the window saying "Hello World".
 
-Now that you have confirmed that the extension is running properly, you can keep the extension development window open if you like. To test out any changes that you make to your extension, you can either press `kb(workbench.action.debug.continue)` again in the development window or reload the extension development window by pressing `kbstyle(Ctrl+R)` (Mac: `kbstyle(Cmd+R)`).
+Now that you have confirmed that the extension is running properly, you can keep the extension development window open if you like. To test out any changes that you make to your extension, you can either press `kb(workbench.action.debug.continue)` again in the development window or reload the extension development window by pressing `Ctrl+R` (Mac: `Cmd+R`).
 
 ## 更新状态栏  Update the Status Bar
 
@@ -179,7 +179,7 @@ class WordCounter {
 
 现在让我们试一下我们的修改有什么效果
 
-我们定义了监视TypeScript文件修改并编译的任务(在插件的.vscode\tasks.json文件里)，所以我们无需手动重新构建。只需要在运行的的代码的**[扩展开发主机]**窗口里简单的按下`kbstyle(Ctrl+R)`就会重新加载插件（你也可以在主开发窗口按`kb(workbench.action.debug.start)` ）。我们依然需要像之前"Hello World"命令那样激活修改后的代码。如果你现在打开的是Markdown文件，你的状态栏上将会显示单词数统计。
+我们定义了监视TypeScript文件修改并编译的任务(在插件的.vscode\tasks.json文件里)，所以我们无需手动重新构建。只需要在运行的的代码的**[扩展开发主机]**窗口里简单的按下`Ctrl+R`就会重新加载插件（你也可以在主开发窗口按`kb(workbench.action.debug.start)` ）。我们依然需要像之前"Hello World"命令那样激活修改后的代码。如果你现在打开的是Markdown文件，你的状态栏上将会显示单词数统计。
 
 ![运行中的单词数统计插件](images/example-word-count/wordcount2.png)
 
@@ -269,7 +269,7 @@ class WordCounter {
 
 Now let's try our updates to the extension.
 
-We have the compilation of the TypeScript file set on a watch (in the extension's .vscode\tasks.json file) so there is no need to re-build.  Simply hit `kbstyle(Ctrl+R)` in the **[Extension Development Host]** window where your code is running and the extension will reload (you can also just `kb(workbench.action.debug.start)` from your primary development window).  We still need to activate the code in the same way as before with the "Hello World" command.  Assuming you are in a Markdown file, your Status Bar will display the word count.
+We have the compilation of the TypeScript file set on a watch (in the extension's .vscode\tasks.json file) so there is no need to re-build.  Simply hit `Ctrl+R` in the **[Extension Development Host]** window where your code is running and the extension will reload (you can also just `kb(workbench.action.debug.start)` from your primary development window).  We still need to activate the code in the same way as before with the "Hello World" command.  Assuming you are in a Markdown file, your Status Bar will display the word count.
 
 ![Working Word Count](images/example-word-count/wordcount2.png)
 
@@ -359,7 +359,7 @@ context.subscriptions.push(wordCounter);
 
 这种[`onLanguage:${language}`](/md/扩展API/激活事件.md#activationeventsonlanguage)事件接受一个语言id，此处是“markdown”，这个事件将在这种语言的文件被打开时产生、、
 
-通过`kbstyle(Ctrl+R)`或者`kb(workbench.action.debug.start)`重新加载窗口来运行插件然后开始编辑一个Markdown文件。你现在应该已经拥有了一个实时的单词数统计。
+通过`Ctrl+R`或者`kb(workbench.action.debug.start)`重新加载窗口来运行插件然后开始编辑一个Markdown文件。你现在应该已经拥有了一个实时的单词数统计。
 
 ![事件触发时更新单词数统计](images/example-word-count/wordcountevent2.gif)
 
@@ -450,7 +450,7 @@ Now change your extension so that it is activated upon the opening of a *Markdow
 
 The  [`onLanguage:${language}`](/md/扩展API/激活事件.md#activationeventsonlanguage) event takes the language id, in this case "markdown", and will be raised whenever a file of that language is opened.
 
-Run the extension by either doing a window reload `kbstyle(Ctrl+R)` or with `kb(workbench.action.debug.start)` and then start editing a Markdown file.  You should now should have a live updating Word Count.
+Run the extension by either doing a window reload `Ctrl+R` or with `kb(workbench.action.debug.start)` and then start editing a Markdown file.  You should now should have a live updating Word Count.
 
 ![Word Count Updating on Events](images/example-word-count/wordcountevent2.gif)
 

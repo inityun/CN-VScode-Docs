@@ -425,7 +425,7 @@ var text = editor.document.getText(selection);
 vscode.window.showInformationMessage('Selected characters: ' + text.length);
 ```
 
-> **小贴士：** 一旦你修改了插件的源代码，你需要重新启动VS Code插件开发实例。你可以在VS Code开发实例里按下`kbstyle(Ctrl+R)` (Mac: `kbstyle(Cmd+R)`)或者点击主VS Code实例上方的重新启动按钮来重新启动VS Code插件开发实例。
+> **小贴士：** 一旦你修改了插件的源代码，你需要重新启动VS Code插件开发实例。你可以在VS Code开发实例里按下`Ctrl+R` (Mac: `Cmd+R`)或者点击主VS Code实例上方的重新启动按钮来重新启动VS Code插件开发实例。
 
 ![Running the modified extension](images/example-hello-world/selection-length.png)
 
@@ -446,7 +446,7 @@ var text = editor.document.getText(selection);
 vscode.window.showInformationMessage('Selected characters: ' + text.length);
 ```
 
-> **Tip:** Once you make changes to the extension source code, you need to restart the Extension Development instance of VS Code. You can do that by using `kbstyle(Ctrl+R)` (Mac: `kbstyle(Cmd+R)`) in the second instance or by clicking the Restart button at the top of your primary VS Code instance.
+> **Tip:** Once you make changes to the extension source code, you need to restart the Extension Development instance of VS Code. You can do that by using `Ctrl+R` (Mac: `Cmd+R`) in the second instance or by clicking the Restart button at the top of your primary VS Code instance.
 
 ![Running the modified extension](images/example-hello-world/selection-length.png)
 

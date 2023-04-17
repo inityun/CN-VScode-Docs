@@ -194,7 +194,7 @@ For the Less version of the above file, just change `$padding` to `@padding`.
 
 VS Code将`node-sass` or `lessc`当作一个外部任务处理器：将Sass/Less files编译为CSS文件。我们需要的执行命令就是 `node-sass styles.scss styles.css` 或者 `lessc styles.less styles.css`.
 
-The next step is to set up the task configuration.  To do this open the **Command Palette** with `kb(workbench.action.showCommands)` and type in **Configure Task Runner**, press `kbstyle(Enter)` to select it. In the selection dialog that shows up, select `Others`.
+The next step is to set up the task configuration.  To do this open the **Command Palette** with `kb(workbench.action.showCommands)` and type in **Configure Task Runner**, press `Enter` to select it. In the selection dialog that shows up, select `Others`.
 
 This will create a sample `tasks.json` file in the workspace `.vscode` folder.  The initial version of file has an example to run an arbitrary command. We will simply modify that configuration for transpiling Less/Sass instead:
 

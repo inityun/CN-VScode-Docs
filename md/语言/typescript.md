@@ -89,9 +89,9 @@ Startup.main();
 ### Step 2: Create tasks.json
 ### 第二步：创建task.json文件
 
-The next step is to set up the task configuration.  To do this open the **Command Palette** with `kb(workbench.action.showCommands)` and type in **Configure Task Runner**, press `kbstyle(Enter)` to select it. This shows a selection box with templates you can choose from:
+The next step is to set up the task configuration.  To do this open the **Command Palette** with `kb(workbench.action.showCommands)` and type in **Configure Task Runner**, press `Enter` to select it. This shows a selection box with templates you can choose from:
 
-下一步就是设置任务配置文件。首先要用`kb(workbench.action.showCommands)`打开**控制台**写入**Configure Task Runner**，按下`kbstyle(Enter)`选择。然后会显示模版选择框，里面包含你可以选择的模板。
+下一步就是设置任务配置文件。首先要用`kb(workbench.action.showCommands)`打开**控制台**写入**Configure Task Runner**，按下`Enter`选择。然后会显示模版选择框，里面包含你可以选择的模板。
 
 
 
@@ -208,9 +208,9 @@ You can also use the keyboard to open the list `kb(workbench.action.showErrorsWa
 
 ### JSDoc 支持
 
-VS Code offers **JSDoc** support for TypeScript. Besides syntax coloring, we help you enter **JSDoc** comments. Simply type `/**` and it will auto insert the closing `*/`. Pressing `kbstyle(Enter)` inside a **JSDoc** block will indent the next line and auto insert a `*`.
+VS Code offers **JSDoc** support for TypeScript. Besides syntax coloring, we help you enter **JSDoc** comments. Simply type `/**` and it will auto insert the closing `*/`. Pressing `Enter` inside a **JSDoc** block will indent the next line and auto insert a `*`.
 
-VS Code为TypeScript提供 **JSDoc** 支持。除了语法着色，还加入了 **JSDoc** 注释。只需要输入 `/**` 将会自动添加 `*/` 。在 **JSDoc** 块内按下 `kbstyle(Enter)` 将会在下一行自动缩进并且添加 `*`。
+VS Code为TypeScript提供 **JSDoc** 支持。除了语法着色，还加入了 **JSDoc** 注释。只需要输入 `/**` 将会自动添加 `*/` 。在 **JSDoc** 块内按下 `Enter` 将会在下一行自动缩进并且添加 `*`。
 
 ## JavaScript Source Map Support
 

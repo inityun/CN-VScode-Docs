@@ -278,7 +278,7 @@ VS Code has several built-in snippets that will come up as you type or you can p
 
 ![Try Suggestions](images/javascript/trysnippet.png)
 
-Selecting the snippet with `kbstyle(Tab)` results in:
+Selecting the snippet with `Tab` results in:
 
 ![Try Result](images/javascript/tryresult.png)
 

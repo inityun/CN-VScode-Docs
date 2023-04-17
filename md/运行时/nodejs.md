@@ -73,9 +73,9 @@ Node.js Web服务器将会开启，你可以通过访问`http://localhost:3000`�
 
 ## 极好的代码编辑体验
 
-Close the browser and from a terminal in the `myExpressApp` folder, stop the Node.js server by pressing `kbstyle(CTRL+C)`.
+Close the browser and from a terminal in the `myExpressApp` folder, stop the Node.js server by pressing `CTRL+C`.
 
-关掉你的浏览器，在`myExpressApp`目录的终端里用`kbstyle(CTRL+C)`停止Node.js服务器。
+关掉你的浏览器，在`myExpressApp`目录的终端里用`CTRL+C`停止Node.js服务器。
 
 Now launch VS Code:
 
