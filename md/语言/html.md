@@ -29,11 +29,11 @@ We also offer up suggestions for elements, tags, some values (as defined in HTML
 
 ## HTML格式化 Format HTML
 
-为了改进你的HTML代码的格式，可以按 `kb(editor.action.format)` 并选中区域来进行重新格式化。
+为了改进你的HTML代码的格式，可以按 `Ctrl+K Ctrl+F` 并选中区域来进行重新格式化。
 
 >**小贴士:** 对于HTML格式化的设置详见 [用户与工作空间](/md/定制化/用户和工作空间.md).
 
-To improve the formatting of your HTML code press `kb(editor.action.format)` and the selected area will be reformatted.
+To improve the formatting of your HTML code press `Ctrl+K Ctrl+F` and the selected area will be reformatted.
 
 >**Tip:** Configure the HTML formatter settings in the [User and Workspace Settings](/md/定制化/用户和工作空间.md).
 

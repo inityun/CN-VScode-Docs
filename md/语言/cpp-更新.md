@@ -152,7 +152,7 @@ If you are debugging with GDB on Windows, see [Windows Debugging on Cygwin/MinGW
 
 The C/C++ extension for Visual Studio Code supports source code formatting using [clang-format](http://clang.llvm.org/docs/ClangFormat.html) which is included with the extension.
 
-You can format an entire file or just the current selection with the **Format Code** command (`kb(editor.action.format)`) in right-click context menu. You can also configure auto-formatting with the following [settings](/md/定制化/用户和工作空间.md):
+You can format an entire file or just the current selection with the **Format Code** command (`Shift+Alt+F`) in right-click context menu. You can also configure auto-formatting with the following [settings](/md/定制化/用户和工作空间.md):
 
 * `C_Cpp.clang_format_formatOnSave` - to format when you save your file.
 * `editor.formatOnType` - to format as you type (triggered on the `;` character).
@@ -212,13 +212,13 @@ To search for a symbol in the current workspace, start by pressing `Ctrl+T` inst
 
 ![Searching in your workspace](images/cpp/workspacesearch.png)
 
-Alternatively, you can search for symbols by accessing these commands through the __Command Palette__ if you prefer. Use __Quick Open__ (`kb(workbench.action.quickOpen)`) then enter the '@' command to search the current file, or the '#' command to search the current workspace. `Ctrl+Shift+O` and `ctrl+t` are just shortcuts for the '@' and '#' commands, respectively, so everything works the same.
+Alternatively, you can search for symbols by accessing these commands through the __Command Palette__ if you prefer. Use __Quick Open__ (`ctrl+e`) then enter the '@' command to search the current file, or the '#' command to search the current workspace. `Ctrl+Shift+O` and `ctrl+t` are just shortcuts for the '@' and '#' commands, respectively, so everything works the same.
 
 ### Peek Definition
 
 You can take a quick look at how a symbol was defined by using the Peek Definition feature. This feature displays a few lines of code near the definition inside a peek window so you can take a look without navigating away from your current location.
 
-To peek at a symbol's definition, place your cursor on the symbol anywhere it's used in your source code and then press `kb(editor.action.previewDeclaration)`. Alternatively, you can choose __Peek Definition__ from the context menu (right-click, then choose __Peek Definition__).
+To peek at a symbol's definition, place your cursor on the symbol anywhere it's used in your source code and then press `Alt+F12`. Alternatively, you can choose __Peek Definition__ from the context menu (right-click, then choose __Peek Definition__).
 
 ![Peek definition](images/cpp/peekdefn.png)
 
@@ -230,7 +230,7 @@ With the peek window open, you browse the list of competing definitions to find 
 
 You can also quickly navigate to where a symbol is defined by using the Go to Definition feature.
 
-To go to a symbol's definition, place your cursor on the symbol anywhere its used in your code and then press `kb(editor.action.goToDeclaration)`. Alternatively, you can choose __Go to Definition__ from the context menu (right-click, then choose __Go to Definition__). When there's only one definition of the symbol, you'll navigate directly to its location, otherwise the competing definitions are displayed in a peek window as described in the previous section and you have to choose the definition that you want to go to.
+To go to a symbol's definition, place your cursor on the symbol anywhere its used in your code and then press `F12`. Alternatively, you can choose __Go to Definition__ from the context menu (right-click, then choose __Go to Definition__). When there's only one definition of the symbol, you'll navigate directly to its location, otherwise the competing definitions are displayed in a peek window as described in the previous section and you have to choose the definition that you want to go to.
 
 ## Debugging
 

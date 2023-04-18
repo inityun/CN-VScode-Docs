@@ -53,9 +53,9 @@ When you hover over properties and values for JSON data with or without schema, 
 
 ## 格式化 Formatting
 
-You can format your JSON document (or just a part of it) using `kb(editor.action.format)` or **Format** from the context menu.
+You can format your JSON document (or just a part of it) using `Shift+Alt+F` or **Format** from the context menu.
 
-使用`kb(editor.action.format)` 或上下文菜单的**Format**，你能够格式化你的JSON文档。
+使用`Shift+Alt+F` 或上下文菜单的**Format**，你能够格式化你的JSON文档。
 
 ## JSON模式和设置 JSON Schemas & Settings
 

@@ -59,9 +59,9 @@ To search for a symbol in the current workspace, start by pressing `Ctrl+T` inst
 
 ![Searching in your workspace](images/cpp/workspacesearch.png)
 
-Alternatively, you can search for symbols by accessing these commands through the __Command Palette__ if you prefer. Use __Quick Open__ (`kb(workbench.action.quickOpen)`) then enter the '@' command to search the current file, or the '#' command to search the current workspace. `Ctrl+Shift+O` and `ctrl+t` are just shortcuts for the '@' and '#' commands, respectively, so everything works the same.
+Alternatively, you can search for symbols by accessing these commands through the __Command Palette__ if you prefer. Use __Quick Open__ (`ctrl+e`) then enter the '@' command to search the current file, or the '#' command to search the current workspace. `Ctrl+Shift+O` and `ctrl+t` are just shortcuts for the '@' and '#' commands, respectively, so everything works the same.
 
-另外，您也可以根据需要通过__Command Palette__访问这些命令来搜索符号。使用 __Quick Open__ (`kb(workbench.action.quickOpen)`)然后输入“ @”命令搜索当前文件，或输入“＃”命令搜索当前工作空间。'Ctrl+Shift+O'和'ctrl+t'分别只是“ @”和“＃”命令的快捷方式，因此所有工作均相同。
+另外，您也可以根据需要通过__Command Palette__访问这些命令来搜索符号。使用 __Quick Open__ (`ctrl+e`)然后输入“ @”命令搜索当前文件，或输入“＃”命令搜索当前工作空间。'Ctrl+Shift+O'和'ctrl+t'分别只是“ @”和“＃”命令的快捷方式，因此所有工作均相同。
 
 ### Peek Definition
 ### 查看定义
@@ -70,7 +70,7 @@ You can take a quick look at how a symbol was defined by using the Peek Definiti
 
 您可以快速查看如何使用“查看定义”功能定义符号。 此功能在窥视窗口内的定义附近显示几行代码，因此您无需离开当前位置即可查看。
 
-To peek at a symbol's definition, place your cursor on the symbol anywhere its used in your code and then press `kb(editor.action.previewDeclaration)`. Alternatively, you can choose __Peek Definition__ from the context menu (right-click, then choose __Peek Definition__). 
+To peek at a symbol's definition, place your cursor on the symbol anywhere its used in your code and then press `Alt+F12`. Alternatively, you can choose __Peek Definition__ from the context menu (right-click, then choose __Peek Definition__). 
 
 ![Peek definition](images/cpp/peekdefn.png)
 
@@ -82,7 +82,7 @@ With the peek window open, you browse the list of competing definitions to find 
 
 You can also quickly navigate to where a symbol is defined by using the Go to Definition feature.
 
-To go to a symbol's definition, place your cursor on the symbol anywhere its used in your code and then press `kb(editor.action.goToDeclaration)`. Alternatively, you can choose __Go to Definition__ from the context menu (right-click, then choose __Go to Definition__). When there's only one definition of the symbol, you'll navigate directly to its location, otherwise the competing definitions are displayed in a peek window as described in the previous section and you have to choose the definition that you want to go to.
+To go to a symbol's definition, place your cursor on the symbol anywhere its used in your code and then press `F12`. Alternatively, you can choose __Go to Definition__ from the context menu (right-click, then choose __Go to Definition__). When there's only one definition of the symbol, you'll navigate directly to its location, otherwise the competing definitions are displayed in a peek window as described in the previous section and you have to choose the definition that you want to go to.
 
 ## Debugging
 

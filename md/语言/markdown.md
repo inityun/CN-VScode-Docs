@@ -16,9 +16,9 @@ Working with Markdown in Visual Studio Code can be pretty fun and there are a nu
 
 ## Markdown Preview - Markdown预览模式
 
-VS Code supports Markdown files out of the box. You just start writing Markdown text, save the file with the .md extension and then you can toggle the visualization of the editor between the code and the preview of the Markdown file; obviously, you can also open an existing Markdown file and start working with it. To switch between views you just have to press `kb(workbench.action.markdown.togglePreview)` in the editor. You can view the preview side-by-side (`kb(workbench.action.markdown.openPreviewSideBySide)`) with the file you are editing and see changes reflected in real-time as you edit.
+VS Code supports Markdown files out of the box. You just start writing Markdown text, save the file with the .md extension and then you can toggle the visualization of the editor between the code and the preview of the Markdown file; obviously, you can also open an existing Markdown file and start working with it. To switch between views you just have to press `Ctrl+Shift+V` in the editor. You can view the preview side-by-side (`Ctrl+K V`) with the file you are editing and see changes reflected in real-time as you edit.
 
-VS Code原生支持对于Markdown的写作，你只需运行VS Code并写作Markdown文档并保存为.md后缀，之后你将可切换Markdown文本的渲染模式，以脚本模式或可视化模式，显然你也可以从打开一个Markdown文本作为编辑的起点，仅需要按下`kb(workbench.action.markdown.togglePreview)`便可以切换渲染模式，同时你可以通过按下`kb(workbench.action.markdown.openPreviewSideBySide)`开启对比模式，在同屏中观察渲染结果和脚本，当然这两种操作均在编辑器内进行。
+VS Code原生支持对于Markdown的写作，你只需运行VS Code并写作Markdown文档并保存为.md后缀，之后你将可切换Markdown文本的渲染模式，以脚本模式或可视化模式，显然你也可以从打开一个Markdown文本作为编辑的起点，仅需要按下`Ctrl+Shift+V`便可以切换渲染模式，同时你可以通过按下`Ctrl+K V`开启对比模式，在同屏中观察渲染结果和脚本，当然这两种操作均在编辑器内进行。
 
 Here is an example with a very simple file.
 

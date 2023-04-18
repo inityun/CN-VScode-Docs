@@ -26,9 +26,9 @@ VS Code的TypeScript支持可以在两种不同的模式下运行:
 * **Explicit Project**: a TypeScript project is defined via a `tsconfig.json` file. The presence of such a file in a directory indicates that the directory is the root of a TypeScript project. The file itself lists the files belonging to the project as well as compiler options. Details about the `tsconfig.json` file can be found [here](https://github.com/Microsoft/TypeScript/wiki/tsconfig.json).
 * **明确项目**：TypeScript项目是通过`tsconfig.json`文件定义的，`tsconfig.json`文件所在的目录就是TypeScript项目的根目录。这个文件本身列出了属于项目的文件以及编译器选项。在[这里](https://github.com/Microsoft/TypeScript/wiki/tsconfig.json)可以找到有关`tsconfig.json`文件的详细信息。
 
->**Tip:** We recommend that you use explicit projects over file scope projects. Since explicit projects list the files belonging to a project language, features like `Find All References` `kb(editor.action.referenceSearch.trigger)` consider the project scope and not the file scope only.
+>**Tip:** We recommend that you use explicit projects over file scope projects. Since explicit projects list the files belonging to a project language, features like `Find All References` `Shift+Alt+F12)` consider the project scope and not the file scope only.
 
->**提示：** 我们推荐大家采用明确项目的方式，因为这种模式可以列出属于项目语言的文件，就像 `Find All References` `kb(editor.action.referenceSearch.trigger)` 这种功能需要考虑项目的范围而不仅仅是文件范围。
+>**提示：** 我们推荐大家采用明确项目的方式，因为这种模式可以列出属于项目语言的文件，就像 `Find All References` `Shift+Alt+F12` 这种功能需要考虑项目的范围而不仅仅是文件范围。
 
 ## tsconfig.json
 
@@ -177,9 +177,9 @@ You can click on that icon to get a list of the problems and navigate to them.
 
 ![Compile Problems](images/typescript/compileerror.png)
 
-You can also use the keyboard to open the list `kb(workbench.action.showErrorsWarnings)`.
+You can also use the keyboard to open the list `Ctrl+Alt+O`.
 
-你也可以使用键盘打开问题列表`kb(workbench.action.showErrorsWarnings)`
+你也可以使用键盘打开问题列表`Ctrl+Alt+O`
 
 >**Tip:** Tasks offer rich support for many actions. Check the [Tasks](/md/编辑器/任务.md) topic for more information on how to configure them.
 
@@ -200,9 +200,9 @@ You can also use the keyboard to open the list `kb(workbench.action.showErrorsWa
 
 ## 格式代码
 
-`kb(editor.action.format)`: formats the currently selected code, or the whole document if no code is selected.
+`Shift+Alt+F2`: formats the currently selected code, or the whole document if no code is selected.
 
-`kb(editor.action.format)`: 格式当前选中的代码，如果没有选中代码块将会格式整个文件。
+`Shift+Alt+F2`: 格式当前选中的代码，如果没有选中代码块将会格式整个文件。
 
 ## JSDoc Support
 
