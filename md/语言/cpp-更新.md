@@ -95,8 +95,8 @@ This will generate a `c_cpp_properties.json` file that allows you to add additio
 * 添加任何必要的参数
 
 
-* You can now build your application with (`kb(workbench.action.tasks.build)`)
-* 现在你可以通过(`kb(workbench.action.tasks.build)`)构建你的应用了
+* You can now build your application with (`ctrl+shift+b`)
+* 现在你可以通过(`ctrl+shift+b`)构建你的应用了
 
 You should now see a `tasks.json` file in your workspace `.vscode` folder that looks something like:
 
@@ -212,7 +212,7 @@ To search for a symbol in the current workspace, start by pressing `Ctrl+T` inst
 
 ![Searching in your workspace](images/cpp/workspacesearch.png)
 
-Alternatively, you can search for symbols by accessing these commands through the __Command Palette__ if you prefer. Use __Quick Open__ (`kb(workbench.action.quickOpen)`) then enter the '@' command to search the current file, or the '#' command to search the current workspace. `Ctrl+Shift+O` and `kb(workbench.action.showAllSymbols)` are just shortcuts for the '@' and '#' commands, respectively, so everything works the same.
+Alternatively, you can search for symbols by accessing these commands through the __Command Palette__ if you prefer. Use __Quick Open__ (`kb(workbench.action.quickOpen)`) then enter the '@' command to search the current file, or the '#' command to search the current workspace. `Ctrl+Shift+O` and `ctrl+t` are just shortcuts for the '@' and '#' commands, respectively, so everything works the same.
 
 ### Peek Definition
 

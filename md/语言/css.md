@@ -22,19 +22,19 @@ We have support for selectors, properties and values. Use `Ctrl+Space` to get a 
 
 ![IntelliSense in CSS](images/css/intellisense.png)
 
-建议中包括大量的文档，其中包括一个对浏览器兼容性的建议列表。如果对选中项想看完整描述按 `kb(toggleSuggestionDetails)`（哎哎为什么我的快捷键不好用。。2016-5-14）.
+建议中包括大量的文档，其中包括一个对浏览器兼容性的建议列表。如果对选中项想看完整描述按 `ctrl+space`（哎哎为什么我的快捷键不好用。。2016-5-14）.
 
-Proposals contain extensive documentation, including a list of browsers that support the property. To see the full description text of the selected entry, use `kb(toggleSuggestionDetails)`.
+Proposals contain extensive documentation, including a list of browsers that support the property. To see the full description text of the selected entry, use `ctrl+space`.
 
 ##Emmet语法 Emmet snippets
 
-按 `kb(editor.emmet.action.expandAbbreviation)` 拓展当前缩写
+按 `tab` 拓展当前缩写
 
 >**小贴士:** Emmet对CSS的支持详见 [Emmet cheat sheet](http://docs.emmet.io/cheat-sheet).
 
 我们同样支持 [用户定义代码段](/md/定制化/用户定义代码段.md).
 
-Press `kb(editor.emmet.action.expandAbbreviation)` to expand the current abbreviation.
+Press `tab` to expand the current abbreviation.
 
 >**Tip:** See the CSS section of the [Emmet cheat sheet](http://docs.emmet.io/cheat-sheet) for valid abbreviations.
 
@@ -222,8 +222,8 @@ VS Code interprets `node-sass` or `lessc` as an external task runner exposing ex
 
 ###第四步：编译 Step 4: Run the Build Task
 
-因为这个文件只有这一个任务，你可以直接按 `kb(workbench.action.tasks.build)` (**Run Build Task**)来编译。样例文件不应该出现任何编译问题，所以只会生成相应的 `styles.css` 
-As this is the only task in the file, you can execute it by simply pressing `kb(workbench.action.tasks.build)` (**Run Build Task**).  The sample Sass/Less file should not have any compile problems, so by running the task all that happens is a corresponding `styles.css` file is created.
+因为这个文件只有这一个任务，你可以直接按 `ctrl+shift+b` (**Run Build Task**)来编译。样例文件不应该出现任何编译问题，所以只会生成相应的 `styles.css` 
+As this is the only task in the file, you can execute it by simply pressing `ctrl+shift+b` (**Run Build Task**).  The sample Sass/Less file should not have any compile problems, so by running the task all that happens is a corresponding `styles.css` file is created.
 
 ##自动化Sass/Less编译 Automating Sass/Less compilation
 
@@ -370,13 +370,13 @@ To complete the tasks integration with VS Code, we will need to modify the task 
 
 ### Step 4: Run the Build Task
 
-Again, as this is the only task in the file you can execute it by simply pressing `kb(workbench.action.tasks.build)` (**Run Build Task**).  But this time, we've set a watch so the Status Bar should indicate that on the left-hand side.
+Again, as this is the only task in the file you can execute it by simply pressing `ctrl+shift+b` (**Run Build Task**).  But this time, we've set a watch so the Status Bar should indicate that on the left-hand side.
 
 ![Task watching spinner](images/css/taskwatching.png)
 
 At this point, if you create and/or modify other Less/Sass files, you will see the respective CSS files generated and/or changes reflected on save.  You can also enable [Auto Save](/md/编辑器/基础.md#saveauto-save) to make things even more streamlined.
 
-If you want to stop the watch, you can press `kb(workbench.action.tasks.build)` again and click **Terminate Running Task** in the message box. Or you can use the **Command Palette** with `Ctrl+Shift+P or F1` and find the terminate command there.
+If you want to stop the watch, you can press `ctrl+shift+b` again and click **Terminate Running Task** in the message box. Or you can use the **Command Palette** with `Ctrl+Shift+P or F1` and find the terminate command there.
 
 ## Customizing CSS, Sass and Less Settings
 

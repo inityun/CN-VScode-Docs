@@ -40,7 +40,7 @@ To improve the formatting of your HTML code press `kb(editor.action.format)` and
 
 ## 支持Emmet Emmet snippets
 
-我们提供Emmet代码拓展，只要按 `kb(editor.emmet.action.expandAbbreviation)`就可以了。
+我们提供Emmet代码拓展，只要按 `tab`就可以了。
 
 ![Emmet HTML support built-in](images/html/emmetsnippet.gif)
 
@@ -48,7 +48,7 @@ To improve the formatting of your HTML code press `kb(editor.action.format)` and
 
 我们同样支持 [用户定义代码段](/md/定制化/用户定义代码段.md).
 
-We support Emmet snippet expansion, simply press `kb(editor.emmet.action.expandAbbreviation)`.
+We support Emmet snippet expansion, simply press `tab`.
 
 ![Emmet HTML support built-in](images/html/emmetsnippet.gif)
 

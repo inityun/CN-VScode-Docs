@@ -150,7 +150,7 @@ Under the covers, we interpret **marked** as an external task runner exposing ex
 
 ### Step 4: Run the Build Task
 
-As this is the only task in the file, you can execute it by simply pressing `kb(workbench.action.tasks.build)` (**Run Build Task**).  At this point, you should see an additional file show up in the file list `sample.html`.
+As this is the only task in the file, you can execute it by simply pressing `ctrl+shift+b` (**Run Build Task**).  At this point, you should see an additional file show up in the file list `sample.html`.
 
 The sample Markdown file did not have any compile problems, so by running the task all that happened was a corresponding `sample.html` file was created.
 
@@ -221,13 +221,13 @@ Your tasks configuration should now look like this:
 
 ### Step 4: Run the gulp Build Task
 
-Again, as this is the only task in the file you can execute it by simply pressing `kb(workbench.action.tasks.build)` (**Run Build Task**).  But this time, we've set a watch so the Status Bar should indicate that on the left-hand side.
+Again, as this is the only task in the file you can execute it by simply pressing `ctrl+shift+b` (**Run Build Task**).  But this time, we've set a watch so the Status Bar should indicate that on the left-hand side.
 
 ![Task watching spinner](images/Markdown/taskwatching.png)
 
 At this point, if you create and/or modify other Markdown files, you will see the respective HTML files generated and/or changes reflected on save.  You can also enable [Auto Save](/md/编辑器/基础.md#saveauto-save) to make things even more streamlined.
 
-If you want to stop the watch, you can press `kb(workbench.action.tasks.build)` again and click **Terminate Running Task** in the message box. Or you can use the **Command Palette** with `Ctrl+Shift+P or F1` and find the terminate command there.
+If you want to stop the watch, you can press `ctrl+shift+b` again and click **Terminate Running Task** in the message box. Or you can use the **Command Palette** with `Ctrl+Shift+P or F1` and find the terminate command there.
 
 ## Next Steps
 

@@ -86,12 +86,12 @@ code .
 
 ## 运行插件  Run the Extension
 
-在我们继续下一步之前，我们可以先按下`F5`运行一下插件以确保到目前为止一切正常。如同你在之前"Hello World"教程中看到的那样，VS Code加载插件后打开另一个窗口（**[扩展开发主机]**窗口）。你应该在命令面板找到"Hello World"命令（按下`kb(workbench.action.showCommands)`）并选择它，你将会在看到窗口顶部看到一个显示"Hello World"的消息提示框。
+在我们继续下一步之前，我们可以先按下`F5`运行一下插件以确保到目前为止一切正常。如同你在之前"Hello World"教程中看到的那样，VS Code加载插件后打开另一个窗口（**[扩展开发主机]**窗口）。你应该在命令面板找到"Hello World"命令（按下`ctrl+shift+p`）并选择它，你将会在看到窗口顶部看到一个显示"Hello World"的消息提示框。
 
 现在你已经确定了插件可以正常的运行，如果你喜欢你可以让插件开发窗口保持打开 。接下来你可以在开发窗口中再次按下`F5`或者按下`Ctrl+R` (Mac: `Cmd+R`)来重新加载插件开发窗口以确定你对插件的修改生效了。
 
 
-Before we go on, we can run the extension to make sure everything works as expected by pressing `F5`. As you saw in the previous "Hello World" walkthrough, VS Code opens another window (the **[Extension Development Host]** window) in which your extension will be loaded. You should find the "Hello World" command in the Command Palette (press `kb(workbench.action.showCommands)`) and when you select it, you will see an information box at the top of the window saying "Hello World".
+Before we go on, we can run the extension to make sure everything works as expected by pressing `F5`. As you saw in the previous "Hello World" walkthrough, VS Code opens another window (the **[Extension Development Host]** window) in which your extension will be loaded. You should find the "Hello World" command in the Command Palette (press `ctrl+shift+p`) and when you select it, you will see an information box at the top of the window saying "Hello World".
 
 Now that you have confirmed that the extension is running properly, you can keep the extension development window open if you like. To test out any changes that you make to your extension, you can either press `F5` again in the development window or reload the extension development window by pressing `Ctrl+R` (Mac: `Cmd+R`).
 

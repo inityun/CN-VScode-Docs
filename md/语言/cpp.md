@@ -59,9 +59,9 @@ To search for a symbol in the current workspace, start by pressing `Ctrl+T` inst
 
 ![Searching in your workspace](images/cpp/workspacesearch.png)
 
-Alternatively, you can search for symbols by accessing these commands through the __Command Palette__ if you prefer. Use __Quick Open__ (`kb(workbench.action.quickOpen)`) then enter the '@' command to search the current file, or the '#' command to search the current workspace. `Ctrl+Shift+O` and `kb(workbench.action.showAllSymbols)` are just shortcuts for the '@' and '#' commands, respectively, so everything works the same.
+Alternatively, you can search for symbols by accessing these commands through the __Command Palette__ if you prefer. Use __Quick Open__ (`kb(workbench.action.quickOpen)`) then enter the '@' command to search the current file, or the '#' command to search the current workspace. `Ctrl+Shift+O` and `ctrl+t` are just shortcuts for the '@' and '#' commands, respectively, so everything works the same.
 
-另外，您也可以根据需要通过__Command Palette__访问这些命令来搜索符号。使用 __Quick Open__ (`kb(workbench.action.quickOpen)`)然后输入“ @”命令搜索当前文件，或输入“＃”命令搜索当前工作空间。'Ctrl+Shift+O'和'kb(workbench.action.showAllSymbols)'分别只是“ @”和“＃”命令的快捷方式，因此所有工作均相同。
+另外，您也可以根据需要通过__Command Palette__访问这些命令来搜索符号。使用 __Quick Open__ (`kb(workbench.action.quickOpen)`)然后输入“ @”命令搜索当前文件，或输入“＃”命令搜索当前工作空间。'Ctrl+Shift+O'和'ctrl+t'分别只是“ @”和“＃”命令的快捷方式，因此所有工作均相同。
 
 ### Peek Definition
 ### 查看定义

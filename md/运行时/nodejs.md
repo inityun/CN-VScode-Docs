@@ -198,9 +198,9 @@ Click on the Configure gear icon at the top of the Debug view to create a defaul
 
 ![launch.json configuration file](images/nodejs/launchjson.png)
 
-Take the defaults for everything else. If you do not have [Auto Save](/md/编辑器/基础.md#saveauto-save) on, save the file by pressing `kb(workbench.action.files.save)`, and make sure `Launch` is selected in the configuration dropdown at the top of the Debug view. Open `app.js` and set a breakpoint on the line of code we wrote earlier `var msg = 'hello world';` by clicking in the gutter to the left of the line number. Press `F5` to start debugging the application. VS Code will start the server in a new terminal and hit the breakpoint we set. From there you can inspect variables, create watches, and step through your code.
+Take the defaults for everything else. If you do not have [Auto Save](/md/编辑器/基础.md#saveauto-save) on, save the file by pressing `ctrl+s`, and make sure `Launch` is selected in the configuration dropdown at the top of the Debug view. Open `app.js` and set a breakpoint on the line of code we wrote earlier `var msg = 'hello world';` by clicking in the gutter to the left of the line number. Press `F5` to start debugging the application. VS Code will start the server in a new terminal and hit the breakpoint we set. From there you can inspect variables, create watches, and step through your code.
 
-对于其余的选项，使用默认配置即可。如果你没有开启 [自动保存](/md/编辑器/基础.md#saveauto-save) ，通过输入`kb(workbench.action.files.save)`来保存文件，并且确保Debug视图中的下拉菜单里的`Launch`被正确的选择了。打开`app.js`在`var msg = 'hello world';`的行号处设置一个断点。 输入`F5`，开始调试应用。VS Code将会在一个新的终端里开启服务器并在我们设置的断点处暂停。这里你可以审查变量、创建watcher，以及分部调试代码。
+对于其余的选项，使用默认配置即可。如果你没有开启 [自动保存](/md/编辑器/基础.md#saveauto-save) ，通过输入`ctrl+s`来保存文件，并且确保Debug视图中的下拉菜单里的`Launch`被正确的选择了。打开`app.js`在`var msg = 'hello world';`的行号处设置一个断点。 输入`F5`，开始调试应用。VS Code将会在一个新的终端里开启服务器并在我们设置的断点处暂停。这里你可以审查变量、创建watcher，以及分部调试代码。
 
 ![Debug session](images/nodejs/debugsession.png)
 

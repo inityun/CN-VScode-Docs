@@ -305,7 +305,7 @@ The [Babel](https://babeljs.io) transpiler turns ES6 files into readable ES5 Jav
 }
 ```
 
-Once you have added this, you can start **Babel** with the `kb(workbench.action.tasks.build)` (**Run Build Task**) command and it will compile all files from the `src` directory into the `lib` directory.
+Once you have added this, you can start **Babel** with the `ctrl+shift+b` (**Run Build Task**) command and it will compile all files from the `src` directory into the `lib` directory.
 
 ## JSX and React Native
 

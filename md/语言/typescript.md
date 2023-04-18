@@ -135,9 +135,9 @@ Under the covers we interpret `tsc` as an external task runner exposing exactly 
 ### Step 3: Run the Build Task
 ###第三步：执行构建任务
 
-As this is the only task in the file, you can execute it by simply pressing `kb(workbench.action.tasks.build)` (**Run Build Task**).  At this point you will see an additional file show up in the file list `HelloWorld.js`.
+As this is the only task in the file, you can execute it by simply pressing `ctrl+shift+b` (**Run Build Task**).  At this point you will see an additional file show up in the file list `HelloWorld.js`.
 
-因为这是在文件的唯一任务，你可以直接按下`kb(workbench.action.tasks.build)` (**执行构建任务**)执行。这时候你将会看到文件列表增加了一个`HelloWorld.js`文件。
+因为这是在文件的唯一任务，你可以直接按下`ctrl+shift+b` (**执行构建任务**)执行。这时候你将会看到文件列表增加了一个`HelloWorld.js`文件。
 
 The example TypeScript file did not have any compile problems, so by running the task all that happened was a corresponding `HelloWorld.js` and `HelloWorld.js.map` file was created.
 

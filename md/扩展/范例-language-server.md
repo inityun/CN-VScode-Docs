@@ -411,7 +411,7 @@ documents.onDidChangeContent((change) => {
 
 向下面这样测试语言服务：
 
-* 到包含服务代码（见上文）的VS Code的实例中并且按下`kb(workbench.action.tasks.build)`启动构建任务。任务将编译服务代码并且安装服务到插件目录。
+* 到包含服务代码（见上文）的VS Code的实例中并且按下`ctrl+shift+b`启动构建任务。任务将编译服务代码并且安装服务到插件目录。
 * 现在会带有客户端插件的VS Code实例中并且按下`F5`启动`扩展开发主机`VS Code实例执行插件代码。
 * 在根目录创建一个test.txt文件并且粘贴如下内容：
 
@@ -432,7 +432,7 @@ Any browser. Any host. Any OS. Open Source.
 
 To test the language server do the following:
 
-* Go to the VS Code instance containing the server code (see above) and press `kb(workbench.action.tasks.build)` to start the build task. The task compiles the server code and installs (e.g. copies) it into the extension folder.
+* Go to the VS Code instance containing the server code (see above) and press `ctrl+shift+b` to start the build task. The task compiles the server code and installs (e.g. copies) it into the extension folder.
 * Now go back to the VS Code instance with the extension (client) and press `F5` to launch an additional `Extension Development Host` instance of VS Code that executes the extension code.
 * Create a test.txt file in the root folder and paste the following content:
 
