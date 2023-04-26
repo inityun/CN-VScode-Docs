@@ -1,23 +1,24 @@
 {
-    "title" : "vscode-docs",
+    "title" : "Microsoft Visual Studio Code 中文手册",
     "author" : "VSCodeContributorsinChina",
     "language" : "zh-hans",
     "plugins": [
       "-lunr",
       "-search",
+      "-sharing",
       "search-pro",
-      "intopic-toc",
-      "flexible-alerts"
+      "theme-hqbook",
+      "flexible-alerts",
+      "code",
+      "sidebar-style"
     ],
     "pluginsConfig": {
-      "intopic-toc": {
-        "selector": ".markdown-section h1, .markdown-section h2, .markdown-section h3, .markdown-section h4, .markdown-section h5",
-        "maxDepth": 6,
-        "mode": "nested",
-        "isCollapsed": false,
-        "isScrollspyActive": true,
-        "visible": true,
-        "label": "On This Page"
+      "sidebar-style": {
+        "title": "VSCode 中文手册",
+        "author": "VSCodeContributorsinChina"
+      },
+      "theme-hqbook":{
+        "search-placeholder":"输入关键字搜索"
       }
     } 
 }
