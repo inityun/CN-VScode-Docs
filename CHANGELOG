@@ -1,11 +1,211 @@
-日期: 2023-04-17
+date: 2023-04-17
 1. 添加了gitbook新的插件 node_modules/gitbook-plugin-flexible-alerts
 2. 添加了 CHANGELOG 文件
 3. 添加了 Updates/January_2022 更新内容文档, 主要是包含了右侧导航目录的添加 outline
 4. 修改了 summary 文件中的目录结构
 
-日期: 2023-04-18
+date: 2023-04-18
 1. 替换了所有文档中 kb() 符号替代, 使用xwj的python脚本
 
 date: 2023-04-26
 1. 重建了gitbook theme hqbook
+2. 添加了gitlab项目仓库的图标
+
+
+
+
+
+以下是原md文件中对应关系
+
+/docs/getstarted/settings.md
+/md/快速入门/设置.md
+
+## md-工具
+/docs/tools/yocode.md
+/md/工具/yocode扩展生成器.md
+
+/docs/tools/vscecli.md
+/md/工具/vse命令行工具.md
+
+/docs/tools/samples.md
+/md/工具/范例.md
+
+## md-编辑器
+/docs/editor/codebasics.md
+/md/编辑器/基础.md
+
+/docs/editor/extension-gallery.md
+/md/编辑器/扩展市场.md
+
+/docs/editor/tasks.md
+/md/编辑器/任务.md
+
+/docs/editor/debugging.md
+/md/编辑器/调试.md
+
+/docs/editor/whyvscode.md
+/md/编辑器/为什么选用VSCode.md
+
+/docs/editor/setup.md
+/md/编辑器/安装.md
+
+/docs/editor/userdefinedsnippets.md
+/md/编辑器/Snippets.md
+
+/docs/editor/accessibility.md
+/md/编辑器/易用性.md
+
+/docs/editor/versioncontrol.md
+/md/编辑器/版本控制.md
+
+/docs/editor/editingevolved.md
+### /docs/editor/integrated-terminal.md 不明白
+### /docs/editor/tasks_appendix.md 不明白
+
+## 语言
+/docs/languages/cpp.md
+/md/语言/cpp.md
+
+/docs/languages/csharp.md
+/md/语言/csharp.md
+
+/docs/languages/css.md
+/md/语言/css.md
+
+/docs/languages/docker.md
+/md/语言/docker.md
+
+/docs/languages/html.md
+/md/语言/html.md
+
+/docs/languages/javascript.md
+/md/语言/javascript.md
+
+/docs/languages/json.md
+/md/语言/json.md
+
+/docs/languages/overview.md
+/md/语言/overview.md
+
+/docs/languages/php.md
+/md/语言/php.md
+
+/docs/languages/python.md
+/md/语言/python.md
+
+/docs/languages/typescript.md
+/md/语言/typescript.md
+
+/docs/languages/markdown.md
+/md/语言/markdown.md
+
+/docs/languages/identifiers.md
+/md/语言/identifiers.md
+
+## 运行时
+/docs/runtimes/nodejs.md
+/md/运行时/nodejs.md
+
+/docs/runtimes/ASPnet5.md
+
+/docs/runtimes/dotnet.md
+
+## 技术支持
+/docs/supporting/faq.md
+/md/技术支持/常见问题.md
+
+## 定制化
+/md/定制化/主题.md
+/docs/customization/themes.md
+
+/md/定制化/基本语言支持.md
+
+/md/定制化/快捷键绑定.md
+/docs/customization/keybindings.md
+
+/md/定制化/概述.md
+/docs/customization/overview.md
+
+/md/定制化/用户和工作空间.md
+/docs/customization/userandworkspace.md
+
+/md/定制化/用户定义代码段.md
+/docs/customization/userdefinedsnippets.md
+
+/md/定制化/语言区域.md
+/docs/customization/locales.md
+
+/md/定制化/调色板.md
+/docs/customization/colorizer.md
+
+## 扩展
+/docs/extensions/install-extension.md
+/md/扩展/安装-扩展.md
+
+/md/扩展/概述.md
+/docs/extensions/overview.md
+
+/md/扩展/范例-hello-world.md
+/docs/extensions/example-hello-world.md
+
+/md/扩展/范例-world-count.md
+/docs/extensions/example-word-count.md
+
+/md/扩展/范例-language-server.md
+/docs/extensions/example-language-server.md
+
+/md/扩展/范例-调试器.md
+/docs/extensions/example-debuggers.md
+
+/md/扩展/调试-扩展.md
+/docs/extensions/debugging-extensions.md
+
+/md/扩展/用我们的方式创造扩展.md
+/docs/extensions/our-approach.md
+
+/md/扩展/测试-扩展.md
+/docs/extensions/testing-extensions.md
+
+/md/扩展/范式-原则.md
+/docs/extensions/patterns-and-principles.md
+
+/docs/extensions/samples.md
+### /docs/extensions/yocode.md 不明白
+### /docs/extensions/themes-snippets-colorizers.md 不明白
+### /docs/extensions/publish-extension.md 不明白
+
+## 扩展API
+/md/扩展API/扩展manifest文件.md
+/docs/extensionAPI/extension-manifest.md
+
+/md/扩展API/扩展点.md
+/docs/extensionAPI/extension-points.md
+
+/md/扩展API/概述.md
+/docs/extensionAPI/overview.md
+
+/md/扩展API/激活事件.md
+/docs/extensionAPI/activation-events.md
+
+/md/扩展API/vscode-api.md
+/docs/extensionAPI/vscode-api.md
+
+/md/扩展API/vscode-api-命令.md
+/docs/extensionAPI/vscode-api-commands.md
+
+/md/扩展API/api调试.md
+/docs/extensionAPI/api-debugging.md
+
+## 快速入门
+/md/快速入门/快捷键绑定.md
+/docs/getstarted/keybindings.md
+
+/md/快速入门/用户接口.md
+/docs/getstarted/userinterface.md
+
+/md/快速入门/设置.md
+/docs/getstarted/settings.md
+
+/md/快速入门/主题.md
+/docs/getstarted/themes.md
+### /docs/getstarted/theme-color-reference.md 不明白
