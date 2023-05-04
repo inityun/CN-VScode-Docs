@@ -4,4 +4,3 @@ npm-debug.log*
 /.vscode
 /_book/
 /.obsidian
-/node_modules/
